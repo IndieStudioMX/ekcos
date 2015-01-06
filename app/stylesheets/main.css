@@ -5,39 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
-li {
-  margin-left: 1em;
-}
-.navbar.navbar-default.navbar-fixed-top {
-  padding: 22px 0;
-}
-.navbar-default .navbar-nav li > a {
-  font-size: 12.31pt;
-  color: #000;
-}
-.navbar-default .navbar-nav li > a:hover {
-  color: #d0d61b;
-}
-.navbar-default .navbar-nav li:last-child a {
-  color: #f00;
-}
-.nav.navbar-nav.navbar-right {
-  margin-right: 13.5rem;
-}
-.brand {
-  display: block;
-  width: 580px;
-  height: auto;
-  position: relative;
-  top: -30px;
-  left: -215px;
-}
-.brand img {
-  max-width: 100%;
-}
-.main-menu {
-  top: -4.5em;
-  position: relative;
+.active {
+  color: #cc3 !important;
 }
 body {
   font-family: 'gandhi';
@@ -52,4 +21,75 @@ body {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+li {
+  margin-left: 1em;
+}
+.navbar.navbar-default.navbar-fixed-top {
+  background: rgba(217,220,218,0.9);
+  border-color: transparent;
+  padding: 22px 0;
+  height: 76px;
+}
+.navbar-default .navbar-nav li > a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+.navbar-default .navbar-nav li > a:hover {
+  color: #cc3;
+}
+.navbar-default .navbar-nav li:nth-child(2),
+.navbar-default .navbar-nav li:nth-child(3),
+.navbar-default .navbar-nav li:nth-child(4),
+.navbar-default .navbar-nav li:nth-child(5) {
+  margin-left: -0.1rem;
+}
+.navbar-default .navbar-nav li:last-child {
+  position: absolute;
+  left: 40.3rem;
+  top: -2px;
+  width: 335px;
+  background: url("../images/view-cart.svg") no-repeat 100% 100%;
+  background-position: 0 -14px;
+}
+.navbar-default .navbar-nav li:last-child:hover {
+  background: url("../images/view-cart_hover.svg") no-repeat 100% 100%;
+  background-position: 0 -14px;
+}
+.navbar-default .navbar-nav li:last-child > a {
+  color: #000;
+  margin-left: 6rem;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav li:last-child > a:hover {
+  color: #000;
+}
+.navbar-default .navbar-nav li:last-child > a > img {
+  width: 25%;
+  position: absolute;
+  top: -0.6rem;
+}
+.nav.navbar-nav.navbar-right {
+  margin-right: 3.5rem;
+}
+.navbar-header {
+  margin-top: -22px;
+}
+.brand {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -13px;
+  left: -7px;
+}
+.brand img {
+  max-width: 100%;
+  width: 500px;
+}
+.main-menu {
+  top: -1rem;
+  left: -14.5rem;
+  position: relative;
 }
