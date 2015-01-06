@@ -18,6 +18,9 @@ li {
 .navbar-default .navbar-nav li > a:hover {
   color: #d0d61b;
 }
+.navbar-default .navbar-nav li:last-child a {
+  color: #f00;
+}
 .nav.navbar-nav.navbar-right {
   margin-right: 13.5rem;
 }
