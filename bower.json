@@ -1,0 +1,8 @@
+{
+  "name": "Ekcos Website",
+  "version": "0.0.1",
+  "description": "Redesign for Ekcos Website",
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
