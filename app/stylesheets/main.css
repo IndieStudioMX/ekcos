@@ -1,4 +1,55 @@
+@font-face {
+  font-family: 'gandhi';
+  src: url("../fonts/GandhiSans-Regular-webfontt.eot");
+  src: url("../fonts/GandhiSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/GandhiSans-Regular-webfont.woff2") format('woff2'), url("../fonts/GandhiSans-Regular-webfont.woff") format('woff'), url("../fonts/GandhiSans-Regular-webfont.ttf") format('truetype'), url("../fonts/GandhiSans-Regular-webfont.svg#gandhi") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+li {
+  margin-left: 1em;
+}
+.navbar.navbar-default.navbar-fixed-top {
+  padding: 22px 0;
+}
+.navbar-default .navbar-nav li > a {
+  font-size: 12.31pt;
+  color: #000;
+}
+.navbar-default .navbar-nav li > a:hover {
+  color: #d0d61b;
+}
+.navbar-default .navbar-nav li:last-child a {
+  color: #f00;
+}
+.nav.navbar-nav.navbar-right {
+  margin-right: 13.5rem;
+}
+.brand {
+  display: block;
+  width: 580px;
+  height: auto;
+  position: relative;
+  top: -30px;
+  left: -215px;
+}
+.brand img {
+  max-width: 100%;
+}
+.main-menu {
+  top: -4.5em;
+  position: relative;
+}
 body {
-  background: rgba(217,220,218,0.6);
-  color: #fff;
+  font-family: 'gandhi';
+  background: #d6e0c1;
+  font-size: 16px;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
