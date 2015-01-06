@@ -18,12 +18,23 @@ li {
 .navbar-default .navbar-nav li > a:hover {
   color: #d0d61b;
 }
-.brand > img {
-  width: 498px;
+.nav.navbar-nav.navbar-right {
+  margin-right: 13.5rem;
+}
+.brand {
+  display: block;
+  width: 580px;
   height: auto;
   position: relative;
   top: -30px;
-  left: 0;
+  left: -215px;
+}
+.brand img {
+  max-width: 100%;
+}
+.main-menu {
+  top: -4.5em;
+  position: relative;
 }
 body {
   font-family: 'gandhi';
