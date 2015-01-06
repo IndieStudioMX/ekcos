@@ -53,7 +53,7 @@ gulp.task('jshint', function () {
 });
 
 //Preprocesa archivos Stylus a CSS y recarga los cambios
-gulp.task('css', function () {
+gulp.task('css', function (){
 	gulp.src('./app/stylesheets/main.styl')
 		.pipe(stylus({ use: nib() }))
 		.pipe(gulp.dest('./app/stylesheets'))
