@@ -2,32 +2,60 @@ li
 	margin-left 1em
 	
 .navbar.navbar-default.navbar-fixed-top 
+	background $menu-light
+	border-color transparent
 	padding 22px 0
+	height 76px
 
 .navbar-default .navbar-nav li 
 	& > a 
-		font-size 12.31pt
-		color black
+		font-size 1.1rem
+		font-weight bold
+		color $text-color
 	& > a:hover
 		color $font-active-color
+	&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+		margin-left -0.1rem
 	&:last-child 
-		a
-			color red
+		position absolute
+		left 40.3rem
+		top -2px
+		width 335px
+		background url('../images/view-cart.svg') no-repeat 100% 100%
+		background-position 0 -14px
+		&:hover 
+			background url('../images/view-cart_hover.svg') no-repeat 100% 100%
+			background-position 0 -14px
+		& > a 
+			color $text-color
+			margin-left  6rem
+			text-transform uppercase
+			&:hover 
+				color $text-color
+			& > img
+				width 25%
+				position absolute 
+				top -.6rem
 
 .nav.navbar-nav.navbar-right 
-	margin-right 13.5rem;
+	margin-right 3.5rem;
+
+.navbar-header 
+	margin-top -22px
 
 .brand 
 	display block
-	width 580px
+	width 100%
 	height auto
 	position relative
-	top -30px
-	left -215px
+	top -13px
+	left -7px
 	img 
 		max-width 100%
+		width 500px
 		
 .main-menu 
-	top -4.5em
+	top -1rem
+	left -14.5rem
 	position relative
 	
