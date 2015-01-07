@@ -1,13 +1,15 @@
 'use strict';
 
-var gulp  = require('gulp'),
-	connect = require('gulp-connect'),
-	stylus  = require('gulp-stylus'),
-	nib     = require('nib'),
-	jshint  = require('gulp-jshint'),
-	stylish = require('jshint-stylish'),
-	inject  = require('gulp-inject'),
-	wiredep = require('wiredep').stream,
+var gulp     = require('gulp'),
+	connect  = require('gulp-connect'),
+	stylus   = require('gulp-stylus'),
+	nib      = require('nib'),
+	jshint   = require('gulp-jshint'),
+	stylish  = require('jshint-stylish'),
+	inject   = require('gulp-inject'),
+	wiredep  = require('wiredep').stream,
+	imagemin = require('gulp-imagemin'),
+	pngquant = require('imagemin-pngquant'),
 	historyApiFallback = require('connect-history-api-fallback');
 
 //Busca en las carpetas de estilos y javascript los archivos que hayamos creado para inyectarlos en el index.html
@@ -52,6 +54,17 @@ gulp.task('jshint', function () {
 		.pipe(jshint.reporter('fail'));
 });
 
+// Comprime imágenes jpg, png y svg
+gulp.task('imagemin', function () {
+	return gulp.src('./app/images/*')
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{ removeViewBox: false}],
+			use: [pngquant()]
+		}))
+		.pipe(gulp.dest('dist'))
+})
+
 //Preprocesa archivos Stylus a CSS y recarga los cambios
 gulp.task('css', function (){
 	gulp.src('./app/stylesheets/main.styl')
@@ -73,6 +86,7 @@ gulp.task('watch', function () {
 	gulp.watch(['./app/stylesheets/**/*.styl'], ['css', 'inject']);
 	gulp.watch(['./app/scripts/**/*.js', './Gulpfile.js'], ['jshint', 'inject']);
 	gulp.watch(['./bower.json'], ['wiredep']);
+	gulp.watch(['./app/images/**/*.jpg', './app/images/**/*.png', './app/images/**/*.svg'], ['imagemin']);
 });
 
 gulp.task('default', ['server', 'inject', 'wiredep', 'watch']);
