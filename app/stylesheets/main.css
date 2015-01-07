@@ -29,6 +29,10 @@ body {
 li {
   margin-left: 1em;
 }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+}
 .navbar.navbar-default.navbar-fixed-top {
   background: rgba(217,220,218,0.9);
   border-color: transparent;
@@ -84,7 +88,6 @@ li {
 }
 .brand {
   display: block;
-  width: 100%;
   height: auto;
   position: absolute;
   top: -13px;
@@ -122,14 +125,26 @@ li {
   font-size: 1.1rem;
 }
 .navbar-products li:first-child {
-  margin-right: 14rem;
+  width: 34rem;
+  background: url("../images/docs-bg.svg") no-repeat;
+  height: 60px;
+  background-position: 27px -23px;
+  background-size: inherit;
+}
+.navbar-products li:first-child:hover {
+  background: url("../images/docs-bg-hover.svg") no-repeat;
+  width: 34rem;
+  background-position: 27px -27px;
+  background-size: inherit;
+  height: 60px;
 }
 .navbar-products li:first-child > a {
   color: #fff;
+  margin-left: 7rem;
 }
 .navbar-products li:nth-child(2) {
   margin-left: 0;
-  margin-right: 5rem;
+  margin-right: -3.5rem;
 }
 .navbar-products li:nth-child(3) {
   margin-left: 0;
@@ -165,6 +180,12 @@ li {
   background-position: -130px -6px;
   background-size: 262px;
 }
+.carousel {
+  position: relative;
+  top: 27px;
+  height: 100%;
+  width: 100%;
+}
 .carousel-caption h3 {
   color: #3d3a3a;
   text-shadow: none;
@@ -188,18 +209,29 @@ li {
   font-weight: bold;
   font-size: 1.55rem;
 }
+.waterless-caption h3 {
+  width: 300px;
+  margin: -37% auto 0 auto;
+}
+.waterless-caption hr {
+  width: 334px;
+}
 .footer {
   background: #000;
-  margin-top: -0.1rem;
-  padding: 1rem;
+  margin-top: 1.9rem;
+  padding: 4rem 1rem;
   line-height: 50px;
+  position: absolute;
+  width: 100%;
+  height: 120px;
 }
-.footer .container {
-  width: 1024px;
-}
-.footer .container p {
+.footer p {
   color: #fff;
 }
-.footer .container a {
+.footer a {
   color: #fff;
+}
+.footer .brand-footer {
+  position: relative;
+  top: -3rem;
 }

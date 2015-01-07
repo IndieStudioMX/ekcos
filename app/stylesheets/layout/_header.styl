@@ -1,6 +1,9 @@
 li
 	margin-left 1em
-	
+
+.nav > li > a:hover, .nav > li > a:focus
+	background-color transparent
+
 .navbar.navbar-default.navbar-fixed-top 
 	background $menu-light
 	border-color transparent
@@ -47,7 +50,6 @@ li
 
 .brand 
 	display block
-	width 100%
 	height auto
 	position absolute
 	top -13px
@@ -82,12 +84,24 @@ li
 		float right
 		font-size 1.1rem
 		&:first-child 
-			margin-right 14rem
+			width 34rem
+			background url('../images/docs-bg.svg') no-repeat
+			height 60px
+			background-position 27px -23px
+			background-size inherit
+			&:hover 
+				background url('../images/docs-bg-hover.svg') no-repeat
+				width 34rem
+				background-position 27px -27px
+				background-size inherit
+				height 60px
+				
 			& > a 
 				color $text-color-light
+				margin-left: 7rem;
 		&:nth-child(2)
 			margin-left 0
-			margin-right 5rem
+			margin-right -3.5rem
 		&:nth-child(3) 
 			margin-left 0
 			margin-right 1rem
