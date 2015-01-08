@@ -3,7 +3,7 @@
 	height 13rem
 	position absolute
 	top 45rem
-	left 13rem
+	left 15rem
 	.btn-latest-news, 
 	.btn-antisplash
 		display inline-block
@@ -17,3 +17,93 @@
 		background url('../images/sprite-news.png') no-repeat
 		background-position -130px -6px
 		background-size 262px
+
+.menuProducts-container
+	background url('../images/menuProducts-container.png') no-repeat
+	background-position -8px 0
+	background-size 125%
+	position absolute
+	width 267px
+	height 290px
+	top 37rem
+	right 14rem
+	z-index 4
+	&:after 
+		content ""
+		height 48px	
+		width 206px
+		position absolute
+		border-radius 50%
+		left 4rem 
+		top 25rem
+		filterBlur blur(5px)
+		transform rotateX(54deg)
+		background rgba(0,0,0,0.13)
+		z-index 2
+
+
+.nav-products
+	list-style none
+	width 214px
+	position relative
+	top 8rem
+	left 1.5rem
+	.item-product 
+		height 46px 
+		width 100% 
+		&:first-child 
+			width 100%
+			.item-logo 
+				display block 
+				width 100%
+				height 46px
+				background url('../images/power-logo.svg'), url('../images/sprite-products.png')
+				background-size 89%, 49%
+				background-repeat no-repeat, no-repeat
+				background-position -4px -6px, 103px -13px
+			.item-buy 
+				item-buy()
+		&:nth-child(2)
+			width 100%
+			.item-logo
+				display block 
+				width 100%
+				height 46px
+				background url('../images/ekcos-logo.svg'), url('../images/sprite-products.png')
+				background-size 89%, 49%
+				background-repeat no-repeat, no-repeat
+				background-position -4px -6px, 103px -60px
+			.item-buy 
+				item-buy()
+		&:nth-child(3)
+			width 100%
+			.item-logo
+				display block 
+				width 100%
+				height 46px
+				background url('../images/trap-logo.svg'), url('../images/sprite-products.png')
+				background-size 89%, 49%
+				background-repeat no-repeat, no-repeat
+				background-position 7px -6px, 103px -106px
+			.item-buy 
+				item-buy()
+		&:last-child
+			width 100%
+			.item-logo
+				display block 
+				width 100%
+				height 46px
+				background url('../images/fresh-logo.svg'), url('../images/sprite-products.png')
+				background-size 77%, 49%
+				background-repeat no-repeat, no-repeat
+				background-position 13px -6px, 103px -150px
+			.item-buy 
+				item-buy()
+			
+
+
+
+
+
+
+

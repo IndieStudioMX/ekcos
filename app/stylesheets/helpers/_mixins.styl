@@ -1,10 +1,41 @@
-smooting() {
-	-webkit-font-smoothing antialiased
-}
+vendor(prop, val, prefixes = ())
+	for prefix in prefixes 
+		-{prefix}-{prop} val
+	{prop} val 
 
-border-box() {
-	-moz-box-sizing border-box
-	-webkit-box-sizing border-box
-	-ms-box-sizing border-box
-  box-sizing border-box
-}
+
+smooting() 
+	-webkit-font-smoothing antialiased
+
+border-box() 
+	vendor('box-sizing', arguments, moz webkit ms)
+
+filterBlur()
+	vendor('filter', arguments, webkit ms moz)
+
+transform()
+	vendor('transform', arguments, webkit ms moz)
+
+item-buy()
+	position relative	
+	top	-3.35rem 
+	left 16.3rem
+	color $font-active-color
+	font-size 1rem
+	text-transform uppercase
+	background url('../images/buy-btn.svg')
+	background-repeat no-repeat 
+	background-size 117%
+	background-position -18px -35px
+	padding .2rem 0
+	display block
+	height 20px
+	width 89px
+	text-indent 1.4rem
+	&:hover 
+		background url('../images/buy-btn_hover.svg')
+		background-repeat no-repeat 
+		background-size 117%
+		background-position -18px -35px
+		text-decoration none
+	
