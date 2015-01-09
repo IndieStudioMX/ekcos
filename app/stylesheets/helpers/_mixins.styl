@@ -3,7 +3,6 @@ vendor(prop, val, prefixes = ())
 		-{prefix}-{prop} val
 	{prop} val 
 
-
 smooting() 
 	-webkit-font-smoothing antialiased
 
@@ -16,26 +15,32 @@ filterBlur()
 transform()
 	vendor('transform', arguments, webkit ms moz)
 
+bg-gradient()
+	vendor('background-image', arguments, webkit ms moz)
+
+transition-menu()
+	vendor('transition', arguments, webkit ms moz)
+
 item-buy()
 	position relative	
-	top	-3.35rem 
-	left 16.3rem
+	top	-3.46rem 
+	left 16.16rem
 	color $font-active-color
 	font-size 1rem
 	text-transform uppercase
 	background url('../images/buy-btn.svg')
 	background-repeat no-repeat 
 	background-size 117%
-	background-position -18px -35px
-	padding .2rem 0
+	background-position -18px -34px
+	padding .16rem 0 1rem 0
 	display block
 	height 20px
 	width 89px
-	text-indent 1.4rem
+	text-indent 1.9rem
 	&:hover 
 		background url('../images/buy-btn_hover.svg')
 		background-repeat no-repeat 
 		background-size 117%
-		background-position -18px -35px
+		background-position -18px -34px
 		text-decoration none
 	
