@@ -3,6 +3,6 @@
 (function () {
 	console.log('Hello World!');
 	$('.carousel').carousel({
-  		interval: 80000
+  		interval: 5000
 	});
 })();
