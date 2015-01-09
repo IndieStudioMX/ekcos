@@ -2,7 +2,9 @@ li
 	margin-left 1em
 
 .nav > li > a 
-	padding 8px 15px
+	padding 10px 1px 0 0
+	margin 0 8px
+	margin 0 14.5px
 
 .nav > li > a:hover, .nav > li > a:focus
 	background-color transparent
@@ -18,33 +20,37 @@ li
 		font-size 1.1rem
 		font-weight bold
 		color $text-color
-	& > a:hover
-		color $font-active-color
+	& > .item-menu
+		transition-menu .1s ease-in
+	& > .item-menu:hover 
+		border-bottom 3px solid $font-active-color
+		transition-menu .2s ease-in
 	&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
 		margin-left -0.1rem
 	&:last-child 
 		position absolute
 		left 40.3rem
 		top -2px
-		width 335px
+		width 337px
 		background url('../images/view-cart.svg') no-repeat 100% 100%
-		background-position 0 -14px
+		background-position 14px -14px
 		&:hover 
 			background url('../images/view-cart_hover.svg') no-repeat 100% 100%
-			background-position 0 -14px
+			background-position 14px -14px
 		& > a 
 			color $text-color
-			margin-left  6rem
+			margin-left  7rem
 			text-transform uppercase
 			font-size 1rem
 			height 50px
+			line-height 2.25rem
 			&:hover 
 				color $text-color
 			& > img
 				width 25%
 				position absolute 
 				top -.6rem
-				left 6.9rem
+				left 5.9rem
 
 .nav.navbar-nav.navbar-right 
 	margin-right 3.5rem;
@@ -91,18 +97,18 @@ li
 			width 34rem
 			background url('../images/docs-bg.svg') no-repeat
 			height 60px
-			background-position 27px -23px
-			background-size inherit
+			background-position 23px -23px
+			background-size 98% 133%
 			&:hover 
 				background url('../images/docs-bg-hover.svg') no-repeat
 				width 34rem
-				background-position 27px -27px
-				background-size inherit
+				background-position 26px -27px
+				background-size 95% 134%
 				height 60px
 				
 			& > a 
 				color $text-color-light
-				margin-left: 7rem;
+				margin-left: 9rem;
 		&:nth-child(2)
 			margin-left 0
 			margin-right -3.5rem
@@ -118,7 +124,7 @@ li
 .buynow-container 
 	position absolute
 	top 9rem
-	right 16rem
+	right 13.5rem
 	a 
 		display block
 		height 100%

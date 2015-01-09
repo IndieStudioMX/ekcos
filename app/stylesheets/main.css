@@ -7,9 +7,10 @@
 }
 .active-item {
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 4px;
-  top: 3.2rem;
+  top: 3rem;
+  left: 0;
   background: #cc3;
 }
 body {
@@ -30,7 +31,9 @@ li {
   margin-left: 1em;
 }
 .nav > li > a {
-  padding: 8px 15px;
+  padding: 10px 1px 0 0;
+  margin: 0 8px;
+  margin: 0 14.5px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -47,8 +50,18 @@ li {
   font-weight: bold;
   color: #000;
 }
-.navbar-default .navbar-nav li > a:hover {
-  color: #cc3;
+.navbar-default .navbar-nav li > .item-menu {
+  -webkit-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+.navbar-default .navbar-nav li > .item-menu:hover {
+  border-bottom: 3px solid #cc3;
+  -webkit-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 .navbar-default .navbar-nav li:nth-child(2),
 .navbar-default .navbar-nav li:nth-child(3),
@@ -60,20 +73,21 @@ li {
   position: absolute;
   left: 40.3rem;
   top: -2px;
-  width: 335px;
+  width: 337px;
   background: url("../images/view-cart.svg") no-repeat 100% 100%;
-  background-position: 0 -14px;
+  background-position: 14px -14px;
 }
 .navbar-default .navbar-nav li:last-child:hover {
   background: url("../images/view-cart_hover.svg") no-repeat 100% 100%;
-  background-position: 0 -14px;
+  background-position: 14px -14px;
 }
 .navbar-default .navbar-nav li:last-child > a {
   color: #000;
-  margin-left: 6rem;
+  margin-left: 7rem;
   text-transform: uppercase;
   font-size: 1rem;
   height: 50px;
+  line-height: 2.25rem;
 }
 .navbar-default .navbar-nav li:last-child > a:hover {
   color: #000;
@@ -82,7 +96,7 @@ li {
   width: 25%;
   position: absolute;
   top: -0.6rem;
-  left: 6.9rem;
+  left: 5.9rem;
 }
 .nav.navbar-nav.navbar-right {
   margin-right: 3.5rem;
@@ -132,19 +146,19 @@ li {
   width: 34rem;
   background: url("../images/docs-bg.svg") no-repeat;
   height: 60px;
-  background-position: 27px -23px;
-  background-size: inherit;
+  background-position: 23px -23px;
+  background-size: 98% 133%;
 }
 .navbar-products li:first-child:hover {
   background: url("../images/docs-bg-hover.svg") no-repeat;
   width: 34rem;
-  background-position: 27px -27px;
-  background-size: inherit;
+  background-position: 26px -27px;
+  background-size: 95% 134%;
   height: 60px;
 }
 .navbar-products li:first-child > a {
   color: #fff;
-  margin-left: 7rem;
+  margin-left: 9rem;
 }
 .navbar-products li:nth-child(2) {
   margin-left: 0;
@@ -164,7 +178,7 @@ li {
 .buynow-container {
   position: absolute;
   top: 9rem;
-  right: 16rem;
+  right: 13.5rem;
 }
 .buynow-container a {
   display: block;
@@ -174,8 +188,8 @@ li {
   width: 27rem;
   height: 13rem;
   position: absolute;
-  top: 45rem;
-  left: 15rem;
+  top: 46rem;
+  left: 13rem;
 }
 .news-menu .btn-latest-news,
 .news-menu .btn-antisplash {
@@ -201,7 +215,7 @@ li {
   width: 267px;
   height: 290px;
   top: 37rem;
-  right: 14rem;
+  right: 17rem;
   z-index: 4;
 }
 .menuProducts-container:after {
@@ -210,7 +224,7 @@ li {
   width: 206px;
   position: absolute;
   border-radius: 50%;
-  left: 4rem;
+  left: 5.5rem;
   top: 25rem;
   -webkit-filter: blur(5px);
   -ms-filter: blur(5px);
@@ -248,26 +262,28 @@ li {
 }
 .nav-products .item-product:first-child .item-buy {
   position: relative;
-  top: -3.35rem;
-  left: 16.3rem;
+  top: -3.46rem;
+  left: 16.16rem;
   color: #cc3;
   font-size: 1rem;
   text-transform: uppercase;
   background: url("../images/buy-btn.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
-  padding: 0.2rem 0;
+  background-position: -18px -34px;
+  padding: 0.16rem 0 1rem 0;
   display: block;
   height: 20px;
   width: 89px;
-  text-indent: 1.4rem;
+  text-indent: 1.9rem;
+  top: -3.29rem;
+  left: 16.18rem;
 }
 .nav-products .item-product:first-child .item-buy:hover {
   background: url("../images/buy-btn_hover.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
+  background-position: -18px -34px;
   text-decoration: none;
 }
 .nav-products .item-product:nth-child(2) {
@@ -280,30 +296,32 @@ li {
   background: url("../images/ekcos-logo.svg"), url("../images/sprite-products.png");
   background-size: 89%, 49%;
   background-repeat: no-repeat, no-repeat;
-  background-position: -4px -6px, 103px -60px;
+  background-position: -4px -6px, 101px -60px;
 }
 .nav-products .item-product:nth-child(2) .item-buy {
   position: relative;
-  top: -3.35rem;
-  left: 16.3rem;
+  top: -3.46rem;
+  left: 16.16rem;
   color: #cc3;
   font-size: 1rem;
   text-transform: uppercase;
   background: url("../images/buy-btn.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
-  padding: 0.2rem 0;
+  background-position: -18px -34px;
+  padding: 0.16rem 0 1rem 0;
   display: block;
   height: 20px;
   width: 89px;
-  text-indent: 1.4rem;
+  text-indent: 1.9rem;
+  top: -3.16rem;
+  left: 16.1rem;
 }
 .nav-products .item-product:nth-child(2) .item-buy:hover {
   background: url("../images/buy-btn_hover.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
+  background-position: -18px -34px;
   text-decoration: none;
 }
 .nav-products .item-product:nth-child(3) {
@@ -320,26 +338,28 @@ li {
 }
 .nav-products .item-product:nth-child(3) .item-buy {
   position: relative;
-  top: -3.35rem;
-  left: 16.3rem;
+  top: -3.46rem;
+  left: 16.16rem;
   color: #cc3;
   font-size: 1rem;
   text-transform: uppercase;
   background: url("../images/buy-btn.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
-  padding: 0.2rem 0;
+  background-position: -18px -34px;
+  padding: 0.16rem 0 1rem 0;
   display: block;
   height: 20px;
   width: 89px;
-  text-indent: 1.4rem;
+  text-indent: 1.9rem;
+  top: -3.19rem;
+  left: 16.29rem;
 }
 .nav-products .item-product:nth-child(3) .item-buy:hover {
   background: url("../images/buy-btn_hover.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
+  background-position: -18px -34px;
   text-decoration: none;
 }
 .nav-products .item-product:last-child {
@@ -356,26 +376,28 @@ li {
 }
 .nav-products .item-product:last-child .item-buy {
   position: relative;
-  top: -3.35rem;
-  left: 16.3rem;
+  top: -3.46rem;
+  left: 16.16rem;
   color: #cc3;
   font-size: 1rem;
   text-transform: uppercase;
   background: url("../images/buy-btn.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
-  padding: 0.2rem 0;
+  background-position: -18px -34px;
+  padding: 0.16rem 0 1rem 0;
   display: block;
   height: 20px;
   width: 89px;
-  text-indent: 1.4rem;
+  text-indent: 1.9rem;
+  top: -3.09rem;
+  left: 16.29rem;
 }
 .nav-products .item-product:last-child .item-buy:hover {
   background: url("../images/buy-btn_hover.svg");
   background-repeat: no-repeat;
   background-size: 117%;
-  background-position: -18px -35px;
+  background-position: -18px -34px;
   text-decoration: none;
 }
 .carousel {
@@ -383,6 +405,35 @@ li {
   top: 32px;
   height: 100%;
   width: 100%;
+  margin-bottom: 0.9rem;
+}
+.carousel-indicators {
+  bottom: 7rem;
+}
+.carousel-container {
+  height: 100%;
+  width: 100%;
+  margin-top: 4.9rem;
+}
+.carousel-control {
+  width: 7%;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.carousel-control.left {
+  -webkit-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  -ms-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  -moz-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+}
+.carousel-control.right {
+  -webkit-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
+  -ms-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
+  -moz-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
+  background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
 }
 .carousel-caption h3 {
   color: #3d3a3a;
@@ -407,6 +458,23 @@ li {
   font-weight: bold;
   font-size: 1.55rem;
 }
+.carousel-caption_message {
+  height: 58px;
+  width: 100%;
+  background: url("../images/caption-bg.svg") no-repeat;
+  background-size: 101% 96%;
+  background-position: -9px 7px;
+  position: absolute;
+  top: 71.2rem;
+}
+.carousel-caption_message p {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 0.5rem;
+}
+.carousel-caption_message .caption_message-p {
+  margin-top: 2.3rem;
+}
 .waterless-caption h3 {
   width: 300px;
   margin: -37% auto 0 auto;
@@ -416,12 +484,14 @@ li {
 }
 .footer {
   background: #000;
-  margin-top: 2.9rem;
-  padding: 3rem 1rem;
-  line-height: 1;
+  margin-top: 1rem;
+  padding: 7px 2.9rem;
+  line-height: 5rem;
   position: absolute;
   width: 100%;
-  height: 80px;
+  height: 67px;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
 }
 .footer p {
   color: #fff;
@@ -434,5 +504,5 @@ li {
 }
 .footer .brand-footer {
   position: relative;
-  top: -4.5rem;
+  top: -2.5rem;
 }
