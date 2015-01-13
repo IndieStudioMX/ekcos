@@ -27,13 +27,6 @@ body {
   -ms-box-sizing: ;
   box-sizing: ;
 }
-.page-wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 li {
   margin-left: 1em;
 }
@@ -50,7 +43,7 @@ li {
   background: rgba(217,220,218,0.9);
   border-color: transparent;
   padding: 22px 0;
-  height: 83px;
+  height: 81px;
 }
 .navbar-default .navbar-nav li > a {
   font-size: 1.1rem;
@@ -115,7 +108,7 @@ li {
   display: block;
   height: auto;
   position: absolute;
-  top: -10px;
+  top: -13px;
   left: -7px;
   z-index: 2;
 }
@@ -140,7 +133,7 @@ li {
 .navbar-products {
   position: absolute;
   width: 100%;
-  height: 3.3rem;
+  height: 3rem;
   left: 15rem;
   background: rgba(34,31,31,0.3);
   top: 3.9rem;
@@ -152,8 +145,8 @@ li {
 .navbar-products li:first-child {
   width: 34rem;
   background: url("../images/docs-bg.svg") no-repeat;
-  height: 63px;
-  background-position: 29px -23px;
+  height: 60px;
+  background-position: 23px -23px;
   background-size: 98% 133%;
 }
 .navbar-products li:first-child:hover {
@@ -408,27 +401,19 @@ li {
   text-decoration: none;
 }
 .carousel {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 32px;
   height: 100%;
   width: 100%;
-  bottom: 0;
-/*margin-bottom .9rem*/
+  margin-bottom: 0.9rem;
 }
 .carousel-indicators {
-  bottom: 10rem;
+  bottom: 7rem;
 }
 .carousel-container {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.carousel-inner {
-  top: 38px;
+  margin-top: 4.9rem;
 }
 .carousel-control {
   width: 7%;
@@ -454,9 +439,8 @@ li {
   color: #3d3a3a;
   text-shadow: none;
   width: 460px;
-  margin: -55% auto 0 auto;
-/*font-size 2.7875rem*/
-  font-size: 26.45pt;
+  margin: -51% auto 0 auto;
+  font-size: 3.38rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -464,7 +448,7 @@ li {
   border-top: 2px solid rgba(34,31,31,0.3);
   width: 483px;
   margin-top: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 18px;
 }
 .carousel-caption p {
   margin-top: 0;
@@ -472,7 +456,7 @@ li {
   text-shadow: none;
   color: rgba(78,76,77,0.9);
   font-weight: bold;
-  font-size: 1.30166666667rem;
+  font-size: 1.55rem;
 }
 .carousel-caption_message {
   height: 58px;
@@ -501,13 +485,13 @@ li {
 .footer {
   background: #000;
   margin-top: 1rem;
-  padding: 0 2.9rem;
-  line-height: 4.5rem;
+  padding: 7px 2.9rem;
+  line-height: 5rem;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 67px;
   font-size: 1.3rem;
-  bottom: 0;
+  margin-top: 1.5rem;
 }
 .footer p {
   color: #fff;
