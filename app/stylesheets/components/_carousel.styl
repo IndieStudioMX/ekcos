@@ -1,18 +1,25 @@
 .carousel 
-	position relative
-	top 32px
+	position absolute
+	top 0
 	height 100%
 	width 100%
-	margin-bottom .9rem
+	bottom 0
+	/*margin-bottom .9rem*/
 
 .carousel-indicators 
-	bottom 7rem
+	bottom 10rem
 
 .carousel-container 
 	height 100%
 	width 100%
-	margin-top 4.9rem
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
 
+.carousel-inner 
+	top 38px
 .carousel-control 
 	width 7%
 	&:hover, &:focus
@@ -29,22 +36,23 @@
 		color $carousel-title-color
 		text-shadow none
 		width 460px
-		margin -51% auto 0 auto
-		font-size 3.38rem
+		margin -55% auto 0 auto
+		/*font-size 2.7875rem*/
+		font-size 26.45pt
 		text-transform uppercase
 		font-weight bold
 	hr 
 		border-top 2px solid $carousel-line
 		width 483px
 		margin-top 18px
-		margin-bottom 18px
+		margin-bottom 4px
 	p
 		margin-top 0
 		margin-bottom 0
 		text-shadow none
 		color $carousel-content-color
 		font-weight bold
-		font-size 1.55rem
+		font-size 1.30166666667rem
 
 .carousel-caption_message
 	height 58px
