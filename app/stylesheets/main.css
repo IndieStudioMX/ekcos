@@ -1452,18 +1452,18 @@ a:hover {
   height: auto;
   width: 100%;
   position: relative;
-  height: auto;
+  height: 602px;
 }
 .docs-container {
   position: relative;
   background: url("../images/power-bg.jpg") no-repeat;
   with: 100%;
-  height: 64.5rem;
+  height: 70.5rem;
   background-size: 100% 100%;
-  top: -3rem;
+  top: -4rem;
 }
 .docs-items-container {
-  top: 27rem;
+  top: 26rem;
   position: relative;
 }
 .buynow-btn {
@@ -1472,7 +1472,26 @@ a:hover {
 }
 .footer-docs {
   position: absolute;
-  bottom: 0;
+  background: #000;
+  margin-top: 1rem;
+  padding: 0 2.9rem;
+  line-height: 4.5rem;
+  width: 100%;
+  height: auto;
+  font-size: 1.3rem;
+}
+.footer-docs p {
+  color: #fff;
+}
+.footer-docs a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.footer-docs .brand-footer {
+  position: relative;
+  top: -2.5rem;
 }
 .leaf-docs {
   top: 12.2rem;
@@ -1491,9 +1510,479 @@ a:hover {
   padding: 1.8rem 2.6rem;
   color: #cc3;
 }
-.buynow-btn:hover {
+.buynow-btn:hover,
+.buynow-btn:active,
+.buynow-btn:focus {
   opacity: 0.9;
   background: url("../images/buynow-btn.png") no-repeat;
   background-size: 100% 100%;
   color: #cfcf3d;
+  border: 0;
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0;
+}
+.waterless-wrapper {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 5rem;
+}
+.waterless-container {
+  background: url("../images/powerscreen-bg.jpg");
+  background-size: 100%;
+  position: relative;
+  with: 100%;
+  height: 61rem;
+}
+.waterless-title {
+  margin: 10rem auto 3rem auto;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  width: 77%;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.enter-waterless {
+  margin-bottom: 2rem;
+}
+.enter-waterless a {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 0.2rem;
+  margin-top: 1rem;
+  width: 35%;
+  background: #000;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.enter-waterless a:hover {
+  background: #333;
+}
+.waterless-message {
+  display: block;
+  margin: 2.5rem auto 0 auto;
+  width: 50%;
+  heigh: auto;
+}
+.waterless-eztrap {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.waterless-content {
+  font-size: 1.5rem;
+}
+.eztrap-wrapper {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 5rem;
+}
+.eztrap-container {
+  background: url("../images/eztrap-bg.png") no-repeat;
+  background-size: 100% 104.5%;
+  background-position: 0 -80px;
+  position: relative;
+  with: 100%;
+  height: 124.5rem;
+}
+.eztrap-features {
+  position: relative;
+  background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+  background-size: 100% 100%;
+  top: 84rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.eztrap-features .eztrap-p {
+  line-height: 15px;
+  font-size: 1.5rem;
+}
+.eztrap-legend {
+  position: relative;
+  top: 85rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.eztrap-legend .col-ez-items-left,
+.eztrap-legend .col-ez-items-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.eztrap-legend .col-ez-items-left {
+  width: 45%;
+  text-align: left;
+}
+.eztrap-legend .col-ez-items-left h3 {
+  margin-top: -0.3rem;
+  font-weight: bold;
+}
+.eztrap-legend .col-ez-items-right {
+  border-left: 2px solid #444;
+  text-indent: 1rem;
+}
+.eztrap-main-features {
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  top: 87rem;
+  position: relative;
+}
+.eztrap-features-strong {
+  position: relative;
+  background: #cc3;
+  background-size: 100% 100%;
+  top: 86rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.eztrap-features-strong .eztrap-y {
+  line-height: 15px;
+  font-size: 1.5rem;
+}
+.eztrap-features-container {
+  background: url("../images/power-bg.jpg");
+  background-size: 100% 101%;
+  background-position: 0 -2px;
+  position: relative;
+  with: 100%;
+  height: 160rem;
+  top: -4rem;
+}
+.eztrap-z {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.eztrap-features-fluid,
+.eztrap-plumbing-fluid {
+  height: 234px;
+  width: 100%;
+  position: relative;
+  top: 0rem;
+  background: rgba(255,255,255,0.4);
+  padding: 2rem 0;
+}
+.container-ez {
+  margin: 0 auto;
+  width: 900px;
+  height: auto;
+  pading: 1rem 0;
+}
+.eztrap-benefits,
+.eztrap-benefits-message {
+  position: relative;
+  background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+  background-size: 100% 100%;
+  top: 2rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.eztrap-benefits-message {
+  top: 15rem;
+}
+.eztrap-benefits-message h3 {
+  margin-top: -1rem;
+}
+.eztrap-benefits-list {
+  list-style: none;
+}
+.eztrap-benefits-p-container {
+  border-left: 2px solid #444;
+  padding: 2rem 0;
+}
+.eztrap-benefits-p-container .eztrap-benefits-p {
+  line-height: 17px;
+}
+.eztrap-features-requirements {
+  position: relative;
+  background: #cc3;
+  background-size: 100% 100%;
+  top: 5rem;
+  width: 900px;
+}
+.eztrap-requirements-title h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.eztrap-iso {
+  position: relative;
+  top: 8rem;
+  line-height: 15px;
+}
+.ez-basic-info {
+  position: relative;
+  top: 10rem;
+}
+.ez-basic-info h4 {
+  background: #000;
+  color: #cc3;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.row-ez {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.ez-info-left,
+.ez-info-right {
+  padding: 0;
+}
+.ez-info-right {
+  padding-left: 15px;
+}
+.ez-info-left {
+  padding-right: 15px;
+}
+.ez-clean-it {
+  font-size: 1.5rem;
+}
+.ez-clean-it p {
+  margin: 0;
+}
+.ez-maintain-it {
+  font-size: 1.5rem;
+}
+.ez-maintain-it p {
+  margin: 0;
+}
+.eztrap-plumbing-fluid {
+  top: 12rem;
+  height: 245px;
+}
+.eztrap-benefits-buy {
+  position: relative;
+  top: 18rem;
+  padding: 1rem 0;
+  background: rgba(255,255,255,0.4);
+}
+.eztrap-benefits-buy .eztrap-buy-container {
+  margin-top: 2.5rem;
+  line-height: 14px;
+}
+.eztrap-benefits-buy .eztrap-buy-container h5 {
+  font-weight: bold;
+}
+.eztrap-benefits-buy .eztrap-buy-container p {
+  font-size: 1.5rem;
+}
+.eztrap-benefits-buy .eztrap-buy-container .eztrap-buy-btn {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 1.3rem;
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 20%;
+  border-bottom: 4px solid #cc3;
+}
+.eztrap-benefits-buy .eztrap-buy-container .eztrap-buy-btn:hover {
+  background: #333;
+}
+.eztrap-benefits-buy .eztrap-buy-logo img {
+  margin-top: 5rem;
+  display: block;
+}
+.footer-eztrap {
+  background: #000;
+  margin-top: 1rem;
+  padding: 0 2.9rem;
+  line-height: 4.5rem;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  font-size: 1.3rem;
+}
+.footer-eztrap p {
+  color: #fff;
+}
+.footer-eztrap a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.footer-eztrap .brand-footer {
+  position: relative;
+  top: -2.5rem;
+}
+.eztrap-waterless {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 22rem;
+}
+.eztrap-content {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+}
+.trufresh-wrapper {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 5rem;
+}
+.trufresh-container {
+  background: url("../images/tru-bg.png") no-repeat;
+  background-size: 100%;
+  background-position: 0 -58px;
+  position: relative;
+  with: 100%;
+  height: 80.5rem;
+}
+.trufresh-features-strong {
+  position: relative;
+  background: #cc3;
+  background-size: 100% 100%;
+  top: 4rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.trufresh-features-container {
+  background: url("../images/power-bg.jpg");
+  background-size: 100% 101%;
+  background-position: 0 -2px;
+  position: relative;
+  height: 253rem;
+  top: -4rem;
+}
+.trufresh-title {
+  margin-bottom: 20px;
+}
+.trufresh-main-features {
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  top: 7rem;
+  position: relative;
+  padding: 1rem 0;
+}
+.trufresh-z {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 15px;
+}
+.trufresh-features-fluid {
+  height: 234px;
+  width: 100%;
+  position: relative;
+  top: 11rem;
+  background: rgba(255,255,255,0.4);
+  padding: 4rem 0;
+}
+.trufresh-features-requirements {
+  position: relative;
+  background: #cc3;
+  background-size: 100% 100%;
+  top: 15rem;
+  width: 900px;
+}
+.trufresh-benefits {
+  position: relative;
+  background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+  background-size: 100% 100%;
+  top: 18rem;
+  width: 900px;
+  padding: 0.6rem 0 0 0;
+}
+.trufresh-benefits-list {
+  list-style: none;
+}
+.trufresh-benefits-l {
+  padding: 2rem 0;
+}
+.trufresh-benefits-p-container {
+  border-left: 2px solid #444;
+  padding: 2rem 0;
+}
+.trufresh-benefits-p-container .eztrap-benefits-p {
+  line-height: 17px;
+}
+.trufresh-plumbing-fluid {
+  top: 20rem;
+  height: 360px;
+  width: 100%;
+  position: relative;
+  background: rgba(255,255,255,0.4);
+  padding: 2rem 0;
+}
+.img-trufresh {
+  position: relative;
+  top: 20rem;
+}
+.img-trufresh img {
+  margin: 0 auto;
+}
+.trufresh-img-perfect {
+  position: relative;
+  top: 5rem;
+}
+.trufresh-img-perfect img {
+  margin: 0 auto;
+}
+.trufresh-products-container {
+  margin-top: 23rem;
+  height: 1042px;
+  position: relative;
+  padding: 2rem 0;
+  background: rgba(255,255,255,0.25);
+}
+.trufresh-products-container.container img {
+  margin: 0 auto;
+  width: 220px;
+  display: block;
+}
+.modal-content {
+  background: url("../images/modalPower.png");
+  border-radius: 0;
+  height: 76rem;
+  background-repeat: no-repeat;
+  width: 806px;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-left: -8rem;
+}
+.modal-header,
+.modal-footer {
+  border-bottom: 0;
+}
+.modal-content-eckos {
+  background: url("../images/docs-01.jpg");
+  background-size: 100%;
+  border-radius: 0;
+  height: 76rem;
+  background-repeat: no-repeat;
+  width: 806px;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-left: -8rem;
+}
+.modal-content-ez {
+  background: url("../images/docs-02.jpg");
+  background-size: 100%;
+  border-radius: 0;
+  height: 93rem;
+  background-repeat: no-repeat;
+  width: 806px;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-left: -8rem;
+}
+.modal-content-tru {
+  background: url("../images/truModal.jpg");
+  background-size: 100%;
+  border-radius: 0;
+  height: 93rem;
+  background-repeat: no-repeat;
+  width: 806px;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-left: -8rem;
 }
