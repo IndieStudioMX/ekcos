@@ -175,8 +175,12 @@ li {
   margin-left: 9rem;
 }
 .navbar-products li:nth-child(2) {
-  margin-right: -6.1rem;
-  padding: 0.5rem 5rem 0 1rem;
+  margin-right: -5.8rem;
+  padding: 0.5rem 3.2rem 0 2rem;
+  -webkit-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  transform: skew(29deg);
   -webkit-transform: skew(29deg);
   -ms-transform: skew(29deg);
   -moz-transform: skew(29deg);
@@ -187,29 +191,38 @@ li {
 }
 .navbar-products li:nth-child(2) > a {
   margin-top: -6px;
+  margin-left: 0;
   -webkit-transform: skew(-29deg);
   -moz-transform: skew(-29deg);
   -ms-transform: skew(-29deg);
+  -webkit-transform: skew(-29deg);
+  -ms-transform: skew(-29deg);
+  -moz-transform: skew(-29deg);
+  transform: skew(-29deg);
 }
 .navbar-products li:nth-child(2):hover {
   background: #888;
-  margin-right: -6.25rem;
+  margin-right: -6.1rem;
+  padding-right: 3.35rem;
 }
 .navbar-products li:nth-child(3) {
-  padding-left: 1rem;
-  padding-right: 2rem;
-  margin-right: -2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 0.1rem;
+  position: absolute;
+  left: 68rem;
+  -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
   -webkit-transform: skew(29deg);
   -ms-transform: skew(29deg);
   -moz-transform: skew(29deg);
   transform: skew(29deg);
-  -webkit-transform: skew(29deg);
-  -moz-transform: skew(29deg);
-  -ms-transform: skew(29deg);
 }
 .navbar-products li:nth-child(3):hover {
   background: #888;
-  margin-right: -2.14rem;
+  left: 68.13rem;
+  padding-right: 0.38rem;
 }
 .navbar-products li:nth-child(3) > a {
   -webkit-transform: skew(-29deg);
@@ -218,8 +231,10 @@ li {
 }
 .navbar-products li:last-child {
   padding-left: 1rem;
-  padding-right: 1rem;
-  margin-right: -1.7rem;
+  padding-right: 1.5rem;
+  margin-right: 0;
+  position: absolute;
+  left: 53.7rem;
   -webkit-transform: skew(29deg);
   -ms-transform: skew(29deg);
   -moz-transform: skew(29deg);
@@ -230,7 +245,9 @@ li {
 }
 .navbar-products li:last-child:hover {
   background: #888;
-  margin-right: -1.84rem;
+  margin-right: 0;
+  padding-right: 1rem;
+  left: 53.8rem;
 }
 .navbar-products li:last-child > a {
   -webkit-transform: skew(-29deg);
