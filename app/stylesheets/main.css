@@ -53,8 +53,7 @@ li {
   height: 83px;
 }
 .navbar-default .navbar-nav li > a {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.25rem;
   color: #000;
 }
 .navbar-default .navbar-nav li > .item-menu {
@@ -147,14 +146,22 @@ li {
 }
 .navbar-products li {
   float: right;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  margin-left: 0;
+}
+.navbar-products li:hover {
+  background: url("../images/shadow-sub.png");
+  background-size: 100% 100%;
+  background-position: 0 -1px;
+  background-repeat: no-repeat;
+  height: 33px;
 }
 .navbar-products li:first-child {
   width: 34rem;
   background: url("../images/docs-bg.svg") no-repeat;
   height: 63px;
   background-position: 29px -23px;
-  background-size: 98% 133%;
+  background-size: 100% 133%;
 }
 .navbar-products li:first-child:hover {
   background: url("../images/docs-bg-hover.svg") no-repeat;
@@ -168,19 +175,70 @@ li {
   margin-left: 9rem;
 }
 .navbar-products li:nth-child(2) {
-  margin-left: 0;
-  margin-right: -3.5rem;
+  margin-right: -6.1rem;
+  padding: 0.5rem 5rem 0 1rem;
+  -webkit-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  transform: skew(29deg);
+  -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+}
+.navbar-products li:nth-child(2) > a {
+  margin-top: -6px;
+  -webkit-transform: skew(-29deg);
+  -moz-transform: skew(-29deg);
+  -ms-transform: skew(-29deg);
+}
+.navbar-products li:nth-child(2):hover {
+  background: #888;
+  margin-right: -6.25rem;
 }
 .navbar-products li:nth-child(3) {
-  margin-left: 0;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-right: -2rem;
+  -webkit-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  transform: skew(29deg);
+  -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+}
+.navbar-products li:nth-child(3):hover {
+  background: #888;
+  margin-right: -2.14rem;
+}
+.navbar-products li:nth-child(3) > a {
+  -webkit-transform: skew(-29deg);
+  -moz-transform: skew(-29deg);
+  -ms-transform: skew(-29deg);
 }
 .navbar-products li:last-child {
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: -1.7rem;
+  -webkit-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  transform: skew(29deg);
+  -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+}
+.navbar-products li:last-child:hover {
+  background: #888;
+  margin-right: -1.84rem;
+}
+.navbar-products li:last-child > a {
+  -webkit-transform: skew(-29deg);
+  -moz-transform: skew(-29deg);
+  -ms-transform: skew(-29deg);
 }
 .navbar-products li > a {
   color: #000;
-  font-weight: bold;
 }
 .buynow-container {
   position: absolute;
@@ -197,7 +255,7 @@ li {
   height: 13rem;
   position: absolute;
   top: 46rem;
-  left: 13rem;
+  left: 12rem;
 }
 .news-menu .btn-latest-news,
 .news-menu .btn-antisplash {
@@ -222,8 +280,8 @@ li {
   position: absolute;
   width: 267px;
   height: 290px;
-  top: 28rem;
-  right: 17rem;
+  top: 38rem;
+  right: 12.4rem;
   z-index: 4;
 }
 .menuProducts-container:after {
@@ -408,6 +466,9 @@ li {
   background-position: -18px -34px;
   text-decoration: none;
 }
+.item-product-logo:hover {
+  opacity: 0.8;
+}
 .carousel {
   position: absolute;
   top: 0;
@@ -417,11 +478,11 @@ li {
 /*margin-bottom .9rem*/
 }
 .carousel-indicators {
-  bottom: 10rem;
+  bottom: 12rem;
 }
 .carousel-container {
 /*height 100%*/
-  height: 614px;
+  height: auto;
   width: 100%;
   position: absolute;
   top: 0;
@@ -432,6 +493,7 @@ li {
 .carousel-inner {
   top: 38px;
   height: 576px;
+  height: auto;
 }
 .carousel-control {
   width: 7%;
@@ -442,12 +504,14 @@ li {
   opacity: 0.5;
 }
 .carousel-control.left {
+  height: 100%;
   -webkit-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
   -ms-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
   -moz-background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
   background-image: gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
 }
 .carousel-control.right {
+  height: 100%;
   -webkit-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
   -ms-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
   -moz-background-image: gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
@@ -457,7 +521,7 @@ li {
   color: #3d3a3a;
   text-shadow: none;
   width: 460px;
-  margin: -55% auto 0 auto;
+  margin: -39rem auto 0 auto;
 /*font-size 2.7875rem*/
   font-size: 26.45pt;
   text-transform: uppercase;
@@ -501,6 +565,14 @@ li {
 .waterless-caption hr {
   width: 334px;
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  height: 0% !important;
+  top: -2rem !important;
+  margin-top: -37rem;
+  height: auto !important;
+  margin-top: 3.3rem;
+}
 .footer {
   background: #000;
   margin-top: 1rem;
@@ -543,7 +615,7 @@ li {
 .power-item {
   position: absolute;
   left: 55rem;
-  top: 17.55rem;
+  top: 25.55rem;
 }
 .power-item a {
   position: relative;
@@ -555,18 +627,19 @@ li {
   text-transform: uppercase;
   padding: 0.3rem 0;
   margin: -2rem auto 0 auto;
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   font-size: 1.5rem;
 }
 .power-item a:hover {
   text-decoration: none;
+  color: rgba(255,255,255,0.8);
 }
 .power-item img {
-  max-width: 90%;
+  max-width: 100%;
 }
 .ekcos-item {
   position: absolute;
-  top: 17rem;
+  top: 24.9rem;
   left: 19rem;
 }
 .ekcos-item a {
@@ -579,15 +652,16 @@ li {
   width: 44%;
   text-transform: uppercase;
   padding: 0.3rem 0;
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   font-size: 1.5rem;
   margin: -2rem auto 0 auto;
 }
 .ekcos-item a:hover {
   text-decoration: none;
+  color: rgba(255,255,255,0.8);
 }
 .ekcos-item img {
-  max-width: 90%;
+  max-width: 100%;
 }
 .restroom-message {
   background: url("../images/message-restroom.png");
@@ -603,8 +677,11 @@ li {
   height: 92px;
   width: 222px;
   position: absolute;
-  top: 23.2rem;
-  left: 97.5rem;
+  top: -6rem;
+  left: 4.5rem;
+}
+.navProducts-restroom {
+  top: 30rem;
 }
 .power-wrapper {
   height: auto;
@@ -679,7 +756,8 @@ li {
   width: 900px;
   background: rgba(34,31,31,0.3);
   margin-top: 2rem;
-  padding-top: 0.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 0.3rem;
 }
 .powerscreen-features-legend p {
   line-height: 1;
@@ -925,7 +1003,7 @@ hr {
   top: 296rem;
 }
 .company-wrapper {
-  height: auto;
+  height: 100%;
   width: 100%;
   position: relative;
   top: 5rem;
@@ -934,11 +1012,12 @@ hr {
   background: url("../images/power-bg.jpg") no-repeat;
   background-size: 100%;
   position: relative;
-  with: 100%;
-  height: 58rem;
+  width: 100%;
+  height: 100%;
+  margin-top: -5rem;
 }
 .company-container .company-title {
-  top: 27rem;
+  top: 38rem;
   margin: 0 auto;
   position: relative;
   width: 35%;
@@ -949,10 +1028,13 @@ hr {
   display: block;
 }
 .testimonials-wrapper {
-  height: auto;
+  height: 100%;
   width: 100%;
-  position: relative;
-  top: 5rem;
+  position: absolute;
+  top: 6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .testimonials-container {
   background: url("../images/ekcoscreen-bg.jpg"), url("../");
@@ -994,7 +1076,27 @@ hr {
   margin-top: 10rem;
 }
 .footer-t {
+  background: #000;
+  margin-top: 0;
+  padding: 0 2.9rem;
+  line-height: 4.5rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 1.3rem;
+}
+.footer-t p {
+  color: #fff;
+}
+.footer-t a {
+  color: #fff;
   display: block;
+  width: 100%;
+  height: 40px;
+}
+.footer-t .brand-footer {
+  position: relative;
+  top: -2.5rem;
 }
 .news-wrapper {
   height: auto;
@@ -1064,6 +1166,7 @@ hr {
 .news-links-access a:hover {
   background: rgba(0,0,0,0.7);
   text-decoration: none;
+  color: #cc3;
 }
 .footer-news {
   display: block;
@@ -1449,18 +1552,21 @@ a:hover {
   margin: 2rem auto 1rem auto;
 }
 .docs-wrapper {
-  height: auto;
   width: 100%;
-  position: relative;
-  height: 602px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .docs-container {
-  position: relative;
+  position: absolute;
   background: url("../images/power-bg.jpg") no-repeat;
-  with: 100%;
-  height: 70.5rem;
+  width: 100%;
+  height: 100%;
   background-size: 100% 100%;
-  top: -4rem;
+  top: 0;
 }
 .docs-items-container {
   top: 26rem;
@@ -1471,14 +1577,15 @@ a:hover {
   top: -10.2rem;
 }
 .footer-docs {
-  position: absolute;
   background: #000;
   margin-top: 1rem;
   padding: 0 2.9rem;
   line-height: 4.5rem;
+  position: absolute;
   width: 100%;
   height: auto;
   font-size: 1.3rem;
+  bottom: 0;
 }
 .footer-docs p {
   color: #fff;
@@ -1494,11 +1601,12 @@ a:hover {
   top: -2.5rem;
 }
 .leaf-docs {
-  top: 12.2rem;
+  top: 8.2rem;
 }
 .container-docs {
   width: 1000px;
   margin: 0 auto;
+  height: 100%;
 }
 .thumbnail {
   width: 121%;
@@ -1523,10 +1631,13 @@ a:hover {
   box-shadow: inset 0 0 0;
 }
 .waterless-wrapper {
-  height: auto;
+  height: 100%;
   width: 100%;
-  position: relative;
-  top: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .waterless-container {
   background: url("../images/powerscreen-bg.jpg");
@@ -1536,7 +1647,7 @@ a:hover {
   height: 61rem;
 }
 .waterless-title {
-  margin: 10rem auto 3rem auto;
+  margin: 22rem auto 3rem auto;
   border-top: 2px solid #444;
   border-bottom: 2px solid #444;
   width: 77%;
@@ -1574,6 +1685,9 @@ a:hover {
 }
 .waterless-content {
   font-size: 1.5rem;
+}
+.menuProducts-waterless {
+  top: 29rem;
 }
 .eztrap-wrapper {
   height: auto;
@@ -1822,6 +1936,9 @@ a:hover {
   margin-top: 6rem;
   font-size: 1.5rem;
 }
+.menuProducts-air {
+  top: 29rem;
+}
 .trufresh-wrapper {
   height: auto;
   width: 100%;
@@ -1860,7 +1977,7 @@ a:hover {
   border-bottom: 2px solid #444;
   top: 7rem;
   position: relative;
-  padding: 1rem 0;
+  padding: 1.2rem 0 0 0;
 }
 .trufresh-z {
   text-transform: uppercase;
@@ -1954,7 +2071,7 @@ a:hover {
   border-bottom: 0;
 }
 .modal-content-eckos {
-  background: url("../images/docs-01.jpg");
+  background: url("../images/ekcos-modal.png");
   background-size: 100%;
   border-radius: 0;
   height: 76rem;
@@ -1965,7 +2082,7 @@ a:hover {
   margin-left: -8rem;
 }
 .modal-content-ez {
-  background: url("../images/docs-02.jpg");
+  background: url("../images/eztrap-modal.png");
   background-size: 100%;
   border-radius: 0;
   height: 93rem;
