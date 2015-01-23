@@ -203,14 +203,15 @@ li {
 .navbar-products li:nth-child(2):hover {
   background: #888;
   margin-right: -6.1rem;
-  padding-right: 3.35rem;
+  padding-right: 3.3rem;
+  margin-left: 0.2rem;
 }
 .navbar-products li:nth-child(3) {
   padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-right: 0.6rem;
   margin-right: 0.1rem;
-  position: absolute;
-  left: 68rem;
+  position: relative;
+  left: 0;
   -webkit-transform: skew(29deg);
   -moz-transform: skew(29deg);
   -ms-transform: skew(29deg);
@@ -221,8 +222,10 @@ li {
 }
 .navbar-products li:nth-child(3):hover {
   background: #888;
-  left: 68.13rem;
-  padding-right: 0.38rem;
+  left: 0;
+  padding-right: 0.55rem;
+  margin-right: 0;
+  margin-left: 0.15rem;
 }
 .navbar-products li:nth-child(3) > a {
   -webkit-transform: skew(-29deg);
@@ -231,10 +234,10 @@ li {
 }
 .navbar-products li:last-child {
   padding-left: 1rem;
-  padding-right: 1.5rem;
+  padding-right: 1.15rem;
   margin-right: 0;
-  position: absolute;
-  left: 53.7rem;
+  position: relative;
+  left: 0;
   -webkit-transform: skew(29deg);
   -ms-transform: skew(29deg);
   -moz-transform: skew(29deg);
@@ -247,7 +250,7 @@ li {
   background: #888;
   margin-right: 0;
   padding-right: 1rem;
-  left: 53.8rem;
+  left: 0;
 }
 .navbar-products li:last-child > a {
   -webkit-transform: skew(-29deg);
@@ -259,7 +262,7 @@ li {
 }
 .buynow-container {
   position: absolute;
-  top: 9rem;
+  top: 10rem;
   right: 13.5rem;
   z-index: 1;
 }
@@ -271,7 +274,7 @@ li {
   width: 27rem;
   height: 13rem;
   position: absolute;
-  top: 46rem;
+  top: 45rem;
   left: 12rem;
 }
 .news-menu .btn-latest-news,
@@ -319,6 +322,9 @@ li {
   transform: rotateX(54deg);
   background: rgba(0,0,0,0.13);
   z-index: 2;
+}
+.menuProducts {
+  top: 29rem;
 }
 .nav-products {
   list-style: none;
@@ -486,8 +492,32 @@ li {
 .item-product-logo:hover {
   opacity: 0.8;
 }
+@media screen and (min-width: 1350px) {
+  .menuProducts-container {
+    top: 45rem;
+  }
+  .news-menu {
+    top: 60rem;
+  }
+}
+@media screen and (min-height: 900px) and (min-width: 1280px) {
+  .menuProducts-container {
+    top: 45rem;
+  }
+  .news-menu {
+    top: 60rem;
+  }
+}
+@media screen and (min-width: 1400px) and (min-height: 800px) {
+  .menuProducts-container {
+    top: 41rem;
+  }
+  .news-menu {
+    top: 54rem;
+  }
+}
 .carousel {
-  position: absolute;
+  position: relative;
   top: 0;
   height: 100%;
   width: 100%;
@@ -495,7 +525,7 @@ li {
 /*margin-bottom .9rem*/
 }
 .carousel-indicators {
-  bottom: 12rem;
+  bottom: 8rem;
 }
 .carousel-container {
 /*height 100%*/
@@ -508,9 +538,10 @@ li {
   bottom: 0;
 }
 .carousel-inner {
-  top: 38px;
-  height: 576px;
-  height: auto;
+/*top 38px
+	height 576px */
+  height: 100%;
+  top: 0;
 }
 .carousel-control {
   width: 7%;
@@ -538,7 +569,7 @@ li {
   color: #3d3a3a;
   text-shadow: none;
   width: 460px;
-  margin: -39rem auto 0 auto;
+  margin: -56rem auto 0 auto;
 /*font-size 2.7875rem*/
   font-size: 26.45pt;
   text-transform: uppercase;
@@ -590,6 +621,151 @@ li {
   height: auto !important;
   margin-top: 3.3rem;
 }
+.slider-01-bg {
+  background: url("../images/slider-01@1x.png") center center;
+  background-size: cover;
+}
+.slider-02-bg {
+  background: url("../images/slider-02.jpg") center center;
+  background-size: cover;
+}
+.slider-03-bg {
+  background: url("../images/slider-03.jpg") center center;
+  background-size: cover;
+  margin-top: 6rem;
+}
+.slider-04-bg {
+  background: url("../images/slider-04.jpg") center center;
+  background-size: cover;
+}
+.slider-size {
+  height: 747px;
+}
+@media screen and (min-width: 1200px) {
+  .carousel-caption h3 {
+    margin: -39rem auto 0 auto;
+  }
+  .waterless-slider-title {
+    margin: -30rem auto 0 auto !important;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .slider-size {
+    height: 629px;
+  }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+  .slider-01-bg {
+    background: url("../images/slider-01.jpg") center center;
+    background-size: cover;
+  }
+  .slider-02-bg {
+    background: url("../images/slider-02.jpg") center center;
+    background-size: cover;
+  }
+  .slider-03-bg {
+    background: url("../images/slider-03.jpg") center center;
+    background-size: cover;
+  }
+  .slider-04-bg {
+    background: url("../images/slider-04.jpg") center center;
+    background-size: cover;
+    background-position-y: -58px;
+  }
+  .carousel-caption h3 {
+    color: #3d3a3a;
+    text-shadow: none;
+    width: 460px;
+    margin: -29rem auto 0 auto;
+  }
+  .waterless-slider-title {
+    margin: -25rem auto 0 auto !important;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .carousel-caption h3 {
+    color: #3d3a3a;
+    text-shadow: none;
+    width: 460px;
+    margin: -56rem auto 0 auto;
+  }
+  .slider-04-bg {
+    background: url("../images/slider-04.jpg") center center;
+    background-size: cover;
+    background-position-y: -79px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .slider-04-bg {
+    background: url("../images/slider-04.png") center center;
+    background-size: cover;
+    background-position-y: -56px;
+  }
+  .slider-size {
+    height: 907px;
+  }
+  .carousel-caption h3 {
+    color: #3d3a3a;
+    text-shadow: none;
+    width: 460px;
+    margin: -50rem auto 0 auto;
+  }
+  .waterless-slider-title {
+    margin: -38rem auto 0 auto !important;
+  }
+  .slider-03-bg {
+    background: url("../images/slider-03.jpg") center center;
+    background-size: cover;
+    margin-top: -6rem;
+  }
+}
+@media screen and (min-width: 1400px) and (min-height: 800px) {
+  .slider-04-bg {
+    background: url("../images/slider-01-1438x811.jpg") center center;
+    background-size: 100% 76%;
+    background-repeat: no-repeat;
+    margin-top: -4rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .slider-04-bg {
+    background: url("../images/slider-04.png") center center;
+    background-size: cover;
+    background-position-y: -56px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .slider-01-bg,
+  background url('../images/slider-01@1x.png') center center,
+  background-size cover,
+  .slider-02-bg {
+    background: url("../images/slider-02.jpg") center center;
+    background-size: cover;
+  }
+  .slider-03-bg {
+    background: url("../images/slider-03.jpg") center center;
+    background-size: cover;
+    margin-top: 6rem;
+  }
+  .slider-04-bg {
+    background: url("../images/slider-04.jpg") center center;
+    background-size: cover;
+    margin-top: 0;
+  }
+}
+@media screen and (min-height: 820px) {
+  .slider-size {
+    height: 907px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-height: 900px) {
+  .slider-01-title {
+    margin: -45rem auto 0 auto !important;
+  }
+}
 .footer {
   background: #000;
   margin-top: 1rem;
@@ -599,7 +775,6 @@ li {
   width: 100%;
   height: auto;
   font-size: 1.3rem;
-  bottom: 0;
 }
 .footer p {
   color: #fff;
@@ -610,7 +785,30 @@ li {
   width: 100%;
   height: 40px;
 }
-.footer .brand-footer {
+.footer-index {
+  background: #000;
+  margin-top: 1rem;
+  padding: 0 2.9rem;
+  line-height: 4.5rem;
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  font-size: 1.3rem;
+  bottom: 0;
+}
+.footer-index p {
+  color: #fff;
+}
+.footer-index a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.footer-index a:hover {
+  color: #fff;
+}
+.footer-index .brand-footer {
   position: relative;
   top: -2.5rem;
 }
@@ -632,7 +830,7 @@ li {
 .power-item {
   position: absolute;
   left: 55rem;
-  top: 25.55rem;
+  top: 17.55rem;
 }
 .power-item a {
   position: relative;
@@ -656,7 +854,7 @@ li {
 }
 .ekcos-item {
   position: absolute;
-  top: 24.9rem;
+  top: 16.9rem;
   left: 19rem;
 }
 .ekcos-item a {
