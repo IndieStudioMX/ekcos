@@ -110,12 +110,33 @@
 .slider-size 
 	height 747px
 
+
+//Generic styles for Netbook 10"
+@media screen and (min-width 1024px) and (min-height 600px)
+	.slider-size 
+		height 547px
+	.slider-01-title 
+		margin -34rem auto 0 auto !important
+		
+//Generic styles for Netbook 10"
+@media screen and (min-width 1024px) and (min-height 768px)
+	.slider-size 
+		height 720px
+	.slider-01-title 
+		margin -38rem auto 0 auto !important
+
 @media screen and (min-width: 1200px)
 	.carousel-caption
 		h3 
 			margin -39rem auto 0 auto
 	.waterless-slider-title 
 		margin -30rem auto 0 auto !important
+
+
+//Generic styles for Netbook 10"
+@media screen and (min-width 1280px) and (min-height 800px)
+	.slider-size 
+		height 745px
 
 @media screen and (min-width: 1300px)
 	.slider-size 
@@ -149,8 +170,17 @@
 			margin -29rem auto 0 auto
 	.waterless-slider-title
 		margin -25rem auto 0 auto !important
+
+@media screen and (min-width 1366px)
+	.slider-size 
+		height 723px
+	.carousel-caption
+		h3
+			margin -39rem auto 0 auto
+	.slider-04-bg 
+		background-position-y -9px
 		
-@media screen and (min-width 1350px)
+@media screen and (min-width 1370px)
 	.carousel-caption
 		h3
 			color $carousel-title-color
@@ -161,6 +191,7 @@
 		background url('../images/slider-04.jpg') center center
 		background-size cover
 		background-position-y -79px 
+		background-repeat no-repeat
 
 @media screen and (min-width: 1400px)
 	.slider-04-bg 
@@ -194,9 +225,18 @@
 
 @media screen and (min-width 1500px)
 	.slider-04-bg 
-		background url('../images/slider-04.png') center center
+		background url('../images/slider-04.jpg') center center
 		background-size cover
 		background-position-y -56px 
+		background-repeat no-repeat
+		
+
+@media screen and (min-width 1550px)
+	.slider-04-bg 
+		background url('../images/slider-04.jpg') center center
+		background-size cover
+		background-position-y 0
+		background-repeat no-repeat
 
 @media screen and (min-width 1600px)
 	.slider-01-bg 

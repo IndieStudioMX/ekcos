@@ -5,19 +5,19 @@
 	top 5rem
 
 .eztrap-container
-	background url('../images/eztrap-bg.png') no-repeat
-	background-size 100% 104.5%
+	background url('../images/eztrap-bg.jpg') no-repeat
+	background-size 100%
 	background-position 0 -80px
 	position relative
 	with 100%
-	height 124.5rem
+	height 62rem
 	
 .eztrap-features
 	position relative
 	background rgba(34,31,31,.3)
 	/*background rgb(204,204,51)*/
 	background-size 100% 100%
-	top 84rem
+	top 64rem
 	width 900px
 	padding .6rem 0 0 0 
 	.eztrap-p 
@@ -26,7 +26,7 @@
 	
 .eztrap-legend
 	position relative
-	top 85rem
+	top 67rem
 	width 900px
 	padding .6rem 0 0 0 
 	.col-ez-items-left, .col-ez-items-right 
@@ -42,6 +42,16 @@
 	.col-ez-items-right 
 		border-left 2px solid #444
 		text-indent 1rem
+
+
+.col-ez-left h3 
+	width 20%
+	margin 0 auto 
+	text-transform uppercase
+	background black
+	color $font-active-color
+	padding 1rem 
+	margin-bottom 3rem 
 
 .eztrap-main-features
 	border-top 2px solid #444
@@ -66,7 +76,7 @@
 	position relative
 	with 100%
 	height 160rem
-	top -4rem
+	top 0
 
 .eztrap-z
 	text-transform uppercase
@@ -78,7 +88,7 @@
 	height 234px 
 	width 100%
 	position relative
-	top 0rem
+	top 83em
 	background rgba(255,255,255,.4)
 	padding 2rem 0
 	
@@ -222,9 +232,20 @@
 	position relative 
 	top 22rem
 
+.eztrap-features
+	background rgb(204,204,51)
 
+//Generic styles for Netbook 10"
+@media screen and (min-width 1024px) and (min-height 600px)
+	.eztrap-container 
+		background-size 100% 100% 
+		background-position 0 34px
 
-
+//Generic styles for Netbook 10"
+@media screen and (min-width 1024px) and (min-height 768px)
+	.eztrap-container 
+		background-size 100% 100%
+		background-position 0 32px
 
 
 
