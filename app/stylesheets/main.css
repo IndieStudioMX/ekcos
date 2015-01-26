@@ -1037,7 +1037,7 @@ li {
   background-size: cover;
 }
 .slider-02-bg {
-  background: url("../images/slider-02.jpg") center center;
+  background: url("../images/slider-07.jpg") center center;
   background-size: cover;
 }
 .slider-03-bg {
@@ -1095,7 +1095,7 @@ li {
     background-size: cover;
   }
   .slider-02-bg {
-    background: url("../images/slider-02.jpg") center center;
+    background: url("../images/slider-07.jpg") center center;
     background-size: cover;
   }
   .slider-03-bg {
@@ -1144,12 +1144,15 @@ li {
 }
 @media screen and (min-width: 1400px) {
   .slider-04-bg {
-    background: url("../images/slider-04.png") center center;
+    background: url("../images/slider-04.jpg") center center;
     background-size: cover;
     background-position-y: -56px;
   }
   .slider-size {
     height: 907px;
+  }
+  .slider-02-bg {
+    background-position: 50% -6rem;
   }
   .carousel-caption h3 {
     color: #3d3a3a;
@@ -1167,10 +1170,10 @@ li {
     background-size: 100%;
   }
 }
-@media screen and (min-width: 1400px) and (min-height: 800px) {
+@media screen and (min-width: 1400px) and (min-height: 790px) {
   .slider-04-bg {
-    background: url("../images/slider-01-1438x811.jpg") center center;
-    background-size: 100% 76%;
+    background: url("../images/slider-08.jpg") center center;
+    background-size: 100% 96%;
     background-repeat: no-repeat;
     margin-top: -4rem;
   }
@@ -1265,6 +1268,9 @@ li {
 .footer-index .brand-footer {
   position: relative;
   top: -2.5rem;
+}
+.footer-index .ft {
+  top: 0.5rem;
 }
 .row {
   margin-right: 0;
@@ -1387,11 +1393,12 @@ li {
   top: 5rem;
 }
 .powerscreen-container {
-  background: url("../images/powerscreen-bg.jpg");
+  background: url("../images/power-background.jpg");
   background-size: 100%;
   position: relative;
   with: 100%;
   height: 61rem;
+  background-position: 0 -61rem;
 }
 .powerscreen-features {
   position: relative;
@@ -1471,7 +1478,7 @@ li {
   width: 900px;
   position: relative;
   background-size: 100%;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .powerscreen-features-list .features-list-l {
   list-style: none;
@@ -1493,7 +1500,7 @@ hr {
   background-size: 100%;
   background-position: -129px 0;
   width: 100%;
-  height: 300px;
+  height: 313px;
   position: absolute;
   top: 125rem;
   z-index: 1;
@@ -1676,9 +1683,9 @@ hr {
   background-size: 100%;
   background-position: -129px 0;
   width: 100%;
-  height: 300px;
+  height: 313px;
   position: absolute;
-  top: 170rem;
+  top: 169rem;
   z-index: 1;
 }
 .bio-line-ekcos {
@@ -1689,7 +1696,7 @@ hr {
   width: 69%;
 }
 .ekcos-products-container {
-  margin-top: 2rem;
+  margin-top: -1rem;
   height: 902px;
   position: relative;
   padding: 2rem 0;
@@ -2581,6 +2588,9 @@ a:hover {
     margin-top: -2rem;
   }
 }
+requirfigcaption {
+  font-weight: bold;
+}
 .eztrap-wrapper {
   height: auto;
   width: 100%;
@@ -2644,14 +2654,15 @@ a:hover {
 .eztrap-main-features {
   border-top: 2px solid #444;
   border-bottom: 2px solid #444;
-  top: 87rem;
+  top: 6rem;
   position: relative;
+  padding: 1rem 0;
 }
 .eztrap-features-strong {
   position: relative;
-  background: #cc3;
+  background: rgba(34,31,31,0.3);
   background-size: 100% 100%;
-  top: 86rem;
+  top: 3rem;
   width: 900px;
   padding: 0.6rem 0 0 0;
 }
@@ -2665,11 +2676,10 @@ a:hover {
   background-position: 0 -2px;
   position: relative;
   with: 100%;
-  height: 160rem;
+  height: 320rem;
   top: 0;
 }
 .eztrap-z {
-  text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -2678,8 +2688,7 @@ a:hover {
   height: 234px;
   width: 100%;
   position: relative;
-  top: 83em;
-  background: rgba(255,255,255,0.4);
+  top: 46em;
   padding: 2rem 0;
 }
 .container-ez {
@@ -2694,12 +2703,12 @@ a:hover {
   background: rgba(34,31,31,0.3);
 /*background rgb(204,204,51)*/
   background-size: 100% 100%;
-  top: 2rem;
+  top: 77rem;
   width: 900px;
   padding: 0.6rem 0 0 0;
 }
 .eztrap-benefits-message {
-  top: 15rem;
+  top: 104rem;
 }
 .eztrap-benefits-message h3 {
   margin-top: -1rem;
@@ -2718,8 +2727,9 @@ a:hover {
   position: relative;
   background: #cc3;
   background-size: 100% 100%;
-  top: 5rem;
+  top: 80rem;
   width: 900px;
+  padding: 0 0 1rem 0;
 }
 .eztrap-requirements-title h3 {
   font-size: 2.5rem;
@@ -2727,7 +2737,7 @@ a:hover {
 }
 .eztrap-iso {
   position: relative;
-  top: 8rem;
+  top: 85rem;
   line-height: 15px;
 }
 .ez-basic-info {
@@ -2740,19 +2750,37 @@ a:hover {
   font-weight: bold;
   padding: 1rem 0;
 }
+.container.eztrap-basic-info {
+  position: relative;
+  top: 88rem;
+}
+.eztrap-info-articles {
+  position: relative;
+  top: 93rem;
+  padding: 2rem 0;
+  background: rgba(255,255,255,0.4);
+}
 .row-ez {
   margin-left: -15px;
   margin-right: -15px;
 }
 .ez-info-left,
 .ez-info-right {
-  padding: 0;
+  padding: 0.9rem 0;
+  color: #cc3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 424px;
 }
 .ez-info-right {
+  background: #000;
   padding-left: 15px;
+  margin-left: 1rem;
 }
 .ez-info-left {
+  background: #000;
   padding-right: 15px;
+  margin-left: -3rem;
 }
 .ez-clean-it {
   font-size: 1.5rem;
@@ -2767,12 +2795,12 @@ a:hover {
   margin: 0;
 }
 .eztrap-plumbing-fluid {
-  top: 12rem;
+  top: 99rem;
   height: 245px;
 }
 .eztrap-benefits-buy {
   position: relative;
-  top: 18rem;
+  top: 110rem;
   padding: 1rem 0;
   background: rgba(255,255,255,0.4);
 }
@@ -2806,7 +2834,7 @@ a:hover {
 }
 .footer-eztrap {
   background: #000;
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 0 2.9rem;
   line-height: 4.5rem;
   position: absolute;
@@ -2831,10 +2859,23 @@ a:hover {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 22rem;
+  top: 115rem;
 }
 .eztrap-features {
   background: #cc3;
+}
+.eztrap-videos-container {
+  position: relative;
+  top: 69rem;
+  z-index: 2;
+}
+.eztrap-patent-container {
+  background: rgba(255,255,255,0.4);
+  height: 28rem;
+  width: 100%;
+  position: relative;
+  top: 73rem;
+  z-index: 3;
 }
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .eztrap-container {
