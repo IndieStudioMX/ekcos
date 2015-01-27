@@ -141,8 +141,9 @@ li {
   width: 100%;
   height: 3.3rem;
   left: 15rem;
-  background: rgba(34,31,31,0.3);
+  background: #c3ca51;
   top: 3.9rem;
+  font-weight: bold;
 }
 .navbar-products li {
   float: right;
@@ -201,10 +202,27 @@ li {
   transform: skew(-29deg);
 }
 .navbar-products li:nth-child(2):hover {
-  background: #888;
+  background-color: #c6cc8d;
+  background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
   margin-right: -6.1rem;
-  padding-right: 3.3rem;
+  padding-right: 3.22rem;
   margin-left: 0.2rem;
+  height: 3.15rem;
+  -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -webkit-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  transform: skew(29deg);
+  -webkit-transition: 0.1s all ease-in;
+  -moz-transition: 0.1s all ease-in;
+  -ms-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
 }
 .navbar-products li:nth-child(3) {
   padding-left: 0.5rem;
@@ -221,11 +239,17 @@ li {
   transform: skew(29deg);
 }
 .navbar-products li:nth-child(3):hover {
-  background: #888;
+  background-color: #c6cc8d;
+  background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
   left: 0;
-  padding-right: 0.55rem;
+  padding-right: 0.59rem;
   margin-right: 0;
   margin-left: 0.15rem;
+  height: 3.15rem;
 }
 .navbar-products li:nth-child(3) > a {
   -webkit-transform: skew(-29deg);
@@ -239,18 +263,29 @@ li {
   position: relative;
   left: 0;
   -webkit-transform: skew(29deg);
+  -moz-transform: skew(29deg);
+  -ms-transform: skew(29deg);
+  -webkit-transform: skew(29deg);
   -ms-transform: skew(29deg);
   -moz-transform: skew(29deg);
   transform: skew(29deg);
-  -webkit-transform: skew(29deg);
-  -moz-transform: skew(29deg);
-  -ms-transform: skew(29deg);
+  -webkit-transition: 0.1s all ease-in;
+  -moz-transition: 0.1s all ease-in;
+  -ms-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
 }
 .navbar-products li:last-child:hover {
-  background: #888;
+  background-color: #c6cc8d;
+  background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+  background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
   margin-right: 0;
-  padding-right: 1rem;
+  padding-right: 1.04rem;
+  transition: 0.5s all ease-in;
   left: 0;
+  height: 3.15rem;
 }
 .navbar-products li:last-child > a {
   -webkit-transform: skew(-29deg);
@@ -269,6 +304,29 @@ li {
 .buynow-container a {
   display: block;
   height: 100%;
+}
+@media screen and (min-width: 960px) and (min-height: 640px) {
+  .brand {
+    left: -90px;
+  }
+  .main-menu {
+    left: -7.5rem;
+  }
+  .navbar-default .navbar-nav li:last-child {
+    left: 38.5rem;
+  }
+  .navbar-default .navbar-nav li:last-child > a {
+    margin-left: 5rem;
+  }
+  .navbar-default .navbar-nav li:last-child > a > img {
+    left: 3.9rem;
+  }
+  .navbar-products {
+    left: 19rem;
+  }
+  .nav-line {
+    left: 40rem;
+  }
 }
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .brand {
@@ -309,7 +367,7 @@ li {
     width: 100%;
     height: 3.3rem;
     left: 15rem;
-    background: rgba(34,31,31,0.3);
+    background: #c3ca51;
     top: 3.9rem;
   }
   .navbar-products li {
@@ -337,6 +395,7 @@ li {
     background-position: 31px -25px;
     background-size: 95% 134%;
     height: 60px;
+    height: 3.15rem;
   }
   .navbar-products li:first-child > a {
     color: #fff;
@@ -369,10 +428,27 @@ li {
     transform: skew(-29deg);
   }
   .navbar-products li:nth-child(2):hover {
-    background: #888;
-    margin-right: -6.1rem;
-    padding-right: 3.3rem;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    margin-right: -6rem;
+    padding-right: 3.22rem;
     margin-left: 0.2rem;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:nth-child(3) {
     padding-left: 0.5rem;
@@ -389,11 +465,28 @@ li {
     transform: skew(29deg);
   }
   .navbar-products li:nth-child(3):hover {
-    background: #888;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
     left: 0;
-    padding-right: 0.55rem;
+    padding-right: 0.59rem;
     margin-right: 0;
     margin-left: 0.15rem;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:nth-child(3) > a {
     -webkit-transform: skew(-29deg);
@@ -415,10 +508,27 @@ li {
     -ms-transform: skew(29deg);
   }
   .navbar-products li:last-child:hover {
-    background: #888;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
     margin-right: 0;
-    padding-right: 1rem;
+    padding-right: 1.04rem;
     left: 0;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:last-child > a {
     -webkit-transform: skew(-29deg);
@@ -488,9 +598,9 @@ li {
   .navbar-products {
     position: absolute;
     width: 100%;
-    height: 3.3rem;
+    height: 3.2rem;
     left: 15rem;
-    background: rgba(34,31,31,0.3);
+    background: #c3ca51;
     top: 3.9rem;
   }
   .navbar-products li {
@@ -550,10 +660,27 @@ li {
     transform: skew(-29deg);
   }
   .navbar-products li:nth-child(2):hover {
-    background: #888;
-    margin-right: -6.1rem;
-    padding-right: 3.3rem;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    margin-right: -6rem;
+    padding-right: 3.22rem;
     margin-left: 0.2rem;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:nth-child(3) {
     padding-left: 0.5rem;
@@ -570,11 +697,28 @@ li {
     transform: skew(29deg);
   }
   .navbar-products li:nth-child(3):hover {
-    background: #888;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
     left: 0;
-    padding-right: 0.55rem;
+    padding-right: 0.59rem;
     margin-right: 0;
     margin-left: 0.15rem;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:nth-child(3) > a {
     -webkit-transform: skew(-29deg);
@@ -596,10 +740,27 @@ li {
     -ms-transform: skew(29deg);
   }
   .navbar-products li:last-child:hover {
-    background: #888;
+    background-color: #c6cc8d;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -o-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: -ms-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
+    background-image: linear-gradient(to top right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
     margin-right: 0;
-    padding-right: 1rem;
+    padding-right: 1.04rem;
     left: 0;
+    height: 3.15rem;
+    -webkit-transform: skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -webkit-transform: scale(1.1) skew(29deg);
+    -ms-transform: scale(1.1) skew(29deg);
+    -moz-transform: scale(1.1) skew(29deg);
+    transform: scale(1.1) skew(29deg);
+    -webkit-transition: 0.1s all ease-in;
+    -moz-transition: 0.1s all ease-in;
+    -ms-transition: 0.1s all ease-in;
+    transition: 0.1s all ease-in;
   }
   .navbar-products li:last-child > a {
     -webkit-transform: skew(-29deg);
@@ -1052,6 +1213,56 @@ li {
 .slider-size {
   height: 747px;
 }
+@media screen and (min-width: 960px) and (min-height: 640px) {
+  .carousel-caption h3 {
+    margin: -41rem auto 0 auto;
+    width: 380px;
+    font-size: 22.45pt;
+  }
+  .menuProducts {
+    top: 20rem;
+  }
+  .menuProducts-container {
+    background-size: 105%;
+    width: 317px;
+    right: 3.4rem;
+  }
+  .news-menu {
+    left: 5rem;
+    top: 29rem;
+  }
+  .slider-02-bg {
+    background-size: 100%;
+    background-position: 0 4rem;
+    background-repeat: no-repeat;
+  }
+  .news-menu .btn-latest-news {
+    background-position: 0 -6px;
+    background-size: 220px;
+    width: 42%;
+  }
+  .news-menu .btn-antisplash {
+    background-position: -116px -6px;
+    background-size: 220px;
+  }
+  .buynow-container {
+    right: 7.5rem;
+  }
+  .buynow-container img {
+    width: 90%;
+  }
+  .slider-03-bg {
+    background-size: 100% 100%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: 0 -4rem;
+  }
+  .waterless-caption h3 {
+    width: 361px !important;
+    font-size: 22.45pt !important;
+    margin-top: -36rem;
+  }
+}
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .slider-size {
     height: 547px;
@@ -1268,9 +1479,6 @@ li {
 .footer-index .brand-footer {
   position: relative;
   top: -2.5rem;
-}
-.footer-index .ft {
-  top: 0.5rem;
 }
 .row {
   margin-right: 0;
