@@ -83,6 +83,29 @@ li
 	left 60rem
 	top 1.5rem
 
+.navbar-products-mobile 
+	position absolute
+	width 100%
+	height 3.3rem
+	left 0rem
+	background $navbar-submenu
+	top 6rem 
+	font-weight bold
+	li 
+		float right
+		font-size 1.25rem
+		&:first-child 
+			margin-left 3%
+			& > a 
+				color #444
+		&:nth-child(2) 
+			margin-left 5%
+			& > a 
+				color #444
+		&:last-child 
+			margin-left -6%
+			& > a 
+				color #444
 .navbar-products
 	position absolute
 	width 100%
@@ -223,8 +246,325 @@ li
 		display block
 		height 100%
 
+@media screen and (min-width 200px) and (max-width 479px)
+	.brand 
+		left -84px
+		width 33.3rem
+	.navbar-default .navbar-nav li:last-child
+		display none
+	.navbar-products li:first-child
+		display none
+	.navbar.navbar-default.navbar-fixed-top
+		height 60px
+	.mobile-submenu
+		display block 
+		width 14.3rem
+		position absolute 	
+		top 0rem
+		left 19rem
+		height 60px
+		.view-cart-container
+			width 143px
+			background url("../images/view-cart.svg") no-repeat 100% 100%
+			background-position -7px -14px
+			height 34px
+			.btn-buy 
+				color #000
+				margin-left 5rem
+				text-transform: uppercase
+				font-size: 1rem
+				height 52px
+				line-height 0
+				position relative 
+				top 0.5rem 
+				img 
+					position absolute
+					top -1.3rem 
+					left 4.3rem 
+					width 4.4rem
+		.documentation-container 
+			width 14.3rem
+			background:rgb(100, 101, 103)
+			height 26px
+			background-position -11px -33px
+			background-size 100% 133%
+			& > a 
+				color #fff 
+				margin-left 5rem
+				font-size 1.2rem
+	.navbar-products 
+		display none
+	.main-menu 
+		left 0
+		top 4.3rem
+		background rgb(100, 101, 103)
+		color $text-color-light
+	ul.nav.navbar-nav.navbar-right.main-menu
+		top 0
+		text-align center
+		margin-top 0
+		li:first-child 
+			margin-left 0rem
+			&:hover 
+				border-bottom 3px solid #cc3
+				-webkit-transition 0.2s ease-in
+				-ms-transition 0.2s ease-in
+				-moz-transition 0.2s ease-in
+				transition 0.2s ease-in
+				background rgb(60, 57, 58)
+	.nav-line 
+		display none
+						
+	.nav.navbar-nav.navbar-right
+		margin-right 0
+	.navbar-default .navbar-nav li > a
+		color $text-color-light
+		margin-right 0
+		&:hover 
+			color $text-color-light
+	.navbar-default .navbar-nav li > .item-menu:hover
+		border-bottom 3px solid #cc3
+		-webkit-transition 0.2s ease-in
+		-ms-transition 0.2s ease-in
+		-moz-transition 0.2s ease-in
+		transition 0.2s ease-in
+		background rgb(60, 57, 58)
+	
 
-@media screen and (min-width 960px) and (min-height 640px)
+@media screen and (min-width 480px) and (max-width 639px)
+	.brand 
+		left -40px
+		width 33.3rem
+	.navbar-default .navbar-nav li:last-child
+		display none
+	.navbar-products li:first-child
+		display none
+	.navbar.navbar-default.navbar-fixed-top
+		height 60px
+	.mobile-submenu
+		display block 
+		width 14.3rem
+		position absolute 	
+		top 0rem
+		left 25rem
+		height 60px
+		.view-cart-container
+			width 143px
+			background url("../images/view-cart.svg") no-repeat 100% 100%
+			background-position -7px -14px
+			height 34px
+			.btn-buy 
+				color #000
+				margin-left 5rem
+				text-transform: uppercase
+				font-size: 1rem
+				height 52px
+				line-height 0
+				position relative 
+				top 0.5rem 
+				img 
+					position absolute
+					top -1.3rem 
+					left 4.3rem 
+					width 4.4rem
+		.documentation-container 
+			width 14.3rem
+			background:rgb(100, 101, 103)
+			height 26px
+			background-position -11px -33px
+			background-size 100% 133%
+			& > a 
+				color #fff 
+				margin-left 5rem
+				font-size 1.2rem
+	.navbar-products 
+		display none
+	.main-menu 
+		left 0
+		top 4.3rem
+		background rgb(100, 101, 103)
+		color $text-color-light
+	ul.nav.navbar-nav.navbar-right.main-menu
+		top 0
+		text-align center
+		margin-top 0
+		li:first-child 
+			margin-left 0rem
+			&:hover 
+				border-bottom 3px solid #cc3
+				-webkit-transition 0.2s ease-in
+				-ms-transition 0.2s ease-in
+				-moz-transition 0.2s ease-in
+				transition 0.2s ease-in
+				background rgb(60, 57, 58)
+	.nav-line 
+		display none
+						
+	.nav.navbar-nav.navbar-right
+		margin-right 0
+	.navbar-default .navbar-nav li > a
+		color $text-color-light
+		margin-right 0
+		&:hover 
+			color $text-color-light
+	.navbar-default .navbar-nav li > .item-menu:hover
+		border-bottom 3px solid #cc3
+		-webkit-transition 0.2s ease-in
+		-ms-transition 0.2s ease-in
+		-moz-transition 0.2s ease-in
+		transition 0.2s ease-in
+		background rgb(60, 57, 58)
+	.navbar-products-mobile li 
+		&:first-child 
+			margin-left 9% 
+			margin-right 2%
+		&:nth-child(2)
+			margin-left 12%
+		&:last-child 
+			margin-left -6%
+	
+
+@media screen and (min-width 640px) and (max-width 767px)
+	.brand 
+		left -5px
+		width 38.3rem
+	.navbar-default .navbar-nav li:last-child
+		display none
+	.navbar-products li:first-child
+		display none
+	.navbar.navbar-default.navbar-fixed-top
+		height 70px
+	.mobile-submenu
+		display block 
+		width 24.3rem
+		position absolute 	
+		top 0rem
+		left 32rem
+		height 70px
+		.view-cart-container
+			width 242px
+			background url("../images/view-cart.svg") no-repeat 100% 100%
+			background-position -7px -14px
+			height 34px
+			.btn-buy 
+				color #000
+				margin-left 9rem
+				text-transform: uppercase
+				font-size: 1.2rem
+				height 52px
+				line-height 0
+				position relative 
+				top 0.5rem 
+				img 
+					position absolute
+					top -1.3rem 
+					left 5.3rem 
+					width 4.4rem
+		.documentation-container 
+			width 24.2rem
+			background:rgb(100, 101, 103)
+			height 36px
+			background-position -11px -33px
+			background-size 100% 133%
+			& > a 
+				color #fff 
+				margin-left 9rem
+				font-size 1.3rem
+				line-height 10px
+	.navbar-products 
+		display none
+	.main-menu 
+		left 0
+		top 5.3rem
+		background rgb(100, 101, 103)
+		color $text-color-light
+	ul.nav.navbar-nav.navbar-right.main-menu
+		top 0
+		text-align center
+		margin-top 0
+		li:first-child 
+			margin-left 0rem
+			&:hover 
+				border-bottom 3px solid #cc3
+				-webkit-transition 0.2s ease-in
+				-ms-transition 0.2s ease-in
+				-moz-transition 0.2s ease-in
+				transition 0.2s ease-in
+				background rgb(60, 57, 58)
+	.nav-line 
+		display none
+						
+	.nav.navbar-nav.navbar-right
+		margin-right 0
+	.navbar-default .navbar-nav li > a
+		color $text-color-light
+		margin-right 0
+		&:hover 
+			color $text-color-light
+	.navbar-default .navbar-nav li > .item-menu:hover
+		border-bottom 3px solid #cc3
+		-webkit-transition 0.2s ease-in
+		-ms-transition 0.2s ease-in
+		-moz-transition 0.2s ease-in
+		transition 0.2s ease-in
+		background rgb(60, 57, 58)
+	.navbar-products-mobile 
+		top 7rem
+		li 
+			&:first-child 
+				margin-left 14% 
+				margin-right 5%
+			&:nth-child(2)
+				margin-left 19%
+			&:last-child 
+				margin-left -6%
+
+@media screen and (min-width 768px) and (max-width 959px)
+	.mobile-submenu
+		display none
+	.brand 
+		left -127px 
+		width 49rem
+	.main-menu 
+		left -7.5rem 
+	.navbar-default .navbar-nav li:last-child 
+		left 38.5rem 
+		& > a 
+			margin-left 5rem 
+			& > img 
+				left 3.9rem 
+	.navbar-products 
+		left 29rem 
+		
+	.nav-line 
+		left 40rem
+	.mobile-submenu
+		display none
+	.nav.navbar-nav.navbar-right 
+		margin-right -6.5rem
+	.navbar-default .navbar-nav li > a 
+		font-size: 1rem
+	.navbar-default .navbar-nav li:nth-child(2), 
+	.navbar-default .navbar-nav li:nth-child(3), 
+	.navbar-default .navbar-nav li:nth-child(4), 
+	.navbar-default .navbar-nav li:nth-child(5)
+		margin-left 0
+	.navbar-default .navbar-nav li:last-child 
+		left 33.5rem 
+	.navbar-default .navbar-nav li:last-child > a 
+		margin-left 2.7rem
+		font-size .9rem 
+	.navbar-default .navbar-nav li:last-child > a > img
+		left 3.3rem
+		width 16%
+		top 0 
+	.navbar-products li:first-child > a 
+	 	font-size 1rem
+	
+
+@media screen and (min-width 960px) and (max-width 1023px)
+	.mobile-submenu
+		display none
 	.brand 
 		left -90px
 	.main-menu 
