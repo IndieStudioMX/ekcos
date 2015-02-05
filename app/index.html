@@ -12,7 +12,7 @@
     <meta name="googlebot" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bower:css -->
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="/stylesheets/main.css">
@@ -84,7 +84,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-            <div class="item active" >
+            <div id="slider-01" class="item active" >
               <div class="slider-01-bg slider-size">
                 <div class="carousel-caption">
                 <h3 class="slider-01-title">Have you Upgraded your Waterless Urinal?</h3>
@@ -94,41 +94,47 @@
               </div>
               </div> 
             </div>
-            <div class="item">
+            <div id="slider-02" class="item">
               <div class="slider-02-bg slider-size">
                 <div class="carousel-caption">
                   <h3>Antisplash</h3>
-                  <hr>
+                  <hr class="antisplash-hr">
                   <p>The only product in the current market</p>
                   <p>Which can virtually eliminate urine splashback</p>
                 </div>
               </div>
             </div>
 
-            <div class="item">
+            <div id="slider-03" class="item">
               <div class="slider-03-bg slider-size">
                 <div class="carousel-caption waterless-caption">
                   <h3 class="waterless-slider-title">Waterless Technologies</h3>
-                  <hr>
+                  <hr class="waterless-hr">
                   <p>Complete Waterless urinal solution</p>
                 </div>
               </div>
             </div>
 
-            <div class="item">
+            <div id="slider-04" class="item">
               <div class="slider-04-bg slider-size">
               </div>
             </div>
           </div>
           <!-- Controls-->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a id="carousel-arrowLeft" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a id="carousel-arrowRight" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
+       <div id="slider-04-content" class="carousel-caption slider-04-caption">
+          <div class="slider-04-content">
+            <p>*This product is designed to biodegrade in a biological active landfill (appropriate facilities not available in all areas).</p>
+            <p>Testing ASTM D5511-2 that we have conducted represent biologically active landfills on our products have shown 99% biodegradation in less than 5 years.</p>
+          </div>
         </div>
               <!-- Footer -->
       <footer class="footer footer-index">
@@ -191,8 +197,9 @@
     </div>
       <!-- EndMenu Products -->
   	<!-- bower:js -->
-  	<script src="lib/jquery/dist/jquery.min.js"></script>
-  	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  	<script src="lib/jquery/dist/jquery.js"></script>
+  	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  	<script src="lib/fitvids/jquery.fitvids.js"></script>
   	<!-- endbower -->
   	<!-- inject:js -->
   	<script src="/scripts/main.js"></script>

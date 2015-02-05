@@ -1413,8 +1413,8 @@ li {
   width: 27rem;
   height: 13rem;
   position: absolute;
-  top: 43% !important;
-  left: 10rem !important;
+  top: 69% !important;
+  left: 5rem !important;
 }
 .news-menu .btn-latest-news,
 .news-menu .btn-antisplash {
@@ -1735,7 +1735,6 @@ li {
 .carousel-caption {
   position: relative;
   top: 39%;
-  border: 1px solid #f00;
   z-index: 3;
   margin: 0 auto;
   left: 0;
@@ -1762,7 +1761,10 @@ li {
   text-shadow: none;
   color: rgba(78,76,77,0.9);
   font-weight: bold;
-  font-size: 1.30166666667rem;
+  font-size: 1.7rem;
+}
+.antisplash-hr {
+  width: 353px !important;
 }
 .carousel-caption_message {
   height: 58px;
@@ -1807,13 +1809,12 @@ li {
   background-position: center;
 }
 .slider-02-bg {
-  background: url("../images/slider-07.jpg") center center;
+  background: url("../images/slider-02.jpg") center center;
   background-size: cover;
 }
 .slider-03-bg {
   background: url("../images/slider-03.jpg") center center;
   background-size: cover;
-  margin-top: 6rem;
   width: 100%;
   height: 100%;
   background-position: center;
@@ -1827,6 +1828,19 @@ li {
 }
 .slider-size {
   height: 680px;
+}
+.slider-04-caption {
+  bottom: 10rem;
+  height: auto;
+  padding-bottom: 0.5rem !important;
+  padding-top: 0.5rem;
+  background: #cc3;
+}
+.is_invisible {
+  display: none;
+}
+.is_visible {
+  display: block;
 }
 @media screen and (min-width: 220px) and (max-width: 479px) {
   .menuProducts-container {
@@ -1994,8 +2008,8 @@ li {
 @media screen and (min-width: 960px) and (min-height: 640px) {
   .carousel-caption h3 {
     margin: 0 auto 0 auto;
-    width: 380px;
-    font-size: 22.45pt;
+    width: 450px;
+    font-size: 25.45pt;
   }
   .menuProducts {
     top: 20rem;
@@ -2010,8 +2024,7 @@ li {
     top: 29rem;
   }
   .slider-02-bg {
-    background-size: 100%;
-    background-position: 0 4rem;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .news-menu .btn-latest-news {
@@ -2030,23 +2043,19 @@ li {
     width: 90%;
   }
   .slider-03-bg {
-    background-size: 100% 100%;
-    margin-top: 0;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
   }
   .waterless-caption h3 {
     width: 361px !important;
-    font-size: 22.45pt !important;
+    font-size: 25.45pt !important;
     margin-top: -36rem;
   }
 }
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .slider-size {
     height: 680px;
-  }
-  .slider-04-bg {
-    background-position: 0 -0.4rem;
   }
 }
 @media screen and (min-width: 1024px) and (min-height: 768px) {
@@ -2063,7 +2072,11 @@ li {
   .slider-size {
     height: 900px;
   }
-  .slider-04-bg {
+  .slider-03-bg {
+    height: 800px;
+  }
+  .slider-04-bg,
+  .slider-02-bg {
     height: 745px;
   }
   .menuProducts-container {
@@ -2083,12 +2096,13 @@ li {
     background-size: cover;
   }
   .slider-02-bg {
-    background: url("../images/slider-07.jpg") center center;
+    background: url("../images/slider-02.jpg") center center;
     background-size: cover;
   }
   .slider-03-bg {
-    background: url("../images/slider-03.jpg") center center;
+    background: url("../images/slider-03.jpg");
     background-size: cover;
+    background-position: center;
   }
   .slider-04-bg {
     background: url("../images/slider-04.jpg") center center;
@@ -2098,12 +2112,11 @@ li {
   .carousel-caption h3 {
     color: #3d3a3a;
     text-shadow: none;
-    width: 460px;
   }
 }
 @media screen and (min-width: 1366px) {
   .slider-size {
-    height: 723px;
+    min-height: 103% !important;
   }
   .slider-04-bg {
     background-position-y: -9px;
@@ -2114,6 +2127,18 @@ li {
     color: #3d3a3a;
     text-shadow: none;
   }
+  .carousel-caption hr {
+    width: 683px;
+  }
+  .antisplash-hr {
+    width: 260px !important;
+  }
+  .waterless-slider-title {
+    width: 100% !important;
+  }
+  .waterless-hr {
+    width: 260px !important;
+  }
   .slider-04-bg {
     background: url("../images/slider-04.jpg") center center;
     background-size: cover;
@@ -2122,16 +2147,17 @@ li {
   }
 }
 @media screen and (min-width: 1400px) {
+  .slider-size {
+    height: 907px;
+  }
   .slider-04-bg {
     background: url("../images/slider-04.jpg") center center;
     background-size: cover;
     background-position-y: -56px;
-  }
-  .slider-size {
-    height: 907px;
+    margin-top: 1.5rem !important;
   }
   .slider-02-bg {
-    background-position: 50% -6rem;
+    background-position: center;
   }
   .carousel-caption h3 {
     color: #3d3a3a;
@@ -2146,9 +2172,12 @@ li {
 @media screen and (min-width: 1400px) and (min-height: 790px) {
   .slider-04-bg {
     background: url("../images/slider-08.jpg") center center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: 3.4rem;
+  }
+  .carousel-caption hr {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -2157,13 +2186,22 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .carousel-caption h3 {
+    color: #3d3a3a;
+    text-shadow: none;
+    width: 100%;
+  }
+  .carousel-caption hr {
+    width: 283px;
+  }
 }
 @media screen and (min-width: 1550px) {
   .slider-04-bg {
-    background: url("../images/slider-04.jpg") center center;
+    background: url("../images/slider-04.jpg");
     background-size: cover;
-    background-position-y: 0;
+    background-position: 0 -4rem;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 @media screen and (min-width: 1280px) and (min-height: 801px) and (max-height: 1300px) {
@@ -2335,9 +2373,21 @@ li {
     bottom: 16rem;
   }
 }
+.restroom-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .row {
   margin-right: 0;
   margin-left: 0;
+}
+.restroom-items-container {
+  width: 100%;
+  top: 28%;
+  position: absolute;
 }
 .leaf-restroom {
   background: url("../images/leaf.png");
@@ -2351,13 +2401,11 @@ li {
   z-index: 1;
 }
 .power-item {
-  position: absolute;
-  left: 55rem;
-  top: 17.55rem;
+  position: relative;
 }
 .power-item a {
   position: relative;
-  left: -1rem;
+  left: 0;
   display: block;
   background: #000;
   text-align: center;
@@ -2376,9 +2424,7 @@ li {
   max-width: 100%;
 }
 .ekcos-item {
-  position: absolute;
-  top: 16.9rem;
-  left: 19rem;
+  position: relative;
 }
 .ekcos-item a {
   display: block;
@@ -2421,34 +2467,6 @@ li {
 .navProducts-restroom {
   top: 29rem;
 }
-@media screen and (min-width: 1024px) and (min-height: 600px) {
-  .navProducts-restroom {
-    top: 22rem;
-  }
-}
-@media screen and (min-width: 1024px) and (min-height: 768px) {
-  .navProducts-restroom {
-    top: 33rem;
-  }
-  .news-menu {
-    top: 27em;
-  }
-}
-@media screen and (min-width: 1280px) and (min-height: 800px) {
-  .power-item {
-    top: 28.8rem !important;
-    left: 54rem !important;
-  }
-}
-@media screen and (min-width: 1366px) and (min-height: 768px) {
-  .ekcos-item {
-    top: 21rem !important;
-  }
-  .power-item {
-    top: 21.8rem !important;
-    left: 54rem !important;
-  }
-}
 .power-wrapper {
   height: auto;
   width: 100%;
@@ -2456,12 +2474,12 @@ li {
   top: 5rem;
 }
 .powerscreen-container {
-  background: url("../images/power-background.jpg");
-  background-size: 100%;
+  background: url("../images/bg-power-a.png");
+  background-size: cover;
   position: relative;
   with: 100%;
   height: 61rem;
-  background-position: 0 -61rem;
+  background-position: 0 -126rem;
 }
 .powerscreen-features {
   position: relative;
@@ -2632,18 +2650,16 @@ hr {
   position: relative;
   top: -2.5rem;
 }
-@media screen and (min-width: 1024px) and (min-height: 600px) {
-  .power-item {
-    left: 43rem;
-  }
+.power-subtitle-demo,
+.power-subtitle-product {
+  font-style: italic;
+  font-weight: bold;
 }
-@media screen and (min-width: 1024px) and (min-height: 768px) {
-  .power-item {
-    top: 28.55rem;
-  }
-  .ekcos-item {
-    top: 28.1rem;
-  }
+.thumblnail-power img {
+  height: 40%;
+  width: 40%;
+  margin: 1rem auto 0 auto;
+  display: block;
 }
 .ekcoscreen-wrapper {
   height: auto;
@@ -2652,8 +2668,9 @@ hr {
   top: 5rem;
 }
 .ekcoscreen-container {
-  background: url("../images/ekcoscreen-bg.jpg") no-repeat;
+  background: url("../images/bg-ekcos-b.png") no-repeat;
   background-size: 100%;
+  background-position: 0;
   position: relative;
   with: 100%;
   height: 52rem;
@@ -2760,7 +2777,7 @@ hr {
 }
 .ekcos-products-container {
   margin-top: -1rem;
-  height: 902px;
+  height: 632px;
   position: relative;
   padding: 2rem 0;
   background: rgba(255,255,255,0.25);
@@ -2768,6 +2785,12 @@ hr {
 .thumbnail-ekcos {
   border: 0;
   background: transparent;
+}
+.thumbnail-ekcos img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 1rem auto 0 auto;
 }
 .thumbnail-ekcos .product-title {
   font-size: 1.5rem;
@@ -2796,23 +2819,28 @@ hr {
   background-position: 0 -2px;
   position: relative;
   with: 100%;
-  height: 242rem;
+  height: 215rem;
 }
 .footer-ekcoscreen {
   display: block;
   position: relative;
   top: 296rem;
 }
+.ekcos-subtitle-product,
+.ekcos-subtitle-demo {
+  font-style: italic;
+  font-weight: bold;
+}
 @media screen and (min-width: 1024px) and (min-height: 768px) {
   .ekcoscreen-container {
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-position: 0;
   }
 }
 .company-wrapper {
   height: 100%;
   width: 100%;
   position: relative;
-  top: 5rem;
 }
 .company-container {
   background: url("../images/power-bg.jpg") no-repeat;
@@ -3899,7 +3927,7 @@ requirfigcaption {
   top: 5rem;
 }
 .eztrap-container {
-  background: url("../images/eztrap-bg.jpg") no-repeat;
+  background: url("../images/trap-01.jpg") no-repeat;
   background-size: 100%;
   background-position: 0 -80px;
   position: relative;
@@ -4167,7 +4195,7 @@ requirfigcaption {
 }
 .eztrap-videos-container {
   position: relative;
-  top: 69rem;
+  top: 62rem;
   z-index: 2;
 }
 .eztrap-patent-container {
@@ -4178,16 +4206,21 @@ requirfigcaption {
   top: 73rem;
   z-index: 3;
 }
+.ez-subtitle-product,
+.ez-subtitle-demo {
+  font-style: italic;
+  font-weight: bold;
+}
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .eztrap-container {
-    background-size: 100% 100%;
-    background-position: 0 34px;
+    background-size: 100%;
+    background-position: 0 1px;
   }
 }
 @media screen and (min-width: 1024px) and (min-height: 768px) {
   .eztrap-container {
-    background-size: 100% 100%;
-    background-position: 0 32px;
+    background-size: 100%;
+    background-position: 0 1px;
   }
 }
 .eztrap-content {
@@ -4235,12 +4268,12 @@ requirfigcaption {
   top: 5rem;
 }
 .trufresh-container {
-  background: url("../images/tru-bg.jpg") no-repeat;
+  background: url("../images/tru-back.jpg") no-repeat;
   background-size: 100%;
-  background-position: 0 -58px;
+  background-position: 0 -49px;
   position: relative;
   with: 100%;
-  height: 80.5rem;
+  height: 50.5rem;
 }
 .trufresh-features-strong {
   position: relative;
@@ -4347,8 +4380,7 @@ requirfigcaption {
 }
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .trufresh-container {
-    background-size: 100% 100%;
-    background-position: 0 9px;
+    background-size: 100%;
   }
 }
 .modal-content {
