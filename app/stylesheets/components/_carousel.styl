@@ -72,8 +72,10 @@
 		text-shadow none
 		color $carousel-content-color
 		font-weight bold
-		font-size 1.30166666667rem
+		font-size 1.7rem
 
+.antisplash-hr 
+	width 353px !important
 .carousel-caption_message
 	height 58px
 	width 100%
@@ -113,13 +115,12 @@
 	background-position center 
 	
 .slider-02-bg 
-	background url('../images/slider-07.jpg') center center
+	background url('../images/slider-02.jpg') center center
 	background-size cover
 
 .slider-03-bg 
 	background url('../images/slider-03.jpg') center center
 	background-size cover
-	margin-top 6rem
 	width 100% 
 	height 100% 
 	background-position center 
@@ -133,7 +134,20 @@
 
 .slider-size 
 	height 680px
-	
+
+.slider-04-caption 
+	bottom 10rem
+	height auto 
+	padding-bottom .5rem !important
+	padding-top .5rem 
+	background $ekcoscreen-bg-item
+
+.is_invisible 
+	display none
+
+.is_visible 
+	display block
+
 @media screen and (min-width 220px) and (max-width 479px)
 	.menuProducts-container 
 		display none
@@ -185,7 +199,7 @@
 			margin 0 auto -2rem auto !important
 	.carousel-indicators 
 		bottom 11%
-		
+
 @media screen and (min-width 480px) and (max-width 639px)
 	.menuProducts-container 
 		display none
@@ -262,8 +276,8 @@
 @media screen and (min-width 960px) and (min-height 640px)
 	.carousel-caption h3 
 		margin 0 auto 0 auto 
-		width 380px 
-		font-size 22.45pt 
+		width 450px 
+		font-size 25.45pt 
 	.menuProducts 
 		top 20rem 
 	.menuProducts-container 
@@ -288,13 +302,12 @@
 		img 
 			width 90%
 	.slider-03-bg 
-		background-size 100% 100%
-		margin-top: -3rem !important;
+		background-size cover
 		background-repeat no-repeat
-		background-position 0 0
+		background-position center
 	.waterless-caption h3  
 		width 361px !important 
-		font-size 22.45pt  !important 
+		font-size 25.45pt  !important 
 		margin-top -36rem 
 
 //Generic styles for Netbook 10"
@@ -315,7 +328,9 @@
 @media screen and (min-width 1280px) and (min-height 800px) and (max-height 1300px)
 	.slider-size 
 		height 900px
-	.slider-04-bg 
+	.slider-03-bg 
+		height 800px
+	.slider-04-bg, .slider-02-bg 
 		height 745px
 	.menuProducts-container 
 		top 35%
@@ -332,12 +347,13 @@
 		background-size cover
 	
 	.slider-02-bg 
-		background url('../images/slider-07.jpg') center center
+		background url('../images/slider-02.jpg') center center
 		background-size cover
 
 	.slider-03-bg 
-		background url('../images/slider-03.jpg') center center
+		background url('../images/slider-03.jpg')
 		background-size cover
+		background-position center
 
 	.slider-04-bg 
 		background url('../images/slider-04.jpg') center center
@@ -347,8 +363,6 @@
 		h3
 			color $carousel-title-color
 			text-shadow none
-			width 460px
-
 @media screen and (min-width 1366px)
 	.slider-size 
 		min-height: 103% !important
@@ -360,6 +374,15 @@
 		h3
 			color $carousel-title-color
 			text-shadow none
+		hr 
+			width 683px
+	.antisplash-hr
+		width 260px !important
+	.waterless-slider-title
+		width 100% !important
+	
+	.waterless-hr 
+		width 260px !important
 	.slider-04-bg 
 		background url('../images/slider-04.jpg') center center
 		background-size cover
@@ -367,12 +390,13 @@
 		background-repeat no-repeat
 
 @media screen and (min-width: 1400px)
+	.slider-size 
+		height 907px
 	.slider-04-bg 
 		background url('../images/slider-04.jpg') center center
 		background-size cover
 		background-position-y -56px 
-	.slider-size 
-		height 907px
+		margin-top 1.5rem !important
 	.slider-02-bg 
 		background-position center
 	.carousel-caption
@@ -387,31 +411,38 @@
 @media screen and (min-width 1400px) and (min-height 790px )
 	.slider-04-bg
 		background url('../images/slider-08.jpg') center center
-		background-size: 100% 100%
+		background-size: cover
 		background-repeat: no-repeat;
 		margin-top: 3.4rem;
+	.carousel-caption hr 
+		width 450px
+	
 
 @media screen and (min-width 1500px)
 	.slider-04-bg 
 		background url('../images/slider-04.jpg') center center
 		background-size cover
 		background-repeat no-repeat
-		
+	.carousel-caption
+		h3
+			color $carousel-title-color
+			text-shadow none
+			width 100%
+		hr 
+			width 283px
 
 @media screen and (min-width 1550px)
 	.slider-04-bg 
-		background url('../images/slider-04.jpg') center center
+		background url('../images/slider-04.jpg')
 		background-size cover
 		background-position: 0 -4rem;
 		background-repeat no-repeat
+		background-position center
 
 
 @media screen and (min-width 1280px) and (min-height 801px) and (max-height 1300px)
 	.slider-size 
 		min-height 900px
-	
-	.slider-03-bg 
-		margin-top 3rem !important
 		
 
 @media screen and (min-width 1300px) and (min-height 600px) and (max-height 1300px)
