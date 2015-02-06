@@ -159,8 +159,9 @@
 		font-size 1.8rem !important
 	.carousel-caption 
 		bottom 38%
+		display none
 		hr 
-			width 100%
+			width 74%
 		h3 
 			width 100%
 			font-size 2.3rem
@@ -168,36 +169,51 @@
 		p 
 			font-size 1.1rem 
 	.buynow-container 
-		top 10rem 
+		display none
+		top 8rem 
 		right 2.5rem 
 		img 
 			width 8rem
 	.slider-size 
 		min-height 435px 
-		background-size 240% 100%
+		background url('../images/sd-mobile01.jpg')
+		background-size 100%
 		background-repeat no-repeat
-		max-height 605px
 	.slider-02-bg 
 		min-height 435px
-		background-size 157% 77%
+		background url('../images/sd-mobile02.jpg')
+		background-size 100%
 		background-repeat no-repeat
-		max-height 720px
-		margin-top -3rem
 	.slider-03-bg 
-		margin-top -5rem 
-		background-size 230% 81%
-		max-height 720px
+		background url('../images/sd-mobile03.jpg')
+		background-size 100%
+		background-position 50% 10%
 	.slider-04-bg 
 		min-height 435px
-		background-size 171% 100% 
-		max-height 605px
+		background url('../images/sd-mobile04.jpg')
+		background-size 100%
 	.waterless-caption
 		bottom 35%
 		h3 
-			width 100% !important
+			width 85% !important
 			margin 0 auto -2rem auto !important
+	.waterless-hr 
+		width 60% !important
 	.carousel-indicators 
 		bottom 11%
+	.antisplash-hr 
+		width 70% !important
+
+@media screen and (min-width 220px) and (max-width 479px) and (min-height 480px) and (max-height 1200px)
+	.slider-02-bg, .slider-03-bg, .slider-01-bg, .slider-04-bg
+		background-size 115%
+		background-repeat no-repeat
+		background-position 50% 0
+		
+	.slider-03-bg
+		background-size 115%
+		background-repeat no-repeat
+		background-position 50% 20%
 
 @media screen and (min-width 480px) and (max-width 639px)
 	.menuProducts-container 
@@ -332,9 +348,10 @@
 	.slider-04-bg, .slider-02-bg 
 		height 745px
 	.menuProducts-container 
-		top 35%
+		top 35% 
 		right 5%
-
+	.menuProducts-Restroom
+		top 35% !important
 @media screen and (min-width: 1300px)
 	.slider-size 
 		height 629px

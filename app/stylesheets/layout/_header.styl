@@ -335,13 +335,33 @@ li
 	.navbar-products-mobile 
 		top 4.9rem
 		li 
+			display inline-block 
+			vertical-align middle 
+			width 33% 
 			&:first-child 
-				margin-left -4%
-				margin-right -2%
+				width 31%
+				margin-left 0 
+				& > a 
+					display block 
+					width 78% 
+					margin 0 auto 
+					text-align center 
 			&:nth-child(2)
-				margin-left -6%
+				width 49%
+				margin-left 0
+				& > a 
+					display block 
+					width 82% 
+					margin 0 auto
+					text-align center 
 			&:last-child 
-				margin-left -9%
+				width 20%
+				margin-left 0
+				& > a 
+					display block 
+					width 80% 
+					margin 0 auto 
+					text-align center 
 	
 
 @media screen and (min-width 350px) and (max-width 479px)
@@ -430,14 +450,35 @@ li
 		transition 0.2s ease-in
 		background rgb(60, 57, 58)
 	
-	.navbar-products-mobile li 
-		&:first-child 
-			margin-left 0
-			margin-right 0
-		&:nth-child(2)
-			margin-left 0
-		&:last-child 
-			margin-left 0
+	.navbar-products-mobile
+		li 
+			display inline-block 
+			vertical-align middle 
+			width 33% 
+			&:first-child 
+				width 31%
+				margin-left 0 
+				& > a 
+					display block 
+					width 78% 
+					margin 0 auto
+					text-align center  
+			&:nth-child(2)
+				width 49%
+				margin-left 0
+				& > a 
+					display block 
+					width 82% 
+					margin 0 auto
+					text-align center 
+			&:last-child 
+				width 20%
+				margin-left 0
+				& > a 
+					display block 
+					width 80% 
+					margin 0 auto
+					text-align center  
 	
 
 @media screen and (min-width 480px) and (max-width 639px)
@@ -669,7 +710,6 @@ li
 		top 0 
 	.navbar-products li:first-child > a 
 		font-size 1rem
-
 @media screen and (min-width 960px) and (max-width 1023px)
 	.mobile-submenu
 		display none
@@ -680,7 +720,7 @@ li
 	.main-menu 
 		left -7.5rem 
 	.navbar-default .navbar-nav li:last-child 
-		left 38.5rem 
+		left 36.5rem 
 		& > a 
 			margin-left 5rem 
 			& > img 
@@ -689,7 +729,11 @@ li
 		left 19rem 
 	.nav-line 
 		left 40rem
-
+	.collapse 
+		display block
+		visibility initial
+	.navbar-products-mobile
+		display none
 //Generic styles for Netbook 10"
 @media screen and (min-width 1024px) and (min-height 600px)
 	.mobile-submenu
@@ -722,6 +766,9 @@ li
 		
 	.navbar-products-mobile 
 		display none
+	.collapse 
+		display block
+		visibility initial
 
 //Generic styles for Netbook 10"
 @media screen and (min-width 1280px) and (min-height 800px)
@@ -902,7 +949,9 @@ li
 					position absolute 
 					top -.6rem
 					left 5.9rem
-
+	.collapse 
+		display block
+		visibility initial
 @media screen and (min-width 1366px) and (min-height 768px)
 	.navbar-products
 		position absolute
@@ -1079,7 +1128,9 @@ li
 					position absolute 
 					top -.6rem
 					left 5.9rem
-
+	.collapse 
+		display block
+		visibility initial
 
 
 
