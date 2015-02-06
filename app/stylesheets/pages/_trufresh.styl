@@ -111,73 +111,54 @@
 	margin 0 auto 
 	width 220px
 	display block
+.footer-tru 
+	background #000
+	margin-top 1rem
+	padding 0 2.9rem
+	line-height 4.5rem
+	position absolute
+	width 100%
+	height 55px
+	font-size 1.3rem
+	p 
+		color $text-color-light 
+	a
+		color $text-color-light 
+		display block
+		width 100%
+		height 40px
+		&:hover 
+			color $text-color-light 
+	.brand-footer
+		position relative
+		top -2.5rem
 
-@media screen and (min-width 320px) and (min-height 600px)
-	.trufresh-container 
-		background-size 100%
-		background-position 50% 50%
-		position relative
+@media screen and (min-width 200px) and (max-width 480px)
+	.trufresh-container
+		background-size 420% 
+		height 51.5rem 
+		background-position 53% 0
+	.trufresh-features-strong
 		width 100%
-		top 0
-		height: 21.5rem
-	
-	.trufresh-features-strong 
-		width 100% !important
-		top 0
-	
-	.trufresh-main-features 
-		top 2rem 
-		width 100% !important
-	
-	.trufresh-features-fluid 
+	.trufresh-main-features
 		width 100%
-		top 4rem 
-		height 28rem 
-	
-	.container-ez 
+	.container-ez
 		width 100%
-		.col-md-4 
-			display inline-block
-			vertical-align top
-			width 49%
-			padding 0
-			margin 0
-			border 0
-			img 
-				width 100%
-	.trufresh-features-requirements 
-		position relative
-		background #cc3
-		background-size 100% 100%
-		top 4rem
-		width 100% !important
+	.trufresh-features-fluid
+		height 10rem 
+		width 100% 
+		top 11rem 
+		padding 2rem 
+	.col-md-tru-1, .col-md-tru-2, .col-md-tru-3
+		display inline-block 
+		vertical-align top 
+		width 32%
+		padding 0
+		margin 0
+	.trufresh-features-requirements, .trufresh-benefits
+		width 100%
 	
-	.trufresh-benefits
-		top 4rem
 
-	.trufresh-plumbing-fluid
-		top 4rem 
-		height 55rem
-	
-	.img-trufresh 
-		position relative
-		top 6rem
-		width 100%
-	.trufresh-products-container
-		margin-top 8rem 
-		height: 40rem
-	.col-sm-6.col-md-4 
-		display inline-block
-		width 36%
-	.trufresh-features-container
-		height 383rem
-		
-	.trufresh-img-perfect 
-		position relative
-		top 5rem
-		width 100%
-	.thumbnail
-		width 100%
 //Generic styles for Netbook 10"
 @media screen and (min-width 1024px) and (min-height 600px)
 	.trufresh-container 

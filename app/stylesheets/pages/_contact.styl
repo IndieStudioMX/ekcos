@@ -414,14 +414,15 @@ a:hover
 		width 100%
 		height 10rem 
 		h3 
-			margin-left: 0;
-			width: 94%;
+			margin-left: 15%;
+			width: 85%;
 			font-size: 2.2rem;
+			text-align left
 		p 
 			line-height 18px
 		.flag
 			top -0.3rem 
-			left -0.7rem
+			left .3rem
 			width 55px
 			height 55px
 			background-size 500px
@@ -434,7 +435,7 @@ a:hover
 		background-position 3px -45px !important 
 		background-size 500px !important 
 		top -1.1rem !important 
-		left -.7rem !important 
+		left 0 !important 
 		height 55px !important 
 		width 55px !important 
 	.contact-links-title-int 
@@ -469,34 +470,48 @@ a:hover
 		background-size 500px !important
 		top 1rem !important 
 		left 2.3rem !important 
+	.sp-line
+		width 20%
 	.flag-int 
 		height 47px !important
 		width 40px !important 
 	.co 
-		background-position -94px -9px !important
+		background-position -170px -9px !important
 		background-size 500px !important
+	.co-line 
+		width 32%
+
 	.pa 
 		background-position -210px -9px !important
 		background-size 500px !important
+	.pa-line 
+		width 28%
 	.po 
-		background-position -250px -8px !important
+		background-position -248px -8px !important
 		background-size 500px !important
 
 	.dom 
 		background-position -287px -4px !important
 		background-size 500px !important
-
+	.dom-line 
+		width 74%
 	.sa 
-		background-position -329px -4px !important
+		background-position -326px -4px !important
 		background-size 500px !important
-
+	.sa-line 
+		width 44%
 	.kor 
 		background-position -395px -56px !important
 		background-size 500px !important
+	.kor-line 
+		width 43%
 	.ci 
-		background-position -364px -9px !important
+		background-position -366px -9px !important
 		background-size 500px !important
-
+	.ca-line, .po-line 
+		width 26%
+	.ca-line 
+		width 53%
 	.flag-cam 
 		width 199px
 		height 60px
@@ -522,11 +537,162 @@ a:hover
 		left 0
 	.contact-links-content_role
 		margin-left 0
+		
+	.role_int 
+		margin-left 3rem !important
+		
+	.contact-links-title-int h3 
+		margin-left 0
+		text-align center
+		width 100%
+	.contact-author-mex
+		margin-left 0 !important
+		
+	.asia-services-divider 
+		margins 0 0 -2rem 24px
+		width 80%
 
+@media screen and (min-width 380px) and (max-width 480px)
+	.contact-container 
+		height 448rem 
+	.contact-container .contact-quote-container .contact-quote-title
+		width 90%
+	.container-c 
+		width 100%
+	.role_int 
+		margin-left 3rem !important
+	.contact-links-title 
+		margin-left 0
+		width 100%
+		height 10rem 
+		h3 
+			margin-left: 15%;
+			width: 85%;
+			font-size: 2.2rem;
+			text-align left
+		p 
+			line-height 18px
+		.flag
+			top -0.3rem 
+			left .3rem
+			width 55px
+			height 55px
+			background-size 500px
+	.contact-links-content 
+		width 100% 
+	
+	.contact-links-content .info-container
+		width 114%
+	.mex 
+		background-position 3px -45px !important 
+		background-size 500px !important 
+		top -1.1rem !important 
+		left 0 !important 
+		height 55px !important 
+		width 55px !important 
+	.contact-links-title-int 
+		height 7rem 
+	.contact-links-header, 
+	.contact-links-header-cam, 
+	.contact-links-header-sk
+		width 100%
+		height 100%
+	.nz 
+		background-position: -53px -2px !important
+		background-size 500px !important
+		position absolute
+		top .7rem !important
+		left 2rem !important
+		z-index 3
+		height 55px !important
+		width 40px !important
+	.ca 
+		background-position -93px -8px !important
+		background-size 500px !important
+		height 46px !important
+		width 36px !important
+		
+	.country-divider 
+		top 0
+		
+	.row-country 
+		margin-bottom -2rem
+	.sp 
+		background-position -130px -11px !important
+		background-size 500px !important
+		top 1rem !important 
+		left 2.3rem !important 
+	.sp-line
+		width 20%
+	.flag-int 
+		height 47px !important
+		width 40px !important 
+	.co 
+		background-position -170px -9px !important
+		background-size 500px !important
+	.co-line 
+		width 32%
 
+	.pa 
+		background-position -210px -9px !important
+		background-size 500px !important
+	.pa-line 
+		width 28%
+	.po 
+		background-position -248px -8px !important
+		background-size 500px !important
 
-
-
+	.dom 
+		background-position -287px -4px !important
+		background-size 500px !important
+	.dom-line 
+		width 74%
+	.sa 
+		background-position -326px -4px !important
+		background-size 500px !important
+	.sa-line 
+		width 44%
+	.kor 
+		background-position -395px -56px !important
+		background-size 500px !important
+	.kor-line 
+		width 43%
+	.ci 
+		background-position -366px -9px !important
+		background-size 500px !important
+	.ca-line, .po-line 
+		width 26%
+	.ca-line 
+		width 53%
+	.flag-cam 
+		width 199px
+		height 60px
+		display block
+		background url("../images/contact-sprite.png") no-repeat
+		background-position -48px -43px
+		background-size 224%
+		position absolute
+		left 7rem
+		top -6rem
+	
+	.flag-asia 
+		top -6rem !important 
+		left 2.5rem !important 
+		background-position -278px -45px !important
+		background-size 500px !important
+	.contact-links-content_cam 
+		margin-left 0
+	.contact-links-header-asia 
+		top 3rem
+		width 100% !important
+		margin-left 0
+		left 0
+	.contact-links-content_role
+		margin-left 0
+	.contact-links-title-int h3 
+		margin-left 0
+		text-align center
+		width 100%
 
 
 
