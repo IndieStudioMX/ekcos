@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Ekcos</title>
     <meta name="description" content="">
-    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bower:css -->
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
@@ -34,6 +34,22 @@
             <a href="index.html" class="brand">
               <img class="img-responsive" src="images/brand.svg" alt="Ekcos Logo">
             </a>
+            <div class="mobile-submenu">
+              <div class="view-cart-container">
+                <a class="btn-buy" href="">View Cart
+                  <img src="images/cart.svg" alt="">
+                </a>
+              </div>
+              <div class="documentation-container">
+                <a href="docs.html">Documentation</a>
+              </div>
+            </div>
+
+            <ul class="nav navbar-products-mobile">
+              <li><a href="airfresheners.html">Air Fresheners</a></li>
+              <li><a href="waterless.html">Waterless Technologies</a></li>
+              <li><a href="restroom.html">Antisplash</a></li>
+            </ul>
           </div>
 
           <div id="main-menu" class="main-menu collapse">
@@ -113,13 +129,13 @@
 
         <div class="fluid-container eztrap-features-fluid">
           <div class="container-ez">
-            <div class="col-md-4">
+            <div class="col-md-4 ez-content-img">
               <img class="img-responsive" src="images/eztrap-item0.jpg" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ez-content-img">
               <img class="img-responsive" src="images/eztrap-item02.png" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ez-content-img">
               <img class="img-responsive"  src="images/eztrap-item03.png" alt="">
             </div>
           </div>
@@ -178,7 +194,7 @@
         </div>
 
         <div class="fluid-container eztrap-info-articles">
-          <div class="container">
+          <div class="container eztrap-info-a">
             <div class="row">
             <div class="col-md-6">
               <article class="ez-clean-it text-center">
@@ -208,14 +224,14 @@
 
         <div class="fluid-container eztrap-plumbing-fluid">
           <div class="container-ez">
-            <div class="col-md-4">
-              <img src="images/eztrap-item04.png" alt="">
+            <div class="col-md-4 ez-img-plumbing">
+              <img class="img-responsive" src="images/eztrap-item04.png" alt="">
             </div>
-            <div class="col-md-4">
-              <img src="images/eztrap-item05.png" alt="">
+            <div class="col-md-4 ez-img-plumbing">
+              <img class="img-responsive" src="images/eztrap-item05.png" alt="">
             </div>
-            <div class="col-md-4">
-              <img src="images/eztrap-item06.png" alt="">
+            <div class="col-md-4 ez-img-plumbing">
+              <img class="img-responsive" src="images/eztrap-item06.png" alt="">
             </div>
           </div>
         </div>
@@ -234,7 +250,7 @@
         <div class="container eztrap-benefits-buy" id="eztrap-products">
           <div class="row">
             <div class="col-md-4">
-              <img src="images/eztrap-item01.png" alt="">
+              <img class="img-responsive" src="images/eztrap-item01.png" alt="">
             </div>
             <div class="col-md-4 eztrap-buy-container text-center">
               <h5 class="eztrap-buy-title">EZ-TRAP</h5>
@@ -249,33 +265,34 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container c-ez">
           <div class="col-md-12 text-center ">
             <img class="img-responsive eztrap-waterless" src="images/eztrap-btn.png" alt="">
           </div>
         </div>
-
+        
       </div>
+            <footer class="footer footer-index">
+        <div class="row">
+          <div class="col-md-3 text-center col-sm-6 footer-reserved">
+            <p class="text-muted"><a href="http://www.ekcos.com">www.ekcos.com</a></p>
+          </div>
+          <div class="col-md-3 text-center col-sm-6 footer-reserved">
+            <p class="text-muted">&copy; 2012</p>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-reserved">
+            <p class="text-muted text-center">All Rights Reserve</p>
+          </div>
+          <div class="col-md-3 text-center col-sm-6">
+           <a href="#">
+             <img class="img-responsive brand-footer" src="images/brand-footer.svg" alt="">
+           </a>
+          </div>
+        </div>
+      </footer>
     </div>
       <!-- Footer -->
-    <footer class="footer-eztrap">
-      <div class="row">
-        <div class="col-md-3 text-center">
-          <p class="text-muted"><a href="http://www.ekcos.com">www.ekcos.com</a></p>
-        </div>
-        <div class="col-md-3 text-center">
-          <p class="text-muted">&copy; 2012</p>
-        </div>
-        <div class="col-md-3 ">
-          <p class="text-muted text-center">All Rights Reserve</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <a href="#">
-           <img class="img-responsive brand-footer" src="images/brand-footer.svg" alt="">
-         </a>
-        </div>
-      </div>
-    </footer>
+
     <!-- EndFooter -->
   	<!-- bower:js -->
   	<script src="lib/jquery/dist/jquery.js"></script>

@@ -60,9 +60,30 @@
 			background rgba(0,0,0, .7)	
 			text-decoration none
 			color rgb(204,204,51)
-			
+		
+	
 .footer-news
-	display block
+	background $footer-bg
+	margin-top -1rem
+	padding 1.3rem 2.9rem
+	line-height 4.5rem
+	position absolute 
+	width 100%
+	height auto
+	font-size 1.3rem
+	p 
+		color $text-color-light 
+	a
+		color $text-color-light 
+		display block
+		width 100%
+		height 40px
+		&:hover 
+			color $text-color-light 
+		
+	.brand-footer
+		position relative
+		top -2.5rem
 
 @media screen and (min-width 200px) and (max-width 480px)
 	.news-container 
@@ -92,7 +113,39 @@
 		background-size 100% 100%
 		height 121rem
 		max-height 150rem
-			
+
+@media screen and (min-width 481px) and (max-width 899px)
+	.news-container 
+		background-size 100%
+		margin-top 3rem 
+		height 160rem
+	.news-quote-container 
+		margin-top 6rem 
+		.news-quote-title
+			width 50%
+			font-size 4.5rem
+			margin-bottom 3rem 
+		.news-quote 
+			line-height 20px
+		.news-quote-author
+			width 40%
+	.container-n 
+		width 100%
+	.news-links-access a 
+		display block 
+		word-wrap break-word
+	.news-links-container 
+		background-image url("../images/power-bg.jpg")
+		margin-top -3rem
+		background-position 0 -5px
+		background-repeat no-repeat
+		background-size 100% 100%
+		height 121rem
+		max-height 150rem
+	
+	.news-container .news-quote-container
+		margin-top 11rem
+		
 //Generic styles for Netbook 10"
 @media screen and (min-width 1024px) and (min-height 600px)
 	.news-container .news-quote-container
