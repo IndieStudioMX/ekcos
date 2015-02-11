@@ -4,6 +4,7 @@
   "description": "Redesign for Ekcos Website",
   "dependencies": {
     "bootstrap": "~3.3.1",
-    "fitvids": "~1.1.0"
+    "fitvids": "~1.1.0",
+    "jquery-flipster": "~0.3.5"
   }
 }

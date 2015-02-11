@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bower:css -->
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/jquery-flipster/dist/jquery.flipster.min.css" />
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="stylesheets/main.css">
@@ -144,66 +145,80 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
-            <div class="row">
+            <div class="row row-power">
               <h2 class="modal-title">Commercial Information</h2>
               <div class="col-md-3 power-d">
                 <a href="../pdf/power/power-commercial01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-commercial01.png" alt="">
+                  <img class="img-responsive docs-img" src="images/power-com01.png" alt="">
                 </a>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row row-power" >
               <h2 class="modal-title">Technical Information</h2>
               <div class="col-md-3 power-d">
                 <a href="../pdf/power/power-tech01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-tech01.png" alt="">
+                  <img class="img-responsive docs-img" src="images/power-t01.png" alt="">
                 </a>
               </div>
               <div class="col-md-3 power-d">
                 <a href="../pdf/power/power-tech02.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-tech02.png" alt="">
+                  <img class="img-responsive docs-img" src="images/power-t02.png" alt="">
                 </a>
               </div>
               <div class="col-md-3 power-d">
                 <a href="../pdf/power/power-tech03.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-tech03.png" alt="">
+                  <img class="img-responsive docs-img" src="images/power-t03.png" alt="">
                 </a>
               </div>
             </div>
 
-            <div class="row">
-              <h2 class="modal-title">Image Gallery / <span>These are Hi Resolution images for use on your website or catalogue</span></h2>
-              <div class="col-md-2 power-m">
-                <a href="../images/power-imgB01.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin01.png" alt="">
+            <div class="row row-power-gallery">
+              <h2 class="modal-title">Image Gallery</h2>
+              <div class="flipster-power">
+                <ul>
+                    <li>
+                      <img class="img-responsive docs-img" src="images/power-g01.png" alt="">
+                    </li>
+                    <li>
+                      <img class="img-responsive docs-img" src="images/power-g02.png" alt="">
+                    </li>
+                    <li>
+                      <img class="img-responsive docs-img" src="images/power-g03.png" alt="">
+                    </li>
+                    <li>
+                      <img class="img-responsive docs-img" src="images/power-g04.png" alt="">
+                    </li>
+                    <li>
+                      <img class="img-responsive docs-img" src="images/power-g05.png" alt="">
+                    </li>
+                </ul>
+              </div>
+              <!--div class="col-md-2 power-m">
+                <a href="../images/power-g01.png" target="_blank">
+                  <img class="img-responsive docs-img" src="images/power-g01.png" alt="">
                 </a>
               </div>
               <div class="col-md-2 power-m">
-                <a href="../images/power-imgB02.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin02.png" alt="">
+                <a href="../images/power-g02.png" target="_blank">
+                  <img class="img-responsive docs-img" src="images/power-g02.png" alt="">
                 </a>
               </div>
               <div class="col-md-2 power-m">
-                <a href="../images/power-imgB03.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin03.png" alt="">
+                <a href="../images/power-g03.png" target="_blank">
+                  <img class="img-responsive docs-img" src="images/power-g03.png" alt="">
                 </a>
               </div>
               <div class="col-md-2 power-m">
-                <a href="../images/power-imgB04.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin04.png" alt="">
+                <a href="../images/power-g04.png" target="_blank">
+                  <img class="img-responsive docs-img" src="images/power-g04.png" alt="">
                 </a>
               </div>
               <div class="col-md-2 power-m">
-                <a href="../images/power-imgB05.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin05.png" alt="">
+                <a href="../images/power-g05.png" target="_blank">
+                  <img class="img-responsive docs-img" src="images/power-g05.png" alt="">
                 </a>
-              </div>
-              <div class="col-md-2 power-m">
-                <a href="../images/power-imgB06.jpg" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-imgMin06.png" alt="">
-                </a>
-              </div>
+              </div-->
             </div>
           </div>
         </div>
@@ -485,6 +500,7 @@
   	<!-- bower:js -->
   	<script src="lib/jquery/dist/jquery.js"></script>
   	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/jquery-flipster/dist/jquery.flipster.min.js"></script>
   	<!-- endbower -->
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
