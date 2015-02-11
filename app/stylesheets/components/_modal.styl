@@ -50,15 +50,32 @@
 	
 .modal-title 
 	text-transform uppercase
-	color $font-active-color
+	color #000
 	font-weight bold 
 	position relative 
-	margin 1rem 0
-	left 0.45rem 
-	font-size 2.4rem 
+	margin 0 0 1rem 0
+	left 0 
+	font-size 1.4rem 
+	padding .5rem 0
 	letter-spacing 3px
+	text-align center
+	background $font-active-color
 	span 
 		text-transform none 
+		
+.row-power 
+	display inline-block 
+	vertical-align top 
+	width 45%
+	border 1px solid $font-active-color 
+	margin 0 2.3%
+	padding 0
+	
+.row-power-gallery
+	width 95.4%
+	margin 6rem auto 1rem auto
+	border 1px solid $font-active-color  
+	height 40rem 
 		
 @media screen and (min-width 200px) and (max-width 600px) and (min-height 480px)
 	.modal-content 

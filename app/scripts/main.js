@@ -5,6 +5,7 @@ var containerSlider = $('#slider-01');
 var slider04  = $('#slider-04-content');
 
 (function () {
+  $('.flipster-power').flipster({ style: 'coverflow'});
   slider04.addClass('is_invisible');
 	console.log('Hello World!');
 	$('.carousel').carousel({
@@ -25,7 +26,7 @@ var slider04  = $('#slider-04-content');
       else {
         slider04.addClass('is_invisible');
       }
-  }) 
+  }); 
 
   $('#carousel-arrowLeft').bind('click', function () {
       if (containerSlider.hasClass('active')) {
@@ -34,5 +35,5 @@ var slider04  = $('#slider-04-content');
       else {
         slider04.addClass('is_invisible');
       }
-  }) 
+  }); 
 })();

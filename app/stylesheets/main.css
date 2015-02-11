@@ -470,7 +470,7 @@ li {
   }
   .navbar-products-mobile li:first-child > a {
     display: block;
-    width: 78%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -480,7 +480,7 @@ li {
   }
   .navbar-products-mobile li:nth-child(2) > a {
     display: block;
-    width: 82%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -490,7 +490,7 @@ li {
   }
   .navbar-products-mobile li:last-child > a {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
@@ -1631,8 +1631,8 @@ li {
   display: block;
   width: 100%;
   height: 46px;
-  background: url("../images/power-logo.svg"), url("../images/sprite-products.png");
-  background-size: 89%, 49%;
+  background: url("../images/power-logo-s.png"), url("../images/sprite-products.png");
+  background-size: 85%, 49%;
   background-repeat: no-repeat, no-repeat;
   background-position: -4px -6px, 103px -13px;
 }
@@ -2017,7 +2017,81 @@ li {
 .is_visible {
   display: block;
 }
-@media screen and (min-width: 220px) and (max-width: 479px) {
+@media screen and (min-width: 220px) and (max-width: 399px) {
+  .menuProducts-container {
+    display: none;
+  }
+  .news-menu {
+    display: none;
+  }
+  .slider-01-title {
+    width: 100% !important;
+    margin: 0 auto -2rem auto !important;
+    font-size: 1.8rem !important;
+  }
+  .carousel-caption {
+    bottom: 38%;
+    display: none;
+  }
+  .carousel-caption hr {
+    width: 74%;
+  }
+  .carousel-caption h3 {
+    width: 100%;
+    font-size: 2.3rem;
+    margin: 0 auto -2rem auto !important;
+  }
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+  .buynow-container {
+    display: none;
+    top: 8rem;
+    right: 2.5rem;
+  }
+  .buynow-container img {
+    width: 8rem;
+  }
+  .slider-size {
+    min-height: 435px;
+    background: url("../images/sd-mobile01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .slider-02-bg {
+    min-height: 435px;
+    background: url("../images/sd-mobile02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .slider-03-bg {
+    background: url("../images/sd-mobile03.jpg");
+    background-size: 100%;
+    background-position: 50% 10%;
+  }
+  .slider-04-bg {
+    min-height: 435px;
+    background: url("../images/sd-mobile04.jpg");
+    background-size: 100%;
+  }
+  .waterless-caption {
+    bottom: 35%;
+  }
+  .waterless-caption h3 {
+    width: 85% !important;
+    margin: 0 auto -2rem auto !important;
+  }
+  .waterless-hr {
+    width: 60% !important;
+  }
+  .carousel-indicators {
+    bottom: 11%;
+  }
+  .antisplash-hr {
+    width: 70% !important;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 479px) {
   .menuProducts-container {
     display: none;
   }
@@ -2280,7 +2354,7 @@ li {
     background: url("../images/sd-mobile04.jpg");
     background-size: 120%;
     background-repeat: no-repeat;
-    background-position: 50% 39%;
+    background-position: 50% -2%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 959px) and (min-height: 968px) {
@@ -3872,7 +3946,67 @@ hr {
     height: 417rem;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .ekcoscreen-container {
+    background-size: 138%;
+    background-position: 50% 0;
+    position: relative;
+    height: 59rem;
+  }
+  .ekcoscreen-testimonial .ekcoscreen-testimonial-down {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -1rem;
+  }
+  .ekcoscreen-author:before {
+    display: none;
+  }
+  .ekcos-features-container {
+    padding: 2rem 0;
+    height: 455rem;
+  }
+  .ekcoscreen-legend-container {
+    width: 100% !important;
+  }
+  .powerscreen-description {
+    width: 100% !important;
+  }
+  .ekcos-description-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .ekcos-description-list li {
+    font-size: 1.6rem;
+  }
+  .bio-container-ekcos,
+  .bio-line-ekcos {
+    display: none;
+  }
+  .ekcos-line {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    display: none;
+  }
+  .ekcos-products-container {
+    width: 100% !important;
+    height: 275rem;
+  }
+  .ekcoscreen-feat-list {
+    height: 38rem !important;
+  }
+  .ekcoscreen-legend-container .ekcoscreen-legend-title {
+    font-size: 2.3rem;
+    width: 100%;
+  }
+  .footer-nw {
+    height: 87px;
+  }
+  .ek-f {
+    top: 43rem;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1023px) {
   .ek-l,
   .ek-r {
     display: inline-block;
@@ -4878,6 +5012,9 @@ a:hover {
 }
 .content-phone-cam,
 .content-mail-cam {
+  margin-left: 0;
+}
+.contact-space {
   margin-left: 0;
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
@@ -6242,6 +6379,106 @@ requirfigcaption {
     height: 76px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .eztrap-container {
+    background-position: 50% 17%;
+    background-size: 100%;
+    height: 34rem;
+    top: 3rem;
+  }
+  .eztrap-videos-container {
+    width: 100% !important;
+    top: 33rem;
+  }
+  .fluid-container.eztrap-patent-container {
+    width: 100%;
+    top: 35rem;
+    height: 29rem;
+  }
+  .eztrap-features-strong,
+  .eztrap-main-features {
+    width: 100%;
+  }
+  .eztrap-features-fluid,
+  .eztrap-plumbing-fluid {
+    top: 36rem;
+  }
+  .eztrap-plumbing-fluid {
+    top: 41rem;
+  }
+  .ez-content-img {
+    width: 32%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .eztrap-benefits,
+  .eztrap-benefits-message {
+    top: 34rem;
+    width: 100%;
+  }
+  .eztrap-benefits-message {
+    top: 41rem;
+  }
+  .eztrap-benefits-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .eztrap-features-requirements {
+    width: 100%;
+    top: 36rem;
+  }
+  .eztrap-iso {
+    width: 100%;
+    top: 38rem;
+  }
+  .container.eztrap-basic-info {
+    width: 100%;
+    top: 38rem;
+  }
+  .ez-info-left,
+  .ez-info-right {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .eztrap-info-articles {
+    top: 40rem;
+    width: 100%;
+  }
+  .eztrap-info-a {
+    width: 100%;
+  }
+  .ez-img-plumbing {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  .eztrap-benefits-buy {
+    width: 100%;
+    top: 46rem;
+  }
+  .eztrap-benefits-buy .img-responsive {
+    margin: 0 auto;
+  }
+  .eztrap-benefits-buy .eztrap-buy-logo img {
+    margin: 4rem auto;
+  }
+  .c-ez {
+    width: 100%;
+  }
+  .eztrap-waterless {
+    top: 49rem;
+  }
+  .ez-f {
+    height: 76px;
+  }
+  .eztrap-features-container {
+    height: 328rem;
+  }
+}
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .eztrap-container {
     background-size: 100%;
@@ -6477,7 +6714,7 @@ requirfigcaption {
   position: relative;
   top: -2.5rem;
 }
-@media screen and (min-width: 200px) and (max-width: 480px) {
+@media screen and (min-width: 200px) and (max-width: 350px) {
   .trufresh-container {
     background-size: 420%;
     height: 51.5rem;
@@ -6552,6 +6789,532 @@ requirfigcaption {
     height: 206rem;
   }
 }
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  .trufresh-container {
+    background-size: 400%;
+    height: 51.5rem;
+    background-position: 53% 130%;
+  }
+  .trufresh-features-strong {
+    width: 100%;
+  }
+  .trufresh-main-features {
+    width: 100%;
+  }
+  .container-ez {
+    width: 100%;
+  }
+  .trufresh-features-fluid {
+    height: 10rem;
+    width: 100%;
+    top: 11rem;
+    padding: 2rem;
+  }
+  .col-md-tru-1,
+  .col-md-tru-2,
+  .col-md-tru-3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .trufresh-features-requirements,
+  .trufresh-benefits {
+    width: 100%;
+  }
+  .trufresh-plumbing-fluid {
+    height: 188px;
+  }
+  .tru-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .img-trufresh {
+    width: 100%;
+    top: 21.5rem;
+  }
+  .trufresh-products-container {
+    width: 100%;
+    height: 770px;
+  }
+  .tru-thumb {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .thumbnail .product-title {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  .trufresh-img-perfect {
+    width: 100%;
+  }
+  .trufresh-features-container {
+    height: 206rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  .trufresh-container {
+    background-size: 400%;
+    height: 51.5rem;
+    background-position: 53% 130%;
+  }
+  .trufresh-features-strong {
+    width: 100%;
+  }
+  .trufresh-main-features {
+    width: 100%;
+  }
+  .container-ez {
+    width: 100%;
+  }
+  .trufresh-features-fluid {
+    height: 10rem;
+    width: 100%;
+    top: 11rem;
+    padding: 2rem;
+  }
+  .col-md-tru-1,
+  .col-md-tru-2,
+  .col-md-tru-3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .trufresh-features-requirements,
+  .trufresh-benefits {
+    width: 100%;
+  }
+  .trufresh-plumbing-fluid {
+    height: 188px;
+  }
+  .tru-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .img-trufresh {
+    width: 100%;
+    top: 21.5rem;
+  }
+  .trufresh-products-container {
+    width: 100%;
+    height: 770px;
+  }
+  .tru-thumb {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .thumbnail .product-title {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  .trufresh-img-perfect {
+    width: 100%;
+  }
+  .trufresh-features-container {
+    height: 206rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .trufresh-container {
+    background-position: 0 45%;
+  }
+  .trufresh-wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+  }
+  .trufresh-container {
+    background: url("../images/tru-back.jpg") no-repeat;
+    background-size: 100%;
+    background-position: 0 14%;
+    position: relative;
+    with: 100%;
+    height: 41.5rem;
+  }
+  .trufresh-features-strong {
+    position: relative;
+    background: #cc3;
+    background-size: 100% 100%;
+    top: 4rem;
+    width: 900px;
+    padding: 0.6rem 0 0 0;
+  }
+  .trufresh-features-container {
+    background: url("../images/power-bg.jpg");
+    background-size: 100% 101%;
+    background-position: 0 -2px;
+    position: relative;
+    height: 253rem;
+    top: -4rem;
+  }
+  .trufresh-title {
+    margin-bottom: 20px;
+  }
+  .trufresh-main-features {
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    top: 7rem;
+    position: relative;
+    padding: 1.2rem 0 0 0;
+  }
+  .trufresh-z {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 15px;
+  }
+  .trufresh-features-fluid {
+    height: 234px;
+    width: 100%;
+    position: relative;
+    top: 11rem;
+    background: rgba(255,255,255,0.4);
+    padding: 4rem 0;
+  }
+  .trufresh-features-requirements {
+    position: relative;
+    background: #cc3;
+    background-size: 100% 100%;
+    top: 15rem;
+    width: 900px;
+  }
+  .trufresh-benefits {
+    position: relative;
+    background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+    background-size: 100% 100%;
+    top: 18rem;
+    width: 900px;
+    padding: 0.6rem 0 0 0;
+  }
+  .trufresh-benefits-list {
+    list-style: none;
+  }
+  .trufresh-benefits-l {
+    padding: 2rem 0;
+  }
+  .trufresh-benefits-p-container {
+    border-left: 2px solid #444;
+    padding: 2rem 0;
+  }
+  .trufresh-benefits-p-container .eztrap-benefits-p {
+    line-height: 17px;
+  }
+  .trufresh-plumbing-fluid {
+    top: 20rem;
+    height: 360px;
+    width: 100%;
+    position: relative;
+    background: rgba(255,255,255,0.4);
+    padding: 2rem 0;
+  }
+  .img-trufresh {
+    position: relative;
+    top: 20rem;
+  }
+  .img-trufresh img {
+    margin: 0 auto;
+  }
+  .trufresh-img-perfect {
+    position: relative;
+    top: 5rem;
+  }
+  .trufresh-img-perfect img {
+    margin: 0 auto;
+  }
+  .trufresh-products-container {
+    margin-top: 23rem;
+    height: 1042px;
+    position: relative;
+    padding: 2rem 0;
+    background: rgba(255,255,255,0.25);
+  }
+  .trufresh-products-container.container img {
+    margin: 0 auto;
+    width: 220px;
+    display: block;
+  }
+  .footer-tru {
+    background: #000;
+    margin-top: 1rem;
+    padding: 0 2.9rem;
+    line-height: 4.5rem;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  .footer-tru p {
+    color: #fff;
+  }
+  .footer-tru a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+  .footer-tru a:hover {
+    color: #fff;
+  }
+  .footer-tru .brand-footer {
+    position: relative;
+    top: -2.5rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  .trufresh-container {
+    background-position: 0 45%;
+  }
+  .trufresh-wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+  }
+  .col-md-tru-1,
+  .col-md-tru-2,
+  .col-md-tru-3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .trufresh-container {
+    background: url("../images/tru-back.jpg") no-repeat;
+    background-size: 160%;
+    background-position: 50% 15%;
+    position: relative;
+    with: 100%;
+    height: 41.5rem;
+  }
+  .trufresh-features-strong {
+    position: relative;
+    background: #cc3;
+    background-size: 100% 100%;
+    top: 4rem;
+    width: 100%;
+    padding: 0.6rem 0 0 0;
+  }
+  .trufresh-features-container {
+    background: url("../images/power-bg.jpg");
+    background-size: 100% 101%;
+    background-position: 0 -2px;
+    position: relative;
+    height: 253rem;
+    top: -4rem;
+  }
+  .trufresh-title {
+    margin-bottom: 20px;
+  }
+  .trufresh-main-features {
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    top: 7rem;
+    position: relative;
+    padding: 1.2rem 0 0 0;
+    width: 100%;
+  }
+  .trufresh-z {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 15px;
+  }
+  .trufresh-features-fluid {
+    height: 234px;
+    width: 100%;
+    position: relative;
+    top: 11rem;
+    background: rgba(255,255,255,0.4);
+    padding: 4rem 0;
+  }
+  .trufresh-features-requirements {
+    position: relative;
+    background: #cc3;
+    background-size: 100% 100%;
+    top: 15rem;
+    width: 900px;
+  }
+  .trufresh-benefits {
+    position: relative;
+    background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+    background-size: 100% 100%;
+    top: 18rem;
+    width: 900px;
+    padding: 0.6rem 0 0 0;
+  }
+  .trufresh-benefits-list {
+    list-style: none;
+  }
+  .trufresh-benefits-l {
+    padding: 2rem 0;
+  }
+  .trufresh-benefits-p-container {
+    border-left: 2px solid #444;
+    padding: 2rem 0;
+  }
+  .trufresh-benefits-p-container .eztrap-benefits-p {
+    line-height: 17px;
+  }
+  .trufresh-plumbing-fluid {
+    top: 20rem;
+    height: 360px;
+    width: 100%;
+    position: relative;
+    background: rgba(255,255,255,0.4);
+    padding: 2rem 0;
+  }
+  .img-trufresh {
+    position: relative;
+    top: 20rem;
+  }
+  .img-trufresh img {
+    margin: 0 auto;
+  }
+  .trufresh-img-perfect {
+    position: relative;
+    top: 5rem;
+  }
+  .trufresh-img-perfect img {
+    margin: 0 auto;
+  }
+  .trufresh-products-container {
+    margin-top: 23rem;
+    height: 1042px;
+    position: relative;
+    padding: 2rem 0;
+    background: rgba(255,255,255,0.25);
+  }
+  .trufresh-products-container.container img {
+    margin: 0 auto;
+    width: 220px;
+    display: block;
+  }
+  .footer-tru {
+    background: #000;
+    margin-top: 1rem;
+    padding: 0 2.9rem;
+    line-height: 4.5rem;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  .footer-tru p {
+    color: #fff;
+  }
+  .footer-tru a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+  .footer-tru a:hover {
+    color: #fff;
+  }
+  .footer-tru .brand-footer {
+    position: relative;
+    top: -2.5rem;
+  }
+  .container-ez {
+    width: 100%;
+  }
+  .trufresh-features-requirements {
+    width: 100%;
+  }
+  .trufresh-benefits {
+    position: relative;
+    background: rgba(34,31,31,0.3);
+/*background rgb(204,204,51)*/
+    background-size: 100% 100%;
+    top: 18rem;
+    width: 100%;
+    padding: 0.6rem 0 0 0;
+  }
+  .trufresh-benefits-list {
+    list-style: none;
+  }
+  .trufresh-benefits-l {
+    padding: 2rem 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .trufresh-benefits-p-container {
+    border-left: 2px solid #444;
+    padding: 2rem 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .trufresh-benefits-p-container .eztrap-benefits-p {
+    line-height: 17px;
+  }
+  .tru-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+  .img-trufresh {
+    width: 100%;
+    top: 21.5rem;
+  }
+  .trufresh-products-container {
+    width: 100%;
+    height: 960px;
+  }
+  .tru-thumb {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .thumbnail .product-title {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  .trufresh-img-perfect {
+    width: 100%;
+    top: 5rem;
+  }
+  .trufresh-features-container {
+    height: 250rem;
+  }
+}
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .trufresh-container {
     background-size: 100%;
@@ -6576,6 +7339,17 @@ requirfigcaption {
     background-size: 100%;
     background-position: 0 -66px;
     height: 58rem;
+  }
+}
+@media screen and (min-width: 1900px) and (min-height: 900px) {
+  .trufresh-container {
+    background-position: 0 -100px;
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1900px) and (min-height: 900px) {
+  .trufresh-container {
+    height: 83rem;
   }
 }
 .modal-content {
@@ -6631,16 +7405,33 @@ requirfigcaption {
 }
 .modal-title {
   text-transform: uppercase;
-  color: #cc3;
+  color: #000;
   font-weight: bold;
   position: relative;
-  margin: 1rem 0;
-  left: 0.45rem;
-  font-size: 2.4rem;
+  margin: 0 0 1rem 0;
+  left: 0;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
   letter-spacing: 3px;
+  text-align: center;
+  background: #cc3;
 }
 .modal-title span {
   text-transform: none;
+}
+.row-power {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  border: 1px solid #cc3;
+  margin: 0 2.3%;
+  padding: 0;
+}
+.row-power-gallery {
+  width: 95.4%;
+  margin: 6rem auto 1rem auto;
+  border: 1px solid #cc3;
+  height: 40rem;
 }
 @media screen and (min-width: 200px) and (max-width: 600px) and (min-height: 480px) {
   .modal-content {
