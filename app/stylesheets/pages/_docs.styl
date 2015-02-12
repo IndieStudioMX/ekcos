@@ -70,7 +70,34 @@
 		outline 0
 		outline-offset 0
 		box-shadow inset 0 0 0
-
+		
+.power-d-center
+	display block 
+	margin 0 auto
+	
+.it-power::after,.ic-power::after, .ig-power::after
+	content ""
+	display inline-block 
+	position absolute 
+	height 17px 
+	width 30px 
+	top .2rem 
+	background url('../images/sprite-modal.png')
+	background-repeat no-repeat 
+	background-position -6px -10px
+	background-size 364%
+	
+.it-power::after
+	background-position -80px -10px
+	
+.ig-power::after
+	background-position -42px -10px
+	
+.title-ig 
+	color #cc3
+	margin 2rem 0
+	
+	
 @media screen and (min-width 200px) and (max-width 300px) and (min-height 480px)
 	.docs-container 
 		height 200rem 

@@ -5811,6 +5811,34 @@ a:hover {
   outline-offset: 0;
   box-shadow: inset 0 0 0;
 }
+.power-d-center {
+  display: block;
+  margin: 0 auto;
+}
+.it-power::after,
+.ic-power::after,
+.ig-power::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 17px;
+  width: 30px;
+  top: 0.2rem;
+  background: url("../images/sprite-modal.png");
+  background-repeat: no-repeat;
+  background-position: -6px -10px;
+  background-size: 364%;
+}
+.it-power::after {
+  background-position: -80px -10px;
+}
+.ig-power::after {
+  background-position: -42px -10px;
+}
+.title-ig {
+  color: #cc3;
+  margin: 2rem 0;
+}
 @media screen and (min-width: 200px) and (max-width: 300px) and (min-height: 480px) {
   .docs-container {
     height: 200rem;
@@ -7356,12 +7384,14 @@ requirfigcaption {
   background: #000;
 /*background url('../images/modalPower.png')*/
   border-radius: 0;
-  height: 100rem;
+  height: 84rem;
   background-repeat: no-repeat;
-  width: 806px;
+/*width 806px*/
+  width: 1306px;
   margin: 0 auto;
+  top: 2rem;
   padding-left: 0;
-  margin-left: -8rem;
+  margin-left: -37rem;
 }
 .modal-header,
 .modal-footer {
@@ -7411,7 +7441,7 @@ requirfigcaption {
   margin: 0 0 1rem 0;
   left: 0;
   font-size: 1.4rem;
-  padding: 0.5rem 0;
+  padding: 0.1rem 0;
   letter-spacing: 3px;
   text-align: center;
   background: #cc3;
@@ -7425,13 +7455,33 @@ requirfigcaption {
   width: 45%;
   border: 1px solid #cc3;
   margin: 0 2.3%;
-  padding: 0;
+  padding: 0 0 1.3rem 0;
 }
 .row-power-gallery {
   width: 95.4%;
   margin: 6rem auto 1rem auto;
   border: 1px solid #cc3;
   height: 40rem;
+}
+.covers {
+  width: 98% !important;
+  margin-left: 1% !important;
+}
+.power-d a {
+  margin: 0 auto;
+  display: block;
+}
+.center-coverflow {
+  -webkit-transform: translate3d(211px, 0px, 0px) !important;
+  -ms-transform: translate3d(211px, 0px, 0px) !important;
+  -moz-transform: translate3d(211px, 0px, 0px) !important;
+  transform: translate3d(211px, 0px, 0px) !important;
+  -webkit-transform: translate3d(211px, 0px, 0px) !important;
+  -moz-transform: translate3d(211px, 0px, 0px) !important;
+  -ms-transform: translate3d(211px, 0px, 0px) !important;
+}
+.Controller-Power {
+  margin-top: 290px !important;
 }
 @media screen and (min-width: 200px) and (max-width: 600px) and (min-height: 480px) {
   .modal-content {
