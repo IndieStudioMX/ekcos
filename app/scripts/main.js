@@ -5,19 +5,10 @@ var containerSlider = $('#slider-01');
 var slider04  = $('#slider-04-content');
 
 (function () {
-  $('.flipster-power').flipster({ style: 'coverflow'});
   slider04.addClass('is_invisible');
 	console.log('Hello World!');
 	$('.carousel').carousel({
   		interval: 80000
-	});
-	$('#powerDocs').on('shown.bs.modal', function () {
-	});
-	$('#ekcosDocs').on('shown.bs.modal', function () {
-	});
-	$('#ezDocs').on('shown.bs.modal', function () {
-	});
-	$('#truDocs').on('shown.bs.modal', function () {
 	});
   $('#carousel-arrowRight').click(function () {
       if (container.hasClass('active')) {
