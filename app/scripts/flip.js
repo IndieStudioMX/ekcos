@@ -1,7 +1,12 @@
 'use strict';
 
 $(document).on('ready', function() {
-	$('#powerDocs').on('shown.bs.modal', function () {
+	$('#powerDocs').on('show.bs.modal', function () {
+		$(".flipster").flipster({
+			enableMousewheel: false, 
+			enableKeyboard: true,
+			enableTouch: true
+		});
 	});
 	$('#ekcosDocs').on('shown.bs.modal', function () {
 	});

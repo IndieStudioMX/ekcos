@@ -7461,7 +7461,7 @@ requirfigcaption {
   width: 95.4%;
   margin: 6rem auto 1rem auto;
   border: 1px solid #cc3;
-  height: 40rem;
+  height: 35rem;
 }
 .covers {
   width: 98% !important;
@@ -7471,17 +7471,144 @@ requirfigcaption {
   margin: 0 auto;
   display: block;
 }
-.center-coverflow {
-  -webkit-transform: translate3d(211px, 0px, 0px) !important;
-  -ms-transform: translate3d(211px, 0px, 0px) !important;
-  -moz-transform: translate3d(211px, 0px, 0px) !important;
-  transform: translate3d(211px, 0px, 0px) !important;
-  -webkit-transform: translate3d(211px, 0px, 0px) !important;
-  -moz-transform: translate3d(211px, 0px, 0px) !important;
-  -ms-transform: translate3d(211px, 0px, 0px) !important;
+.coverflow-p {
+  width: 100%;
 }
-.Controller-Power {
-  margin-top: 290px !important;
+.flipster {
+  width: 98% !important;
+}
+.power-d01 {
+  background: url("../images/power-com01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.power-d01:hover {
+  content: "";
+  background: url("../images/power-com_hov.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 84px;
+  margin: 0 auto;
+}
+.power-t01 {
+  background: url("../images/power-t01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.power-t01:hover {
+  background: url("../images/power-t_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  width: 100%;
+  height: 84px;
+  margin: 0 auto;
+}
+.power-t02 {
+  background: url("../images/power-t02.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.power-t02:hover {
+  background: url("../images/power-t_hover02.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 84px;
+  margin: 0 auto;
+}
+.power-t03 {
+  background: url("../images/power-t03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.power-t03:hover {
+  background: url("../images/power-t_hover03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 84px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 200px) and (max-width: 600px) and (min-height: 480px) {
   .modal-content {
