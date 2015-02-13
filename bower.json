@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "~3.3.1",
     "fitvids": "~1.1.0",
-    "jquery-flipster": "~0.3.5"
+    "jquery-flipster": "~0.3.5",
+    "coffee-flow": "~0.0.10"
   }
 }

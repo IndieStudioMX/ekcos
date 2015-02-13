@@ -14,7 +14,7 @@
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/jquery.flipster.css">
     <!-- endinject -->
   </head>
   <body>
@@ -148,87 +148,51 @@
           <div class="modal-body">
             <div class="row row-power ">
               <h2 class="modal-title ic-power">Commercial Information</h2>
-              <div class="col-md-4 col-md-offset-4 power-d">
-                <a href="../pdf/power/power-commercial01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-com01.png" alt="">
+              <div class="col-md-2 col-md-offset-5 power-d">
+                <a class="power-d01" href="../pdf/power/power-commercial01.pdf" target="_blank">
                 </a>
               </div>
             </div>
 
             <div class="row row-power" >
               <h2 class="modal-title it-power">Technical Information</h2>
-              <div class="col-md-4 power-d">
-                <a href="../pdf/power/power-tech01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-t01.png" alt="">
+              <div class="col-md-2 col-md-offset-3 power-d">
+                <a class="power-t01" href="../pdf/power/power-tech01.pdf" target="_blank">
                 </a>
               </div>
-              <div class="col-md-4 power-d">
-                <a href="../pdf/power/power-tech02.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-t02.png" alt="">
+              <div class="col-md-2 power-d">
+                <a class="power-t02" href="../pdf/power/power-tech02.pdf" target="_blank">
                 </a>
               </div>
-              <div class="col-md-4 power-d">
-                <a href="../pdf/power/power-tech03.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/power-t03.png" alt="">
+              <div class="col-md-2 power-d">
+                <a class="power-t03" href="../pdf/power/power-tech03.pdf" target="_blank">
                 </a>
               </div>
             </div>
 
             <div class="row row-power-gallery">
               <h2 class="modal-title ig-power">Image Gallery</h2>
-              <div id="coverflow">
-                <div class="covers">
-                <ul class="center-coverflow">
-                  <li><div class="imgdiv">
-                      <a href="images/p-g01.png" target="_blank">
-                        <img class="img-responsive docs-img" src="images/power-g01.png" alt="">
-                      </a>
-                    </div>
-                    <div class="text">
-                      
-                    </div>
+              <!-- Flipster List -->  
+              <div class="flipster f-slide">
+                <ul>
+                  <li>
+                    <img src="img/p-g01.png">
                   </li>
-                  <li><div class="imgdiv">
-                      <a href="images/p-g02.png" target="_blank">
-                        <img class="img-responsive docs-img" src="images/power-g02.png" alt="">
-                      </a>
-                    </div>
-                    <div class="text">
-                      
-                    </div>
+                  <li>
+                    <img src="img/p-g02.png">
                   </li>
-                  <li><div class="imgdiv">
-                      <a href="images/p-g03.png" target="_blank">
-                        <img class="img-responsive docs-img" src="images/power-g03.png" alt="">
-                      </a>
-                    </div>
-                    <div class="text">
-                      
-                    </div>
+                  <li>
+                    <img src="img/p-g03.png">
                   </li>
-                  <li><div class="imgdiv">
-                      <a href="images/p-g04.png" target="_blank"> 
-                        <img class="img-responsive docs-img" src="images/power-g04.png" alt="">
-                      </a>
-                    </div>
-                    <div class="text">
-                      
-                    </div>
+                  <li>
+                    <img src="img/p-g04.png">
                   </li>
-                  <li><div class="imgdiv">
-                      <a href="images/p-g05.png" target="_blank">
-                        <img class="img-responsive docs-img" src="images/power-g05.png" alt="">
-                      </a>
-                    </div>
-                    <div class="text">
-                      
-                    </div>
+                  <li>
+                    <img src="img/p-g05.png">
                   </li>
-                  </ul>
-                </div>
-                <div class="Controller Controller-Power "></div>
-                <div class="ScrollBar"></div>
+                </ul>
               </div>
+<!-- End Flipster List -->
             </div>
             <h4 class="title-ig text-center">These are Hi Resolution images for use on your website or catalogue</h4>
             </div>
@@ -510,14 +474,19 @@
       </div>
     </div>
   	<!-- bower:js -->
-  	<script src="lib/jquery/dist/jquery.js"></script>
+  	<script src="lib/jquery/dist/jquery.min.js"></script>
   	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
   	<!-- endbower -->
   	<!-- inject:js -->
-    <script src="scripts/main.js"></script>
-  	<script src="js/coverflow.min.js"></script>
-
-    <script> $coverflow = $("#coverflow").coverflow({"path":""}); </script>
+    <script src="src/js/jquery.flipster.js"></script>
+    <script src="scripts/flip.js"></script>
+    <script>      
+      (function($){
+        $(document).on('ready', function() {
+          //$("div:not(#powerDocs) .flipster").flipster();
+        });
+      })(jQuery);
+    </script>
   	<!-- endinject -->
 	</body>
 </html>
