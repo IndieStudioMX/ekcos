@@ -342,7 +342,7 @@ li {
   color: #000;
 }
 .buynow-container {
-  position: absolute;
+  position: fixed;
   top: 10rem;
   right: 13.5rem;
   z-index: 1;
@@ -1571,12 +1571,12 @@ li {
   height: 100%;
 }
 .news-menu .btn-latest-news {
-  background: url("../images/sprite-news.png") no-repeat;
+  background: url("../images/btn-nws.png") no-repeat;
   background-position: 0 -6px;
   background-size: 262px;
 }
 .news-menu .btn-antisplash {
-  background: url("../images/sprite-news.png") no-repeat;
+  background: url("../images/btn-nws.png") no-repeat;
   background-position: -130px -6px;
   background-size: 262px;
 }
@@ -1843,7 +1843,7 @@ li {
     top: 40%;
   }
   .menuProducts-container {
-    top: 45rem !important;
+    top: 43rem !important;
   }
 }
 .carousel {
@@ -1936,7 +1936,7 @@ li {
   text-shadow: none;
   color: rgba(78,76,77,0.9);
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 .antisplash-hr {
   width: 353px !important;
@@ -2007,8 +2007,8 @@ li {
 .slider-04-caption {
   bottom: 10rem;
   height: auto;
-  padding-bottom: 0.5rem !important;
-  padding-top: 0.5rem;
+  padding-bottom: 1.2rem !important;
+  padding-top: 0.7rem;
   background: #cc3;
 }
 .is_invisible {
@@ -2409,7 +2409,7 @@ li {
   .menuProducts-container {
     background-size: 105%;
     width: 317px;
-    right: 3.4rem;
+    right: 7.4rem;
   }
   .news-menu {
     left: 5rem;
@@ -2429,7 +2429,7 @@ li {
     background-size: 220px;
   }
   .buynow-container {
-    right: 7.5rem;
+    right: 11.5rem;
   }
   .buynow-container img {
     width: 90%;
@@ -2473,7 +2473,7 @@ li {
   }
   .menuProducts-container {
     top: 35%;
-    right: 5%;
+    right: 7%;
   }
   .menuProducts-Restroom {
     top: 35% !important;
@@ -3006,7 +3006,7 @@ hr {
   border-top: 2px solid #444;
 }
 .bio-container {
-  background: url("../images/bio-bg.png") no-repeat;
+/*background url('../images/bio-bg.png') no-repeat*/
   background-size: 100%;
   background-position: -129px 0;
   width: 100%;
@@ -3014,6 +3014,52 @@ hr {
   position: absolute;
   top: 125rem;
   z-index: 1;
+}
+.bio-container .bio-img {
+/*background url('../images/bio-bg.png') no-repeat*/
+  background-size: 100%;
+  background-position: -129px 0;
+  width: 100%;
+  height: 326px;
+  position: absolute;
+  top: 0;
+  left: -113px;
+  z-index: 1;
+}
+.hidden-img-r,
+.hidden-img-l {
+  position: absolute;
+  right: 5rem;
+  height: auto;
+  width: 23%;
+}
+.hidden-img-l {
+  left: 4rem;
+  top: 24rem;
+  width: 35%;
+  display: none;
+}
+.hidden-img-r {
+  right: 18rem;
+  top: -1rem;
+  width: 47%;
+  display: none;
+}
+.overlayr {
+  width: 42%;
+  top: 5rem;
+  height: 78%;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+.overlayl {
+  width: 57%;
+  top: 5rem;
+  height: 78%;
+  position: absolute;
+  left: 0;
+  z-index: 12;
 }
 .bio-line {
   position: relative;
@@ -3083,6 +3129,10 @@ hr {
 .power-subtitle-product {
   font-style: italic;
   font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
 }
 .thumblnail-power img {
   height: 40%;
@@ -4574,7 +4624,7 @@ a:hover {
   background-size: 100% 100%;
   position: relative;
   with: 100%;
-  height: 268rem;
+  height: 289rem;
 }
 .contact-container .contact-quote-container {
   margin-top: 15rem;
@@ -4710,6 +4760,18 @@ a:hover {
 .contact-links-content_author-mex {
   margin-left: 3rem;
 }
+.bar {
+  display: block;
+  height: 130px !important;
+  width: 130px !important;
+  background: url("../images/bermudas-01.png");
+  background-repeat: no-repeat;
+  background-position: 1px -1px;
+  background-size: 114%;
+  position: absolute;
+  top: -1rem;
+  left: -0.6rem;
+}
 .nz {
   background-position: -127px -14px !important;
   background-size: 1147px !important;
@@ -4840,6 +4902,9 @@ a:hover {
 .po-line {
   width: 20%;
 }
+.ca-line {
+  width: 37%;
+}
 .co-line {
   width: 25%;
 }
@@ -4883,12 +4948,16 @@ a:hover {
   line-height: 8px;
   margin-left: 3rem;
 }
-.country-divider {
+.country-divider,
+.country-divider-bar {
   width: 100%;
   position: relative;
   top: 13rem;
   width: 88%;
   left: -0.3rem;
+}
+.country-divider-bar {
+  top: 15rem;
 }
 .country-divider-cam {
   top: 5rem;
@@ -6514,39 +6583,39 @@ requirfigcaption {
     height: 67rem;
   }
   .eztrap-videos-container {
-    top: 50rem;
+    top: 62rem;
   }
   .eztrap-patent-container {
-    top: 52rem;
+    top: 63rem;
   }
   .eztrap-features-fluid,
   .eztrap-plumbing-fluid {
-    top: 54rem;
+    top: 64rem;
   }
   .eztrap-benefits,
   .eztrap-benefits-message {
-    top: 56rem;
-  }
-  .eztrap-features-requirements {
-    top: 59rem;
-  }
-  .eztrap-iso {
-    top: 63rem;
-  }
-  .container.eztrap-basic-info {
     top: 65rem;
   }
-  .eztrap-info-articles {
-    top: 67rem;
+  .eztrap-features-requirements {
+    top: 68rem;
   }
-  .eztrap-plumbing-fluid {
-    top: 69rem !important;
+  .eztrap-iso {
+    top: 70rem;
   }
-  .eztrap-benefits-message {
+  .container.eztrap-basic-info {
     top: 71rem;
   }
-  .eztrap-benefits-buy {
+  .eztrap-info-articles {
+    top: 73rem;
+  }
+  .eztrap-plumbing-fluid {
+    top: 74rem !important;
+  }
+  .eztrap-benefits-message {
     top: 75rem;
+  }
+  .eztrap-benefits-buy {
+    top: 78rem;
   }
   .eztrap-waterless {
     top: 82rem;
@@ -7380,6 +7449,9 @@ requirfigcaption {
     height: 83rem;
   }
 }
+.modal-body {
+  padding: 14px;
+}
 .modal-content {
   background: #000;
 /*background url('../images/modalPower.png')*/
@@ -7387,11 +7459,14 @@ requirfigcaption {
   height: 84rem;
   background-repeat: no-repeat;
 /*width 806px*/
-  width: 1306px;
+  width: 947px;
   margin: 0 auto;
   top: 2rem;
   padding-left: 0;
-  margin-left: -37rem;
+  margin-left: -18rem;
+}
+li.flip-item.flip-current {
+  box-shadow: 0 0 73px #fff;
 }
 .modal-header,
 .modal-footer {

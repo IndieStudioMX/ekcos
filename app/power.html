@@ -99,21 +99,25 @@
         <div class="container powerscreen-advise">
           <p class="text-center">Using our <strong>Sealed Bristle Technology &#8482;,</strong> the Power Screen is by far the most impressive and effective 30 day screen in the market. It is a "must" for every urinal.</p>
         </div>
-      </div>
-
+      </div> 
+      
       <div class="powerscreen-features-container">
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-antisplash">
-              <iframe src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="power-subtitle-product text-center">Product Presentation</p>
+              <iframe id="powerscreen-video01" class="powerscreen-video01" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p class="power-subtitle-product powerscreen-video01-a vidvim0 text-center">
+                <button class="power-subtitle-product text-center" onclick="launchFullscreen(document.getElementById('powerscreen-video01'));">Product Presentation</button>
+              </p>
             </div>
-            <div class="col-md-6 powerscreen-antisplash">
-              <iframe src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="power-subtitle-demo text-center">Demo Presentation</p>
+            <div class="col-md-6 powerscreen-antisplash ">
+              <iframe id="powerscreen-video02" class="powerscreen-video02" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button onclick="launchFullscreen(document.getElementById('powerscreen-video02'));" class="power-subtitle-demo text-center">Demo Presentation</button>
             </div>
           </div>
         </div>
         <div class="container powerscreen-features-legend">
-            <p class="text-center">ëkcos innovation is the only company licensed to produce urinal screens </p>
+            <p class="text-center">Ekcos innovation is the only company licensed to produce urinal screens </p>
             <p class="text-center">featuring<strong> Sealed Bristle Technology&#8482;.</strong> </p>
               <p class="text-center">No other company has been granted a licensee to do so</p>
           </div>
@@ -238,10 +242,10 @@
             <p class="text-muted"><a href="http://www.ekcos.com">www.ekcos.com</a></p>
           </div>
           <div class="col-md-3 text-center col-sm-6 footer-reserved">
-            <p class="text-muted">&copy; 2012</p>
+            <p class="text-muted">&copy; 2015</p>
           </div>
           <div class="col-md-3 col-sm-6 footer-reserved">
-            <p class="text-muted text-center">All Rights Reserve</p>
+            <p class="text-muted text-center">All Rights Reserved</p>
           </div>
           <div class="col-md-3 text-center col-sm-6">
            <a href="#">
@@ -256,6 +260,17 @@
     </div>
 
     <div class="bio-container">
+      <img class="bio-img" src="images/bio-bg.png" alt="" usemap="#location-map">
+      <div id="overlayr" class="overlayr">
+        <img id="overlay-img-r" src="images/message-hover-right.png" alt="" class="hidden-img-r">
+      </div>
+      <div id="overlayl" class="overlayl">
+        <img id="overlay-img-l" src="images/message-hover-left.png" alt="" class="hidden-img-l">
+      </div>
+      <map name="location-map" id="location-map">
+        <area shape="rect" coords="0,0,42%,78%" href="#" id="r">
+        <area shape="rect" coords="0,0, 58%, 78%" href="#" id="l">
+      </map>
     </div>
     <hr class="bio-line">
   	<!-- bower:js -->
@@ -264,6 +279,54 @@
   	<!-- endbower -->
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
+    <script>
+      
+      // Find the right method, call on correct element
+      function launchFullscreen(element) {
+        if(element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+      }
+
+      function exitFullscreen() {
+        if(document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if(document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if(document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+
+      function dumpFullscreen() {
+        console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+        console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
+      }
+
+      // Events
+      document.addEventListener("fullscreenchange", function(e) {
+        console.log("fullscreenchange event! ", e);
+      });
+      document.addEventListener("mozfullscreenchange", function(e) {
+        console.log("mozfullscreenchange event! ", e);
+      });
+      document.addEventListener("webkitfullscreenchange", function(e) {
+        console.log("webkitfullscreenchange event! ", e);
+      });
+      document.addEventListener("msfullscreenchange", function(e) {
+        console.log("msfullscreenchange event! ", e);
+      });
+
+      // Add different events for fullscreen
+
+       
+    </script>
   	<!-- endinject -->
 	</body>
 </html>
