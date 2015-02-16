@@ -96,7 +96,7 @@ hr
 	border-top 2px solid #444
 
 .bio-container
-	background url('../images/bio-bg.png') no-repeat
+	/*background url('../images/bio-bg.png') no-repeat*/
 	background-size 100%
 	background-position -129px 0
 	width 100%
@@ -104,6 +104,48 @@ hr
 	position absolute
 	top 125rem
 	z-index 1
+	.bio-img 
+		/*background url('../images/bio-bg.png') no-repeat*/
+		background-size 100%
+		background-position -129px 0
+		width 100%
+		height 326px 
+		position absolute
+		top 0
+		left -113px
+		z-index 1
+.hidden-img-r, .hidden-img-l 
+	position absolute 
+	right 5rem
+	height auto 
+	width 23%
+
+.hidden-img-l
+	left 4rem
+	top 24rem
+	width 35%
+	display none
+	
+.hidden-img-r
+	right 18rem
+	top -1rem
+	width 47%
+	display none
+.overlayr
+	width 42% 
+	top 5rem 
+	height 78% 
+	position absolute
+	right 0 
+	z-index 10
+
+.overlayl 
+	width 57% 
+	top 5rem 
+	height 78% 
+	position absolute
+	left 0 
+	z-index 12
 
 .bio-line 
 	position relative
@@ -165,6 +207,10 @@ hr
 .power-subtitle-demo, .power-subtitle-product
 	font-style italic
 	font-weight bold
+	display block 
+	margin 0 auto
+	background transparent
+	border 0
 	
 .thumblnail-power 
 	img 

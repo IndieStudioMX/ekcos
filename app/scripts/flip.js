@@ -2,7 +2,7 @@
 
 $(document).on('ready', function() {
 	$('#powerDocs').on('show.bs.modal', function () {
-		$(".flipster").flipster({
+		$('.flipster').flipster({
 			enableMousewheel: false, 
 			enableKeyboard: true,
 			enableTouch: true
