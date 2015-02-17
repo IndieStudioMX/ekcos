@@ -11,6 +11,10 @@ li
 
 .navbar.navbar-default.navbar-fixed-top 
 	background $menu-light
+	background url('../images/hd-nav.png')
+	background-size 100% 
+	background-position 207px -47px 
+	background-repeat no-repeat
 	border-color transparent
 	padding 22px 0
 	height 83px
@@ -67,7 +71,7 @@ li
 	z-index 2
 	img 
 		max-width 100%
-		width 450px
+		width 505px
 		
 .main-menu 
 	top -1rem
@@ -111,7 +115,10 @@ li
 	width 100%
 	height 3.3rem
 	left 15rem
-	background $navbar-submenu
+	background url('../images/hd-submenu.png')
+	background-position 0
+	background-size 100% 
+	background-repeat no-repeat
 	top 3.9rem 
 	font-weight bold
 	li 
@@ -267,7 +274,7 @@ li
 		height 49px
 		.view-cart-container
 			width 100%
-			background url("../images/view-cart.svg") no-repeat 100% 100%
+			background url("../images/view-cart02.svg") no-repeat 100% 100%
 			background-position -7px -14px
 			height 23px
 			.btn-buy 
@@ -831,7 +838,7 @@ li
 //Generic styles for Netbook 10"
 @media screen and (min-width 1280px) and (min-height 800px)
 	.brand
-		left -7px
+		left -119px
 	.navbar-products
 		position absolute
 		width 100%
@@ -1016,8 +1023,12 @@ li
 		width 100%
 		height 3.2rem
 		left 15rem
-		background $navbar-submenu
+		background url('../images/hd-submenu.png')
+		background-position 140px -51px 
+		background-size 100% 
+		background-repeat no-repeat
 		top 3.9rem 
+		font-weight bold
 		li 
 			float right
 			font-size 1.25rem
@@ -1029,25 +1040,25 @@ li
 				background-repeat no-repeat 
 				height 33px
 			&:first-child 
-				width 34rem
-				background url('../images/docs-bg.svg') no-repeat
-				height 63px
-				background-position 29px -23px
-				background-size 100% 133%
+				width 28rem
+				background url('../images/docs-bg-light.png') no-repeat
+				height 87px
+				background-position -52px -42px
+				background-size 138% 145%
 				&:hover 
 					background url('../images/docs-bg-hover.svg') no-repeat
-					width 34rem
-					background-position 31px -25px
+					width 28rem
+					background-position -52px -42px
 					background-size 95% 134%
-					height 60px
+					height 87px
 					
 				& > a 
-					color $text-color-light
+					color $font-active-color
 					margin-left 9rem
 					
 			&:nth-child(2)
-				margin-right -5.8rem
-				padding .5rem 3.2rem 0 2rem
+				margin-right -15px
+				padding .5rem 5.2rem 0 5rem
 				transform skew(29deg)
 				transform skew(29deg)
 				-webkit-transform: skew(29deg)
@@ -1060,6 +1071,8 @@ li
 					-moz-transform skew(-29deg)
 					-ms-transform skew(-29deg)
 					transform skew(-29deg)
+					font-size 1.6rem 
+					top -0.4rem 
 				&:hover 
 					background-color $navbar-submenu_shadow
 					background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 100%)
@@ -1080,9 +1093,9 @@ li
 					-ms-transition .1s all ease-in
 					transition .1s all ease-in
 			&:nth-child(3) 
-				padding-left .5rem
-				padding-right .6rem
-				margin-right .1rem
+				padding-left 3.5rem
+				padding-right 3.6rem
+				margin-right 0.1rem
 				position relative
 				left 0
 				-webkit-transform skew(29deg)
@@ -1112,10 +1125,12 @@ li
 				& > a 
 					-webkit-transform: skew(-29deg);
 					-moz-transform: skew(-29deg);
-					-ms-transform: skew(-29deg);
+					-ms-transform: skew(-29deg)
+					font-size 1.6rem 
+					top -0.4rem 
 			&:last-child
-				padding-left 1rem
-				padding-right 1.15rem
+				padding-left 3rem
+				padding-right 3.15rem
 				margin-right: 0;
 				position relative
 				left 0
@@ -1146,6 +1161,8 @@ li
 					-webkit-transform: skew(-29deg);
 					-moz-transform: skew(-29deg);
 					-ms-transform: skew(-29deg);
+					font-size 1.6rem 
+					top -0.4rem 
 			& > a 
 				color $text-color
 	.nav.navbar-nav.navbar-right 
@@ -1153,39 +1170,55 @@ li
 
 	.navbar-default .navbar-nav li 
 		& > a 
-			font-size 1.25rem
+			font-size 1.55rem
 			color $text-color
+			-webkit-transform skew(-29deg)
+			-moz-transform skew(-29deg)
+			-ms-transform skew(-29deg)
+			transform skew(-29deg)
 		& > .item-menu
 			transition-menu .1s ease-in
 		& > .item-menu:hover 
 			border-bottom 3px solid $font-active-color
 			transition-menu .2s ease-in
-		&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+		&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
 			margin-left -0.1rem
+			height 4.65rem 
+			margin-top -0.2rem
+			padding 0 1.8rem
+			-webkit-transform skew(29deg)
+			-moz-transform skew(29deg)
+			-ms-transform skew(29deg)
+			transform skew(29deg)
 		&:last-child 
 			position absolute
-			left 39.5rem
+			left 63.1rem
 			top -2px
 			width 337px
-			background url('../images/view-cart.svg') no-repeat 100% 100%
+			background url('../images/view-cart0-.svg') no-repeat 100% 100%
 			background-position -7px -14px
 			&:hover 
-				background url('../images/view-cart_hover.svg') no-repeat 100% 100%
+				background url('../images/view-cart0-hover.svg') no-repeat 100% 100%
 				background-position -7px -14px
 			& > a 
-				color $text-color
-				margin-left  7rem
+				color #C2C861
+				font-weight bold
+				margin-left  9rem
 				text-transform uppercase
-				font-size 1rem
+				font-size 1.25rem
 				height 50px
-				line-height 2.25rem
+				line-height 3.25rem
+				-webkit-transform skew(0)
+				-moz-transform skew(0)
+				-ms-transform skew(0)
+				transform skew(0)
 				&:hover 
-					color $text-color
+					color $font-active-color
 				& > img
-					width 25%
+					width 34%
 					position absolute 
 					top -.6rem
-					left 5.9rem
+					left 6.9rem
 	.collapse 
 		display block
 		visibility initial
