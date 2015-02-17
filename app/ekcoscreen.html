@@ -101,12 +101,12 @@
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-video-container ek-video">
-              <iframe src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <p class="ekcos-subtitle-product text-center">Product Presentation</p>
+              <iframe id="ekcos-video01" src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button onclick="launchFullscreen(document.getElementById('ekcos-video01'));" class="ekcos-subtitle-product power-subtitle-demo  text-center">Product Presentation</button>
             </div>
             <div class="col-md-6 powerscreen-video-container ek-video">
-              <iframe src="//player.vimeo.com/video/114214478?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <p class="ekcos-subtitle-demo text-center">Demo Presentation</p>
+              <iframe id="ekcos-video02" src="//player.vimeo.com/video/114214478?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button onclick="launchFullscreen(document.getElementById('ekcos-video02'));" class="ekcos-subtitle-demo power-subtitle-demo  text-center">Demo Presentation</button>
             </div>
           </div>
         </div>
@@ -291,6 +291,54 @@
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
   	<!-- endinject -->
+    <script>
+      
+      // Find the right method, call on correct element
+      function launchFullscreen(element) {
+        if(element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+      }
+
+      function exitFullscreen() {
+        if(document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if(document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if(document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+
+      function dumpFullscreen() {
+        console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+        console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
+      }
+
+      // Events
+      document.addEventListener("fullscreenchange", function(e) {
+        console.log("fullscreenchange event! ", e);
+      });
+      document.addEventListener("mozfullscreenchange", function(e) {
+        console.log("mozfullscreenchange event! ", e);
+      });
+      document.addEventListener("webkitfullscreenchange", function(e) {
+        console.log("webkitfullscreenchange event! ", e);
+      });
+      document.addEventListener("msfullscreenchange", function(e) {
+        console.log("msfullscreenchange event! ", e);
+      });
+
+      // Add different events for fullscreen
+
+       
+    </script>
 	</body>
 </html>
 

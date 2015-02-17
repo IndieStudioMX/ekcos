@@ -84,17 +84,11 @@
 
         <div class="container eztrap-videos-container">
           <div class="row">
-            <div class="col-md-6">
-              <iframe src="//player.vimeo.com/video/114214480?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <p class="ez-subtitle-product text-center">
-                Product Presentation
-              </p>
+            <div class="col-md-6 col-md-offset-3">
+              <iframe id="eztrap-video01" src="//player.vimeo.com/video/114214480?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button onclick="launchFullscreen(document.getElementById('eztrap-video01'));" class="power-subtitle-demo ez-subtitle-product text-center">Product Presentation</button>
             </div>
             <div class="col-md-6">
-              <iframe src="//player.vimeo.com/video/114214480?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <p class="ez-subtitle-demo text-center">
-                Product Demo
-              </p>
             </div>
           </div>
         </div>
@@ -302,6 +296,54 @@
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
   	<!-- endinject -->
+    <script>
+      
+      // Find the right method, call on correct element
+      function launchFullscreen(element) {
+        if(element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if(element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+      }
+
+      function exitFullscreen() {
+        if(document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if(document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if(document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+
+      function dumpFullscreen() {
+        console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+        console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
+      }
+
+      // Events
+      document.addEventListener("fullscreenchange", function(e) {
+        console.log("fullscreenchange event! ", e);
+      });
+      document.addEventListener("mozfullscreenchange", function(e) {
+        console.log("mozfullscreenchange event! ", e);
+      });
+      document.addEventListener("webkitfullscreenchange", function(e) {
+        console.log("webkitfullscreenchange event! ", e);
+      });
+      document.addEventListener("msfullscreenchange", function(e) {
+        console.log("msfullscreenchange event! ", e);
+      });
+
+      // Add different events for fullscreen
+
+       
+    </script>
 	</body>
 </html>
 
