@@ -14,8 +14,27 @@
     <!-- endbower -->
     <!-- inject:css -->
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="src/css/jquery.flipster.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/carousel.css">
     <!-- endinject -->
+    <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+        .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -90px !important;
+        width: 180px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+      }
+
+      .slides, .carousel, .carousel-ekcos {
+        width: 885px !important;
+      }
+
+      .en-markup-crop-options div div:first-of-type {
+          margin-left: 0px !important;
+      }
+    </style>
   </head>
   <body>
 	  <!--[if lt IE 7]>
@@ -168,23 +187,22 @@
           <div class="modal-body">
             <div class="row row-power ">
               <h2 class="modal-title ic-power">Commercial Information</h2>
-              <div class="col-md-2 col-md-offset-5 power-d">
+              <div class="col-md-4 col-md-offset-4 power-d">
                 <a class="power-d01" href="../pdf/power/power-commercial01.pdf" target="_blank">
                 </a>
               </div>
             </div>
-
             <div class="row row-power" >
               <h2 class="modal-title it-power">Technical Information</h2>
-              <div class="col-md-2 col-md-offset-3 power-d">
+              <div class="col-md-4 power-d">
                 <a class="power-t01" href="../pdf/power/power-tech01.pdf" target="_blank">
                 </a>
               </div>
-              <div class="col-md-2 power-d">
+              <div class="col-md-4 power-d">
                 <a class="power-t02" href="../pdf/power/power-tech02.pdf" target="_blank">
                 </a>
               </div>
-              <div class="col-md-2 power-d">
+              <div class="col-md-4 power-d">
                 <a class="power-t03" href="../pdf/power/power-tech03.pdf" target="_blank">
                 </a>
               </div>
@@ -192,27 +210,76 @@
 
             <div class="row row-power-gallery">
               <h2 class="modal-title ig-power">Image Gallery</h2>
-              <!-- Flipster List -->  
-              <div class="flipster f-slide">
-                <ul>
-                  <li>
-                    <img src="img/p-g01.png">
-                  </li>
-                  <li>
-                    <img src="img/p-g02.png">
-                  </li>
-                  <li>
-                    <img src="img/p-g03.png">
-                  </li>
-                  <li>
-                    <img src="img/p-g04.png">
-                  </li>
-                  <li>
-                    <img src="img/p-g05.png">
-                  </li>
-                </ul>
+              <!-- Carousel --> 
+              <div class="carousel">
+                <div class="slides" style="width: 900px; height: 330px;"> <!-- Begin Carousel -->
+                  <div class="slideItem" style="width: 256px; height: 211.2px; top: 54px; right: 34.6px; opacity: 1; z-index: 4; display: block;"> <!-- Slide Item -->
+                    <a href="images/pwr-01.png" target="_blank">
+                      <img src="images/pwr-s-01.png" style="width: 256px; height: 192px; display: inline-block;">
+                    </a>
+                    <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 56px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 204.8px; height: 168.96px; top: 73.2px; right: -47.32px; opacity: 0; z-index: 3; display: none;">
+                    <a href="images/pwr-02.png" target="_blank">
+                      <img src="images/pwr-s-02.png" style="width: 204.8px; height: 153.6px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 4.80000000000001px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 204.8px; height: 168.96px; top: 73.2px; right: 772.52px; opacity: 0; z-index: 3; display: none;">
+                    <a href="images/pwr-03.png" target="_blank">
+                      <img src="images/pwr-s-03.png" style="width: 204.8px; height: 153.6px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 4.80000000000001px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 256px; height: 211.2px; top: 54px; right: 639.4px; opacity: 1; z-index: 4; display: block;">
+                    <a href="images/pwr-03.png" target="_blank">
+                      <img src="images/pwr-s-04.png" style="width: 256px; height: 192px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 56px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 473px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/pwr-04.png" target="_blank">
+                      <img src="images/pwr-s-05.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 400px; height: 330px; top: 0px; right: 265px; opacity: 1; z-index: 6; display: block;">
+                    <a href="images/pwr-05.png" target="_blank">
+                      <img src="images/pwr-s-06.png" style="width: 400px; height: 300px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 200px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/pwr-07.png" target="_blank">
+                      <img src="images/pwr-s-07.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/pwr-08.png" target="_blank">
+                      <img src="images/pwr-s-08.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/pwr-09.png" target="_blank">
+                      <img src="images/pwr-s-09.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/pwr-10.png" target="_blank">
+                      <img src="images/pwr-s-10.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <!--
+                <div class="spinner" style="display: none; width: 400px; height: 300px; top: 0px; right: 265px; opacity: 1; z-index: 10; position: absolute; cursor: pointer; overflow: hidden; padding: 0px; margin: 0px; border: none;"></div>
+                <div class="videoOverlay" style="display: none; width: 400px; height: 300px; top: 0px; right: 265px; opacity: 1; z-index: 9; position: absolute; cursor: pointer; overflow: hidden; padding: 0px; margin: 0px; border: none;"></div>
+                -->
+                </div> <!-- END SLIDES -->
               </div>
-<!-- End Flipster List -->
+              <!-- End Carousel -->
             </div>
             <h4 class="title-ig text-center">These are Hi Resolution images for use on your website or catalogue</h4>
             </div>
@@ -229,270 +296,143 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
-            <div class="row">
-              <h2 class="modal-title">Commercial Information</h2>
-              <div class="col-md-3 ek-it">
+            <div class="row row-ekcos-c">
+              <h2 class="modal-title ic-ekcos">Commercial Information</h2>
+              <div class="col-md-4 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-commercial01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-commercial01.png" alt="">
+                  <img class="img-responsive docs-img" src="images/ic-ekcos01.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
+              <div class="col-md-4 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-commercial02.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-commercial02.png" alt="">
+                  <img class="img-responsive docs-img" src="images/ic-ekcos02.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
+              <div class="col-md-4 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-commercial03.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-commercial03.png" alt="">
+                  <img class="img-responsive docs-img" src="images/ic-ekcos03.png" alt="">
                 </a>
               </div>
 
             </div>
 
-            <div class="row">
-              <h2 class="modal-title">Technical Information</h2>
-              <div class="col-md-3 ek-it">
+            <div class="row row-ekcos-d">
+              <h2 class="modal-title it-ekcos">Technical Information</h2>
+              <div class="col-md-2 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-tech01.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech01.png" alt="">
+                  <img class="img-responsive docs-img" src="images/it-ekcos01.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
+              <div class="col-md-2 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-tech02.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech02.png" alt="">
+                  <img class="img-responsive docs-img" src="images/it-ekcos02.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
+              <div class="col-md-2 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-tech03.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech03.png" alt="">
+                  <img class="img-responsive docs-img" src="images/it-ekcos03.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
+              <div class="col-md-2 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-tech05.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech05.png" alt="">
+                  <img class="img-responsive docs-img" src="images/it-ekcos04.png" alt="">
                 </a>
               </div>
-            </div>
-            <br><br>
-            <div class="row">
-              <div class="col-md-3 ek-it">
+
+              <div class="col-md-2 ekcos-d">
                 <a href="../pdf/ekcos/ekcos-tech04.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech04.png" alt="">
+                  <img class="img-responsive docs-img" src="images/it-ekcos05.png" alt="">
                 </a>
               </div>
-              <div class="col-md-3 ek-it">
-                <a href="../pdf/ekcos/ekcos-tech06.pdf" target="_blank">
-                  <img class="img-responsive docs-img" src="images/ekcos-tech06.png" alt="">
+
+              <div class="col-md-2 ekcos-d">
+                <a href="../pdf/ekcos/ekcos-tech04.pdf" target="_blank">
+                  <img class="img-responsive docs-img" src="images/it-ekcos06.png" alt="">
                 </a>
               </div>
             </div>
 
-            <div class="row">
-              <h2 class="modal-title">Image Gallery / <span>These are Hi Resolution images for use on your website or catalogue</span></h2>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b01.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min01.png" alt="">
-                </a>
+            <div class="row row-power-gallery">
+              <h2 class="modal-title ig-ekcos">Image Gallery</h2>
+              <!-- Carousel --> 
+              <div class="carousel" id="carousel-ekcos">
+                <div class="slides" style="width: 900px; height: 330px;"> <!-- Begin Carousel -->
+                  <div class="slideItem" style="width: 256px; height: 211.2px; top: 54px; right: 34.6px; opacity: 1; z-index: 4; display: block;"> <!-- Slide Item -->
+                    <a href="images/ek-01.png" target="_blank">
+                      <img src="images/ek-s-01.png" style="width: 256px; height: 192px; display: inline-block;">
+                    </a>
+                    <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 56px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 204.8px; height: 168.96px; top: 73.2px; right: -47.32px; opacity: 0; z-index: 3; display: none;">
+                    <a href="images/ek-02.png" target="_blank">
+                      <img src="images/ek-s-02.png" style="width: 204.8px; height: 153.6px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 4.80000000000001px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 204.8px; height: 168.96px; top: 73.2px; right: 772.52px; opacity: 0; z-index: 3; display: none;">
+                    <a href="images/ek-03.png" target="_blank">
+                      <img src="images/pwr-s-03.png" style="width: 204.8px; height: 153.6px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 4.80000000000001px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 256px; height: 211.2px; top: 54px; right: 639.4px; opacity: 1; z-index: 4; display: block;">
+                    <a href="images/ek-04.png" target="_blank">
+                      <img src="images/pwr-s-04.png" style="width: 256px; height: 192px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 56px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 473px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/ek-05.png" target="_blank">
+                      <img src="images/ek-s-05.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 400px; height: 330px; top: 0px; right: 265px; opacity: 1; z-index: 6; display: block;">
+                    <a href="images/ek-06.png" target="_blank">
+                      <img src="images/ek-s-06.png" style="width: 400px; height: 300px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 200px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/ek-07.png" target="_blank">
+                      <img src="images/ek-s-07.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/ek-08.png" target="_blank">
+                      <img src="images/ek-s-08.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/ek-09.png" target="_blank">
+                      <img src="images/ek-s-09.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+                  <div class="slideItem" style="width: 320px; height: 264px; top: 30px; right: 137px; opacity: 1; z-index: 5; display: block;">
+                    <a href="images/ek-10.png" target="_blank">
+                      <img src="images/ek-s-10.png" style="width: 320px; height: 240px; display: inline-block;">
+                    </a>
+                  <div class="shadow" style="width: 400px; z-index: -1; position: absolute; margin: 0px; padding: 0px; border: none; overflow: hidden; left: 0px; bottom: 0px;"><div class="shadowLeft" style="position: relative; float: left;"></div><div class="shadowMiddle" style="position: relative; float: left; width: 120px;"></div><div class="shadowRight" style="position: relative; float: left;"></div></div></div>
+
+
+                  
+                  <!--
+                <div class="spinner" style="display: none; width: 400px; height: 300px; top: 0px; right: 265px; opacity: 1; z-index: 10; position: absolute; cursor: pointer; overflow: hidden; padding: 0px; margin: 0px; border: none;"></div>
+                <div class="videoOverlay" style="display: none; width: 400px; height: 300px; top: 0px; right: 265px; opacity: 1; z-index: 9; position: absolute; cursor: pointer; overflow: hidden; padding: 0px; margin: 0px; border: none;"></div>
+                -->
+                </div> <!-- END SLIDES -->
               </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b02.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min02.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b03.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min03.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b04.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min04.png" alt="">
-                </a>
-              </div>
+              <!-- End Carousel -->
             </div>
-            <br><br>
-            <div class="row">
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b05.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min05.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b06.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min06.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b07.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min07.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b08.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min08.png" alt="">
-                </a>
-              </div>
-            </div>
-            <br><br>
-            <div class="row">
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b09.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min09.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ek-m">
-                <a href="../images/ekcos-b10.jpg" target="_blank">
-                  <img class="img-responsive" src="images/ekcos-min10.png" alt="">
-                </a>
-              </div>
-            </div>
+            <h4 class="title-ig text-center">These are Hi Resolution images for use on your website or catalogue</h4>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="ezDocs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content modal-content-ez">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <h2 class="modal-title">Commercial Information</h2>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrapDoc01.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-c01.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrapDoc02.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-c02.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrapDoc03.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-c03.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrapDoc04.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-c04.png" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <h2 class="modal-title">Technical Information</h2>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrap-tech01.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-doc01.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-d">
-                <a href="../pdf/eztrap/eztrap-tech02.pdf" target="_blank">
-                  <img class="img-responsive" src="images/ez-doc02.png" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <h2 class="modal-title">Image Gallery / <span>These are Hi Resolution images for use on your website or catalogue</span></h2>
-              <div class="col-md-3 ez-img">
-                <a href="../images/eztrap-img01.jpg" target="_blank">
-                  <img class="img-responsive" src="images/eztrap-img01.jpg" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-img">
-                <a href="../images/eztrap-img02.jpg" target="_blank">
-                  <img class="img-responsive" src="images/eztrap-img02.jpg" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 ez-img">
-                <a href="../images/eztrap-img03.jpg" target="_blank">
-                  <img class="img-responsive" src="images/eztrap-img03.jpg" alt="">
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="truDocs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content modal-content-tru">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <h2 class="modal-title">Commercial Information</h2>
-              <div class="col-md-3 tru-d">
-                <a href="../pdf/trufresh/truCommercial01.pdf">
-                  <img class="img-responsive" src="images/truCommercial01.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 tru-d">
-                <a href="../pdf/trufresh/truCommercial02.pdf">
-                  <img class="img-responsive"  src="images/truCommercial02.png" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <h2 class="modal-title">Technical Information</h2>
-              <div class="col-md-3 tru-d">
-                <a href="../pdf/trufresh/truTech01.pdf">
-                  <img src="images/truTech01.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 tru-d">
-                <a href="../pdf/trufresh/truTech02.pdf">
-                  <img src="images/truTech02.png" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <h2 class="modal-title">Image Gallery / <span>These are Hi Resolution images for use on your website or catalogue</span></h2>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img01.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img01.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img02.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img02.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img03.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img03.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img04.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img04.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img05.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img05.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-2 tru-img">
-                <a href="../images/tru-img06.jpg" target="_blank">
-                  <img class="img-responsive" src="images/tru-img06.png" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Buy Now -->
     <div class="buynow-container">
       <a href="buynow.html">
@@ -507,13 +447,9 @@
   	<!-- inject:js -->
     <script src="src/js/jquery.flipster.js"></script>
     <script src="scripts/flip.js"></script>
-    <script>      
-      (function($){
-        $(document).on('ready', function() {
-          //$("div:not(#powerDocs) .flipster").flipster();
-        });
-      })(jQuery);
-    </script>
+    <script src="scripts/jquery.mousewheel.min.js"></script>
+    <script src="scripts/jquery.carousel-1.1.min.js"></script>
+    <script src="scripts/sample01.js"></script>
   	<!-- endinject -->
 	</body>
 </html>
