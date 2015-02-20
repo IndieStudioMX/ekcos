@@ -125,12 +125,12 @@
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-antisplash">
-              <iframe id="powerscreen-video01" class="powerscreen-video01" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe data-id="0" id="powerscreen-video00" class="powerscreen-video01" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <button class="power-subtitle-product text-center" onclick="launchFullscreen(document.getElementById('powerscreen-video01'));">Product Presentation</button>
             </div>
             <div class="col-md-6 powerscreen-antisplash ">
-              <iframe id="powerscreen-video02" class="powerscreen-video02" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <button onclick="launchFullscreen(document.getElementById('powerscreen-video02'));" class="power-subtitle-demo text-center">Demo Presentation</button>
+              <iframe data-id="1" id="powerscreen-video01" class="powerscreen-video02" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button class="power-subtitle-demo text-center" onclick="launchFullscreen(document.getElementById('powerscreen-video02'));">Demo Presentation</button>
             </div>
           </div>
         </div>
@@ -321,22 +321,36 @@
   	<!-- endbower -->
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
+    <!--script src="scripts/jquery.vimeo.api.min.js"></script-->
     <script>
-      
+      var iframePower01 = $('#powerscreen-video01');
+      var iframePower02 = $('#powerscreen-video02');
+      var player01 = $(iframePower01);
+      var player02 = $(iframePower02);
+      var id = $('iframe').data('id')
       // Find the right method, call on correct element
       function launchFullscreen(element) {
+        var id = $('iframe').data('id')
         if(element.requestFullscreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.requestFullscreen();
         } else if(element.mozRequestFullScreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.mozRequestFullScreen();
         } else if(element.webkitRequestFullscreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.webkitRequestFullscreen();
         } else if(element.msRequestFullscreen) {
           element.msRequestFullscreen();
+          $('#powerscreen-video0' + id)[0].autoplay = true 
         }
       }
 
       function exitFullscreen() {
+        var id = $('iframe').data('id')
         if(document.exitFullscreen) {
           document.exitFullscreen();
         } else if(document.mozCancelFullScreen) {
@@ -347,22 +361,31 @@
       }
 
       function dumpFullscreen() {
+        var id = $('iframe').data('id')
         console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
         console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
       }
 
       // Events
       document.addEventListener("fullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("fullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("mozfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("mozfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("webkitfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("webkitfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("msfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("msfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
 
       // Add different events for fullscreen

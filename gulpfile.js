@@ -68,7 +68,7 @@ gulp.task('imagemin', function () {
 //Preprocesa archivos Stylus a CSS y recarga los cambios
 gulp.task('css', function (){
 	gulp.src('./app/stylesheets/main.styl')
-		.pipe(stylus({ use: nib() /*compress: true*/ }))
+		.pipe(stylus({ use: nib(), compress: true }))
 		.pipe(gulp.dest('./app/stylesheets'))
 		.pipe(connect.reload())
 });
