@@ -75,29 +75,49 @@
 	display block 
 	margin 0 auto
 	
-.it-power::after,.ic-power::after, .ig-power::after
+.buttonNav 
+	top 1rem !important
+
+.carousel .buttonNav .bullet, .carousel-ekcos .buttonNav .bullet
+	background white  !important 
+	border-radius 50%  !important 
+	box-shadow 1px 1px 0px 1px rgba(210,207,207,1)  !important 
+	
+.carousel .buttonNav .bulletActive, .carousel-ekcos .buttonNav .bulletActive
+	background $font-active-color  !important 
+	border-radius 50%   !important 
+	box-shadow 1px 1px 0px 1px rgba(152,152,152,1) !important 
+	
+.slides 
+	top 5rem
+	
+.carousel .shadow .shadowRight, .carousel-ekcos .shadow .shadowRight 
+	width 50px
+	
+
+.it-ekcos, .ic-ekcos, .ig-ekcos 
+	font-size 1.45rem !important
+	
+.it-ekcos::after,.ic-ekcos::after, .ig-ekcos::after
 	content ""
 	display inline-block 
 	position absolute 
-	height 17px 
-	width 30px 
-	top .2rem 
+	height 27px 
+	width 40px 
+	top .45rem
+	right 1rem  
 	background url('../images/sprite-modal.png')
 	background-repeat no-repeat 
-	background-position -6px -10px
+	background-position 3px -14px
 	background-size 364%
 	
-.it-power::after
-	background-position -80px -10px
+.it-ekcos::after
+	background-position -105px -10px
+	right 14rem 
 	
-.ig-power::after
-	background-position -42px -10px
-	
-.title-ig 
-	color #cc3
-	margin 2rem 0
-	
-	
+.ig-ekcos::after
+	background-position -60px -12px
+	right 33rem 
 @media screen and (min-width 200px) and (max-width 300px) and (min-height 480px)
 	.docs-container 
 		height 200rem 
