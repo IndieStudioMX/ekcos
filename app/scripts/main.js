@@ -6,7 +6,6 @@ var slider04  = $('#slider-04-content');
 
 (function () {
   slider04.addClass('is_invisible');
-	console.log('Hello World!');
 	$('.carousel').carousel({
   		interval: 80000
 	});

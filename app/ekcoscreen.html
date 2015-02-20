@@ -127,12 +127,12 @@
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-video-container ek-video">
-              <iframe id="ekcos-video01" src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe data-id="01" id="ekcos-video01" src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <button onclick="launchFullscreen(document.getElementById('ekcos-video01'));" class="ekcos-subtitle-product power-subtitle-demo  text-center">Product Presentation</button>
             </div>
             <div class="col-md-6 powerscreen-video-container ek-video">
               <iframe id="ekcos-video02" src="//player.vimeo.com/video/114214478?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <button onclick="launchFullscreen(document.getElementById('ekcos-video02'));" class="ekcos-subtitle-demo power-subtitle-demo  text-center">Demo Presentation</button>
+              <button data-id="02" onclick="launchFullscreen(document.getElementById('ekcos-video02'));" class="ekcos-subtitle-demo power-subtitle-demo  text-center">Demo Presentation</button>
             </div>
           </div>
         </div>
@@ -344,27 +344,42 @@
   	<script src="scripts/main.js"></script>
   	<!-- endinject -->
     <script>
-      
+  
       // Find the right method, call on correct element
       function launchFullscreen(element) {
         if(element.requestFullscreen) {
+          var videoID = $('iframe').data('id');
           element.requestFullscreen();
+          $('#ekcos-video' + videoID).vimeo("play");
         } else if(element.mozRequestFullScreen) {
+          var videoID = $('iframe').data('id');
           element.mozRequestFullScreen();
+          $('#ekcos-video' + videoID).vimeo("play");
         } else if(element.webkitRequestFullscreen) {
+          var videoID = $('iframe').data('id');
           element.webkitRequestFullscreen();
+          $('#ekcos-video' + videoID).vimeo("play");
         } else if(element.msRequestFullscreen) {
+          var videoID = $('iframe').data('id');
           element.msRequestFullscreen();
+          $('#ekcos-video' + videoID).vimeo("play");
         }
       }
 
       function exitFullscreen() {
+
         if(document.exitFullscreen) {
+          var videoID = $('iframe').data('id');
           document.exitFullscreen();
+          $('#ekcos-video' + videoID).vimeo("pause");
         } else if(document.mozCancelFullScreen) {
+          var videoID = $('iframe').data('id');
           document.mozCancelFullScreen();
+          $('#ekcos-video' + videoID).vimeo("pause");
         } else if(document.webkitExitFullscreen) {
+          var videoID = $('iframe').data('id');
           document.webkitExitFullscreen();
+          $('#ekcos-video' + videoID).vimeo("pause");
         }
       }
 

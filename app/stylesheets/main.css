@@ -7939,7 +7939,7 @@ li.flip-item.flip-current {
   margin-left: 1% !important;
 }
 .power-d a,
-.ekcos-d a {
+.ekcos-i a .ekcos-d a {
   margin: 0 auto;
   display: block;
 }
@@ -7965,6 +7965,108 @@ li.flip-item.flip-current {
 .power-d01:hover {
   content: "";
   background: url("../images/power-com_hov.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.ic-ekcos01 {
+  background: url("../images/ic-ekcos01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.ic-ekcos01:hover {
+  content: "";
+  background: url("../images/ic-ekcos01_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.ic-ekcos02 {
+  background: url("../images/ic-ekcos02.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.ic-ekcos02:hover {
+  content: "";
+  background: url("../images/ic-ekcos02_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.ic-ekcos03 {
+  background: url("../images/ic-ekcos03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.ic-ekcos03:hover {
+  content: "";
+  background: url("../images/ic-ekcos03_hover.png");
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.2s ease-in;
@@ -8082,6 +8184,204 @@ li.flip-item.flip-current {
   height: 140px;
   margin: 0 auto;
 }
+.it-ekcos01 {
+  background: url("../images/it-ekcos01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos01:hover {
+  background: url("../images/it-ekcos01_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.it-ekcos02 {
+  background: url("../images/it-ekcos02.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos02:hover {
+  background: url("../images/it-ekcos02_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.it-ekcos03 {
+  background: url("../images/it-ekcos03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos03:hover {
+  background: url("../images/it-ekcos03_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.it-ekcos04 {
+  background: url("../images/it-ekcos04.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos04:hover {
+  background: url("../images/it-ekcos04_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.it-ekcos05 {
+  background: url("../images/it-ekcos05.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos05:hover {
+  background: url("../images/it-ekcos05_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
+.it-ekcos06 {
+  background: url("../images/it-ekcos06.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -ms-transition: 0.4s ease-in;
+}
+.it-ekcos06:hover {
+  background: url("../images/it-ekcos06_hover.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  display: block;
+  max-width: 100%;
+  height: 140px;
+  margin: 0 auto;
+}
 .it-power::after,
 .ic-power::after,
 .ig-power::after {
@@ -8111,6 +8411,8 @@ li.flip-item.flip-current {
 }
 .ekcos-d {
   padding: 5px;
+  padding-bottom: 0;
+  height: 111px;
 }
 @media screen and (min-width: 200px) and (max-width: 600px) and (min-height: 480px) {
   .modal-content {
