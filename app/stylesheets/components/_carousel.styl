@@ -20,8 +20,8 @@
 	bottom 0
 
 .carousel-indicators 
-	bottom 0
-	display none
+	top 68.5rem !important
+	display block
 
 .carousel, .item, .active 
 	height 100% 
@@ -41,11 +41,12 @@
 
 .carousel-control.left
 	height 100% 
-	bg-gradient gradient(rgba(0,0,0,.25) 0%, rgba(0,0,0,0.0001) 100%)
+	bg-gradient gradient(rgba(0,0,0,.25) 0%, rgba(136,134,134,.25) 100%) !important 
+	opacity 1 !important
 .carousel-control.right
 	height 100%
-	bg-gradient gradient(rgba(0,0,0,0.0001) 0%, rgba(0,0,0,.25) 100%)
-	
+	bg-gradient gradient(rgba(136,134,134,.25) 0%, rgba(136,134,134,.25) 100%) !important
+	opacity 1 !important 
 .carousel-caption
 	position relative
 	top 39%
@@ -73,7 +74,7 @@
 		text-shadow none
 		color $carousel-content-color
 		font-weight bold
-		font-size 1.5rem
+		font-size 1rem
 
 .antisplash-hr 
 	width 353px !important
@@ -137,11 +138,12 @@
 	height 680px
 
 .slider-04-caption 
-	bottom 10rem
+	bottom 9.5rem
 	height auto 
 	padding-bottom 1.2rem !important
 	padding-top .7rem 
 	background $ekcoscreen-bg-item
+	width 100%
 
 .is_invisible 
 	display none
@@ -149,6 +151,31 @@
 .is_visible 
 	display block
 
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right
+	color rgba(102,74,120,1)
+	-webkit-transition .2s all ease-in
+	-moz-transition .2s all ease-in
+	-ms-transition .2s all ease-in 
+	transition .2s all ease-in
+
+
+.carousel-control .icon-prev:hover, 
+.carousel-control .icon-next:hover, 
+.carousel-control .glyphicon-chevron-left:hover, 
+.carousel-control .glyphicon-chevron-right:hover 
+	color rgba(102,74,120,.5)
+	font-size 2.4em
+	-webkit-transition .3s all ease-in
+	-moz-transition .3s all ease-in
+	-ms-transition .3s all ease-in 
+	transition .3s all ease-in
+
+.carousel-indicators li
+	border: 1px solid #3D137B;
+	
+.carousel-indicators .active
+	background-color rgba(102, 74, 120, 0.96)
+	border: 1px solid #3D137B;
 @media screen and (min-width 220px) and (max-width 399px)
 	.menuProducts-container 
 		display none

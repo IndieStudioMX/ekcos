@@ -127,12 +127,12 @@
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-video-container ek-video">
-              <iframe id="ekcos-video01" src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe data-id="1" id="ekcos-video01" src="//player.vimeo.com/video/114214481?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <button onclick="launchFullscreen(document.getElementById('ekcos-video01'));" class="ekcos-subtitle-product power-subtitle-demo  text-center">Product Presentation</button>
             </div>
             <div class="col-md-6 powerscreen-video-container ek-video">
               <iframe id="ekcos-video02" src="//player.vimeo.com/video/114214478?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <button onclick="launchFullscreen(document.getElementById('ekcos-video02'));" class="ekcos-subtitle-demo power-subtitle-demo  text-center">Demo Presentation</button>
+              <button data-id="2" onclick="launchFullscreen(document.getElementById('ekcos-video02'));" class="ekcos-subtitle-demo power-subtitle-demo  text-center">Demo Presentation</button>
             </div>
           </div>
         </div>
@@ -203,14 +203,7 @@
             <hr class="ekcos-line">
           </div>
 
-        <div class="ekcos-module-title container">
-          <div class="row">
-            <div class="col-md-12">
-              <p>*This product is designed to biodegrade in a biological active landfill (appropriate facilities not available in all areas).</p>
-              <p>Testing ASTM D5511-2 that we have conducted represent biologically active landfills on our products have shown 99% biodegradation in less than 5 years.</p>
-            </div>
-          </div>
-        </div>
+
         <div class="ekcos-products-container container">
           <div class="row" id="ekcos-products">
             <div class="col-sm-6 without-padding col-md-3 ek-thumb">
@@ -221,7 +214,7 @@
                   <p class="product-description">Spiced Apple Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-2G</p>
-                  <a href="ekcoscreen/seafoam_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -233,7 +226,7 @@
                   <p class="product-description">Tropical Fruit Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-4O</p>
-                  <a href="ekcoscreen/iorange_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -245,7 +238,7 @@
                   <p class="product-description">Berry Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-1P</p>
-                  <a href="ekcoscreen/ekcopurple_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -258,7 +251,7 @@
                   <p class="product-description">Mint Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-3B</p>
-                  <a href="ekcoscreen/ocean_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -296,7 +289,7 @@
                   <p class="product-description">Tropical Fruit Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-6C</p>
-                  <a href="ekcoscreen/Clear_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -309,7 +302,7 @@
                   <p class="product-description">Ice Mint Fragrance</p>
                   <p class="product-description">60 days PLUS</p>
                   <p class="product-description">EKS-7BK</p>
-                  <a href="ekcoscreen/black_ekcos.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                  <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
                 </div>
               </div>
             </div>
@@ -351,7 +344,7 @@
   	<script src="scripts/main.js"></script>
   	<!-- endinject -->
     <script>
-      
+      var id = $('iframe').data('id');
       // Find the right method, call on correct element
       function launchFullscreen(element) {
         if(element.requestFullscreen) {

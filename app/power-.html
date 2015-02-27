@@ -125,12 +125,12 @@
         <div class="container powerscreen-features-items">
           <div class="row">
             <div class="col-md-6 powerscreen-antisplash">
-              <iframe id="powerscreen-video01" class="powerscreen-video01" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe data-id="0" id="powerscreen-video00" class="powerscreen-video01" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <button class="power-subtitle-product text-center" onclick="launchFullscreen(document.getElementById('powerscreen-video01'));">Product Presentation</button>
             </div>
             <div class="col-md-6 powerscreen-antisplash ">
-              <iframe id="powerscreen-video02" class="powerscreen-video02" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <button onclick="launchFullscreen(document.getElementById('powerscreen-video02'));" class="power-subtitle-demo text-center">Demo Presentation</button>
+              <iframe data-id="1" id="powerscreen-video01" class="powerscreen-video02" src="//player.vimeo.com/video/114214479?color=c3ca51&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <button class="power-subtitle-demo text-center" onclick="launchFullscreen(document.getElementById('powerscreen-video02'));">Demo Presentation</button>
             </div>
           </div>
         </div>
@@ -174,14 +174,6 @@
             <hr>
           </div>
 
-      <div class="powerscreen-module-title container">
-          <div class="row">
-            <div class="col-md-12">
-              <p>*This product is designed to biodegrade in a biological active landfill (appropriate facilities not available in all areas).</p>
-              <p>Testing ASTM D5511-2 that we have conducted represent biologically active landfills on our products have shown 99% biodegradation in less than 5 years.</p>
-            </div>
-          </div>
-        </div>
 
       <div class="power-products-container container">
         <div class="row" id="power-products">
@@ -193,7 +185,7 @@
                 <p class="product-description">Spiced Apple Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-2G</p>
-                <a href="power_buy_products/green_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -205,7 +197,7 @@
                 <p class="product-description">Tropical Fruit Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-4O</p>
-                <a href="power_buy_products/orange_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -217,7 +209,7 @@
                 <p class="product-description">Berry Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-1P</p>
-                <a href="power_buy_products/purple_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -229,7 +221,7 @@
                 <p class="product-description">Mint Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-3B</p>
-                <a href="power_buy_products/blue_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -267,7 +259,7 @@
                 <p class="product-description">Tropical Fruit Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-6C</p>
-                <a href="power_buy_products/clear_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -279,7 +271,7 @@
                 <p class="product-description">Ice Mint Fragrance</p>
                 <p class="product-description">30 day</p>
                 <p class="product-description">PWR-78K</p>
-                <a href="power_buy_products/black_power.html" target="_blank" class="btn btn-primary btn-product-buy" role="button">Buy</a>
+                <a href="#" class="btn btn-primary btn-product-buy" role="button">Buy</a>
               </div>
             </div>
           </div>
@@ -311,12 +303,12 @@
 
     <div class="bio-container">
       <img class="bio-img" src="images/bio-bg.png" alt="" usemap="#location-map">
-      <!--div id="overlayr" class="overlayr">
+      <div id="overlayr" class="overlayr">
         <img id="overlay-img-r" src="images/message-hover-right.png" alt="" class="hidden-img-r">
-      </div-->
-      <!--div id="overlayl" class="overlayl">
+      </div>
+      <div id="overlayl" class="overlayl">
         <img id="overlay-img-l" src="images/message-hover-left.png" alt="" class="hidden-img-l">
-      </div-->
+      </div>
       <map name="location-map" id="location-map">
         <area shape="rect" coords="0,0,42%,78%" href="#" id="r">
         <area shape="rect" coords="0,0, 58%, 78%" href="#" id="l">
@@ -329,22 +321,36 @@
   	<!-- endbower -->
   	<!-- inject:js -->
   	<script src="scripts/main.js"></script>
+    <!--script src="scripts/jquery.vimeo.api.min.js"></script-->
     <script>
-      
+      var iframePower01 = $('#powerscreen-video01');
+      var iframePower02 = $('#powerscreen-video02');
+      var player01 = $(iframePower01);
+      var player02 = $(iframePower02);
+      var id = $('iframe').data('id')
       // Find the right method, call on correct element
       function launchFullscreen(element) {
+        var id = $('iframe').data('id')
         if(element.requestFullscreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.requestFullscreen();
         } else if(element.mozRequestFullScreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.mozRequestFullScreen();
         } else if(element.webkitRequestFullscreen) {
+          console.log($('#player'));
+          $('#powerscreen-video0' + id)[0].autoplay = true 
           element.webkitRequestFullscreen();
         } else if(element.msRequestFullscreen) {
           element.msRequestFullscreen();
+          $('#powerscreen-video0' + id)[0].autoplay = true 
         }
       }
 
       function exitFullscreen() {
+        var id = $('iframe').data('id')
         if(document.exitFullscreen) {
           document.exitFullscreen();
         } else if(document.mozCancelFullScreen) {
@@ -355,22 +361,31 @@
       }
 
       function dumpFullscreen() {
+        var id = $('iframe').data('id')
         console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
         console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
       }
 
       // Events
       document.addEventListener("fullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("fullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("mozfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("mozfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("webkitfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("webkitfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
       document.addEventListener("msfullscreenchange", function(e) {
+        var id = $('iframe').data('id')
         console.log("msfullscreenchange event! ", e);
+        $('#powerscreen-video0' + id)[0].autoplay = true 
       });
 
       // Add different events for fullscreen
@@ -380,3 +395,4 @@
   	<!-- endinject -->
 	</body>
 </html>
+

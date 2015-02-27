@@ -7,7 +7,7 @@ var slider04  = $('#slider-04-content');
 (function () {
   slider04.addClass('is_invisible');
 	$('.carousel').carousel({
-  		interval: 80000
+  		interval: 8000
 	});
   $('#carousel-arrowRight').click(function () {
       if (container.hasClass('active')) {
